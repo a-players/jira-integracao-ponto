@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.mindproapps.jira</groupId>
+    <artifactId>integracaoponto</artifactId>
+    <version>1.0.0</version>
+
+    <organization>
+        <name>A-Players - Jira DC 10.3.4</name>
+        <url>a-players.io</url>
+    </organization>
+
+    <name>integracaoponto</name>
+    <description>This is the com.mindproapps.jira:integracaoponto plugin for Atlassian JIRA.</description>
+    <packaging>atlassian-plugin</packaging>
+
+    <dependencies>
+
+        <!-- Adicionado para a versão Jira Data-Center 10.3.4 -->
+        <dependency>
+            <groupId>jta</groupId>
+            <artifactId>jta</artifactId>
+            <version>1.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.atlassian.jira</groupId>
+            <artifactId>jira-api</artifactId>
+            <version>${jira.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Add dependency on jira-core if you want access to JIRA implementation classes as well as the sanctioned API. -->
+        <!-- This is not normally recommended, but may be required eg when migrating a plugin originally developed against JIRA 4.x -->
+        <!--
+        <dependency>
+            <groupId>com.atlassian.jira</groupId>
+            <artifactId>jira-core</artifactId>
+            <version>${jira.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>3.1.4.RELEASE</version>
+        </dependency //-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.6.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.plugins.rest</groupId>
+            <artifactId>atlassian-rest-common</artifactId>
+            <version>1.0.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.sal</groupId>
+            <artifactId>sal-api</artifactId>
+            <version>2.6.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.plugin</groupId>
+            <artifactId>atlassian-spring-scanner-annotation</artifactId>
+            <version>${atlassian.spring.scanner.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.activeobjects</groupId>
+            <artifactId>activeobjects-plugin</artifactId>
+            <version>1.2.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.plugin</groupId>
+            <artifactId>atlassian-spring-scanner-runtime</artifactId>
+            <version>${atlassian.spring.scanner.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- WIRED TEST RUNNER DEPENDENCIES -->
+        <dependency>
+            <groupId>com.atlassian.plugins</groupId>
+            <artifactId>atlassian-plugins-osgi-testrunner</artifactId>
+            <version>${plugin.testrunner.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+            <version>1.1.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.2-atlassian-1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.tempoplugin</groupId>
+            <artifactId>tempo-platform-api</artifactId>
+            <version>2.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-platform-api-2.5.3.jar</systemPath>
+
+        </dependency>
+        <dependency>
+            <groupId>com.tempoplugin</groupId>
+            <artifactId>tempo-platform-jira</artifactId>
+            <version>2.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-platform-jira-2.5.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.tempoplugin</groupId>
+            <artifactId>tempo-core</artifactId>
+            <version>5.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-core-5.5.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.tempoplugin</groupId>
+            <artifactId>tempo-accounts</artifactId>
+            <version>4.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-accounts-4.5.3.jar</systemPath>
+
+        </dependency>
+        <dependency>
+            <groupId>com.tempoplugin</groupId>
+            <artifactId>tempo-teams</artifactId>
+            <version>4.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-teams-4.5.3.jar</systemPath>
+
+        </dependency>
+        <dependency>
+            <groupId>com.tempoplugin</groupId>
+            <artifactId>tempo-plan-core</artifactId>
+            <version>4.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-plan-core-4.5.3.jar</systemPath>
+
+        </dependency>
+        <dependency>
+            <groupId>is.origo.jira</groupId>
+            <artifactId>tempo-plugin</artifactId>
+            <version>9.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/tempo-plugin-9.5.3.jar</systemPath>
+
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <version>3.4.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- Uncomment to use TestKit in your project. Details at https://bitbucket.org/atlassian/jira-testkit -->
+        <!-- You can read more about TestKit at https://developer.atlassian.com/display/JIRADEV/Plugin+Tutorial+-+Smarter+integration+testing+with+TestKit -->
+        <!--
+        <dependency>
+            <groupId>com.atlassian.jira.tests</groupId>
+            <artifactId>jira-testkit-client</artifactId>
+            <version>${testkit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>jira-maven-plugin</artifactId>
+                <version>${amps.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <productVersion>${jira.version}</productVersion>
+                    <productDataVersion>${jira.version}</productDataVersion>
+                    <!-- Uncomment to install TestKit backdoor in JIRA. -->
+                    <!--
+                    <pluginArtifacts>
+                        <pluginArtifact>
+                            <groupId>com.atlassian.jira.tests</groupId>
+                            <artifactId>jira-testkit-plugin</artifactId>
+                            <version>${testkit.version}</version>
+                        </pluginArtifact>
+                    </pluginArtifacts>
+                    -->
+                    <enableQuickReload>true</enableQuickReload>
+
+                    <!-- See here for an explanation of default instructions: -->
+                    <!-- https://developer.atlassian.com/docs/advanced-topics/configuration-of-instructions-in-atlassian-plugins -->
+                    <instructions>
+                        <Atlassian-Plugin-Key>${atlassian.plugin.key}</Atlassian-Plugin-Key>
+
+                        <!-- Add package to export here -->
+                        <Export-Package>
+                            com.mindproapps.jira.integracaoponto.api,
+                        </Export-Package>
+
+                        <!-- Add package import here -->
+                        <Import-Package>
+                            <!-- Tempo Platform -->
+                            com.tempoplugin.platform.api.cache;version="0.0",
+                            com.tempoplugin.platform.api.event;version="0.0",
+                            com.tempoplugin.platform.api.i18n;version="0.0",
+                            com.tempoplugin.platform.api.issue;version="0.0",
+                            com.tempoplugin.platform.api.project;version="0.0",
+                            com.tempoplugin.platform.api.security;version="0.0",
+                            com.tempoplugin.platform.api.service;version="0.0",
+                            com.tempoplugin.platform.api.user;version="0.0",
+                            com.tempoplugin.platform.jira.cache;version="0.0",
+                            com.tempoplugin.platform.jira.event;version="0.0",
+                            com.tempoplugin.platform.jira.i18n;version="0.0",
+                            com.tempoplugin.platform.jira.issue;version="0.0",
+                            com.tempoplugin.platform.jira.project;version="0.0",
+                            com.tempoplugin.platform.jira.security;version="0.0",
+                            com.tempoplugin.platform.jira.service;version="0.0",
+                            com.tempoplugin.platform.jira.user;version="0.0",
+                            com.tempoplugin.platform.user.api;version="0.0",
+                            <!-- Tempo Core -->
+                            com.tempoplugin.core.cache.api;version="0.0",
+                            com.tempoplugin.core.ensure;version="0.0",
+                            com.tempoplugin.core.fields.api;version="0.0",
+                            com.tempoplugin.core.issues.api;version="0.0",
+                            com.tempoplugin.core.license.api;version="0.0",
+                            com.tempoplugin.core.permission.api;version="0.0",
+                            com.tempoplugin.core.permission.migrate;version="0.0",
+                            com.tempoplugin.core.rest.api;version="0.0",
+                            com.tempoplugin.core.specification*;version="0.0",
+                            com.tempoplugin.core.utils;version="0.0",
+                            com.tempoplugin.platform.jira.core.security;version="0.0",
+                            org.springframework.osgi.*;resolution:="optional",
+                            org.eclipse.gemini.blueprint.*;resolution:="optional",
+                            *
+                        </Import-Package>
+                        <log4jProperties>src/aps/log4j.properties</log4jProperties>
+                        <!-- Ensure plugin is spring powered -->
+                        <Spring-Context>*</Spring-Context>
+                    </instructions>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>atlassian-spring-scanner-maven-plugin</artifactId>
+                <version>${atlassian.spring.scanner.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>atlassian-spring-scanner</goal>
+                        </goals>
+                        <phase>process-classes</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <scannedDependencies>
+                        <dependency>
+                            <groupId>com.atlassian.plugin</groupId>
+                            <artifactId>atlassian-spring-scanner-external-jar</artifactId>
+                        </dependency>
+                    </scannedDependencies>
+                    <verbose>false</verbose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <jira.version>7.13.0</jira.version>
+        <amps.version>8.0.2</amps.version>
+        <plugin.testrunner.version>2.0.1</plugin.testrunner.version>
+        <atlassian.spring.scanner.version>1.2.13</atlassian.spring.scanner.version>
+        <!-- This property ensures consistency between the key in atlassian-plugin.xml and the OSGi bundle's key. -->
+        <atlassian.plugin.key>${project.groupId}.${project.artifactId}</atlassian.plugin.key>
+        <!-- TestKit version 6.x for JIRA 6.x -->
+        <testkit.version>6.3.11</testkit.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <!-- Adicionado para a versão Jira Data-Center 10.3.4 -->
+    <repositories>
+        <repository>
+            <id>local-repo</id>
+            <url>file://${user.home}/localrepo</url>
+        </repository>
+    </repositories>
+
+    <!-- Adicionado para a versão Jira Data-Center 10.3.4 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>local-repo</id>
+            <url>file://${user.home}/localrepo</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

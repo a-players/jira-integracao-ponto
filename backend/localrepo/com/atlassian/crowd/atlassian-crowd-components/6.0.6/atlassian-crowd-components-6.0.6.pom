@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.crowd</groupId>
+        <artifactId>atlassian-crowd</artifactId>
+        <version>6.0.6</version>
+    </parent>
+
+    <artifactId>atlassian-crowd-components</artifactId>
+
+    <name>Atlassian Crowd Components</name>
+    <description>Atlassian Crowd Modules and Webapps.</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>crowd-api</module>
+        <module>crowd-common</module>
+        <module>crowd-core</module>
+        <module>crowd-core-tiny</module>
+        <module>crowd-bundled-plugins</module>
+        <module>crowd-synchronisation</module>
+        <module>crowd-ldap</module>
+        <module>crowd-azure-ad</module>
+        <module>crowd-remote</module>
+        <module>crowd-persistence</module>
+        <module>crowd-persistence-hibernate5</module>
+        <module>crowd-events</module>
+        <module>crowd-web-app-common</module>
+        <module>crowd-web-app</module>
+        <module>crowd-server</module>
+        <module>crowd-language</module>
+        <module>crowd-integration-api</module>
+        <module>crowd-integration</module>
+        <module>crowd-decorator</module>
+        <module>crowd-password-encoders</module>
+        <module>crowd-acceptance-test</module>
+        <module>crowd-apacheds-server</module>
+        <module>crowd-rest</module>
+        <module>embedded-crowd</module>
+        <module>crowd-sal</module>
+        <module>crowd-integration-client-rest</module>
+        <module>crowd-integration-client-common</module>
+        <module>crowd-server-common</module>
+        <module>crowd-sync-feedback</module>
+        <module>crowd-test-utils</module>
+        <module>crowd-xwork</module>
+        <module>crowd-server-shared</module>
+        <module>crowd-server-api</module>
+        <module>crowd-query-language</module>
+        <module>crowd-analytics-plugin</module>
+        <module>crowd-monitoring-plugin</module>
+        <module>crowd-sso-saml</module>
+        <module>crowd-frontend-plugin</module>
+        <module>crowd-hibernate5-dialects</module>
+        <module>crowd-db-config-password-cipher-encryptors</module>
+        <module>crowd-directory-pruning-plugin</module>
+        <module>crowd-beehive-compat</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <!-- Enforcer rules inherited for all modules, separate from the root pom's non-inherited configuration -->
+            <plugin>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>ban-conflicting-dependencies</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>Use com.google.code.findbugs:jsr305 for these annotations.</message>
+                                    <excludes>
+                                        <exclude>com.googlecode.findbugs:jsr305</exclude>
+                                        <exclude>com.atlassian.bundles:jsr305</exclude>
+                                    </excludes>
+                                </bannedDependencies>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>Use jcl-over-slf4j.</message>
+                                    <excludes>
+                                        <exclude>commons-logging:commons-logging</exclude>
+                                    </excludes>
+                                </bannedDependencies>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>Use org.hamcrest:hamcrest for hamcrest</message>
+                                    <excludes>
+                                        <exclude>org.hamcrest:hamcrest-core</exclude>
+                                        <exclude>org.hamcrest:hamcrest-library</exclude>
+                                        <exclude>org.hamcrest:java-hamcrest</exclude>
+                                        <exclude>org.hamcrest:hamcrest-all</exclude>
+                                        <exclude>org.hamcrest:hamcrest-junit</exclude>
+                                    </excludes>
+                                </bannedDependencies>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>Use org.jdom:jdom2 for dom</message>
+                                        <excludes>
+                                            <exclude>org.jdom:jdom</exclude>
+                                        </excludes>
+                                </bannedDependencies>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>Use com.rometools:rome for rome/syndication</message>
+                                        <excludes>
+                                            <exclude>com.sun.syndication:com.springsource.com.sun.syndication</exclude>
+                                        </excludes>
+                                </bannedDependencies>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>Use org.apache.logging.log4j (log4j 2) over log4j (log4j 1).</message>
+                                    <excludes>
+                                        <exclude>log4j:logj4</exclude>
+                                        <exclude>org.slf4j:slf4j-reload4j</exclude>
+                                        <exclude>ch.qos.reload4j:reload4j</exclude>
+                                    </excludes>
+                                </bannedDependencies>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>

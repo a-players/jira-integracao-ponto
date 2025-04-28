@@ -1,0 +1,1333 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.jira</groupId>
+        <artifactId>jira-bom</artifactId>
+        <version>10.3.4</version>
+        <relativePath>jira-bom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.atlassian.jira</groupId>
+    <artifactId>jira-project</artifactId>
+
+    <packaging>pom</packaging>
+    <name>Atlassian Jira - Server</name>
+    <description>Jira provides cutting edge issue tracking and project management.</description>
+    <inceptionYear>2002</inceptionYear>
+    <url>http://www.atlassian.com/software/jira</url>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://jira.atlassian.com/browse/JRASERVER</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://extranet.atlassian.com/display/JIRADEV/How+JIRA+uses+Bamboo</url>
+    </ciManagement>
+
+    <modules>
+        <module>jira-components</module>
+        <module>jira-bom</module>
+        <module>jira-functional-tests</module>
+        <module>jira-page-objects</module>
+        <module>jira-ui-test-utils</module>
+    </modules>
+    <scm>
+        <connection>scm:git:ssh://git@stash.atlassian.com:7997/jiraserver/jira.git</connection>
+        <developerConnection>scm:git:ssh://git@stash.atlassian.com:7997/jiraserver/jira.git</developerConnection>
+        <url>https://stash.atlassian.com/projects/JIRASERVER/repos/jira</url>
+        <tag>HEAD</tag>
+    </scm>
+    <dependencyManagement>
+        <dependencies>
+            <!-- Don't put any other dependencies here, those should be placed in the respective BOMs -->
+            <dependency>
+                <groupId>com.atlassian.jira</groupId>
+                <artifactId>jira-internal-bom</artifactId>
+                <version>10.3.4</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <properties>
+        <enforcer.skip>true</enforcer.skip>
+        <jira.build.number>10030004</jira.build.number>
+        <!-- This must be kept in sync with the distribution POM. https://extranet.atlassian.com/x/wYJee -->
+        <!-- leave blank for no downgrade version -->
+
+        <jira.downgrade.minimum.build.version>7.1.2</jira.downgrade.minimum.build.version>
+        <jira.minimum.upgradable.build.number>70100</jira.minimum.upgradable.build.number>
+        <jira.minimum.upgradable.version>7.0</jira.minimum.upgradable.version>
+        <jira.release.info>EAR/WAR</jira.release.info>
+        <maven.test.unit.skip>${maven.test.skip}</maven.test.unit.skip>
+        <maven.test.func.skip>${maven.test.skip}</maven.test.func.skip>
+        <maven.test.selenium.skip>${maven.test.skip}</maven.test.selenium.skip>
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+
+        <atlassian.test.suite.batch>1</atlassian.test.suite.batch>
+        <atlassian.test.suite.numbatches>1</atlassian.test.suite.numbatches>
+        <jdkLevel>17</jdkLevel>
+        <h2.scope>provided</h2.scope>
+
+        <!-- BEGIN.AMPS.CONTAINER.PROPERTIES -->
+        <!-- Properties for AMPS to decide which tomcat version use when starting Jira. For visit go/amps-autocontainer -->
+        <amps.product.specific.container>org.apache.tomcat:apache-tomcat:${tomcat9x.version}:windows-x64</amps.product.specific.container>
+        <!-- List of containers supported by cargo-maven-plugin: https://codehaus-cargo.github.io/cargo/Containers.html -->
+        <amps.product.specific.cargo.container>tomcat9x</amps.product.specific.cargo.container>
+        <!-- END.AMPS.CONTAINER.PROPERTIES -->
+
+        <!-- base JVM args for JIRA test runners -->
+        <jira.user.extra.jvmargs>--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio.file=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.base/sun.reflect.generics.parser=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED --add-exports=java.base/sun.util.calendar=ALL-UNNAMED --add-exports=java.base/sun.security.action=ALL-UNNAMED --add-exports=java.xml/jdk.xml.internal=ALL-UNNAMED</jira.user.extra.jvmargs>
+
+        <jira.user.hardmode.jvmargs/>
+        <jira.user.timezone>Australia/Sydney</jira.user.timezone>
+        <jira.user.jvmargs>-Dupm.plugin.upload.enabled=true -Dlog4j2.contextSelector=org.apache.logging.log4j.core.selector.BasicContextSelector -Dlog4j2.disableJmx=true -Dlog4j2.garbagefree.threadContextMap=true -Dlog4j2.isWebapp=false -Datlassian.allow.insecure.url.parameter.login=true -Dupm.pac.disable=true -Duser.language=en -Duser.region=AU -Duser.timezone=${jira.user.timezone} ${jira.user.extra.jvmargs} ${jira.user.hardmode.jvmargs}</jira.user.jvmargs>
+
+        <jira.test.runner.extra.jvmargs/>
+        <jira.test.runner.jvmargs>-Dfile.encoding=utf-8 ${jira.user.jvmargs} ${jira.test.runner.extra.jvmargs}</jira.test.runner.jvmargs>
+
+        <jira.functest.maxMemory>2G</jira.functest.maxMemory>
+        <jira.functest.minMemory>384m</jira.functest.minMemory>
+        <jira.functest.jvmargs.memory>-Xmx${jira.functest.maxMemory} -Xms${jira.functest.minMemory}</jira.functest.jvmargs.memory>
+
+        <!-- properties for javadoc theme -->
+        <doclava.theme.dir>${basedir}/target/doclava</doclava.theme.dir>
+        <!-- this property is also used in JavadocDoclintProblems eh metric -->
+        <jira.doclint>none</jira.doclint>
+        <jira.doclint.params/>
+
+        <jira.docs.version>${idea.docs.version}</jira.docs.version>
+
+        <release.args/>
+
+        <compile.warn.deprecation>false</compile.warn.deprecation>
+        <maven.test.skip>false</maven.test.skip>
+        <maven.profiling.product>JIRA_DC</maven.profiling.product>
+
+        <thirdpartylicensing.dir>${user.dir}/third-party-licensing</thirdpartylicensing.dir>
+        <thirdpartylicensing.licenses>${thirdpartylicensing.dir}/licenses/</thirdpartylicensing.licenses>
+        <thirdpartylicensing.bom>${thirdpartylicensing.dir}/bom.csv</thirdpartylicensing.bom>
+
+        <!-- excluded provided scope dependencies that will not be treated as bundled plugins. Affects both Cloud and Server builds! -->
+        <bundled.plugins.excluded.artifacts>jira-internal-bom,jira-bundled-plugins-bom,jira-api,jira-core,jsr305,slf4j-simple,slf4j-log4j12,log4j,clover</bundled.plugins.excluded.artifacts>
+
+        <!-- clover configuration -->
+        <clover.excludesFile/>
+        <clover.dbName>clover.db</clover.dbName>
+        <clover.instrumentation>statement</clover.instrumentation>
+        <clover.dbLocation>${clover.rootDirectory}/db</clover.dbLocation>
+        <clover.outputDirectory>${clover.rootDirectory}/report</clover.outputDirectory>
+        <clover.reportDescriptor>${clover.rootDirectory}/clover-report.xml</clover.reportDescriptor>
+        <clover.blacklist>${clover.rootDirectory}/clover.blacklist</clover.blacklist>
+        <clover.report.html>true</clover.report.html>
+        <clover.report.xml>true</clover.report.xml>
+
+        <clover.relativeRootDirectory>conf/clover</clover.relativeRootDirectory>
+        <clover.rootDirectory>${user.dir}/${clover.relativeRootDirectory}</clover.rootDirectory>
+        <clover.relativeLicenseLocation>${clover.relativeRootDirectory}/clover.license</clover.relativeLicenseLocation>
+        <clover.licenseLocation>${user.dir}/${clover.relativeLicenseLocation}</clover.licenseLocation>
+        <clover.resultsDirectory>${clover.rootDirectory}/results</clover.resultsDirectory>
+
+        <!-- node -->
+        <!--
+        When bumping node, npm or yarn version:
+        - change node.version/npm.version (without the 'v' prefix),
+        - remember to sync changes with package.json
+        -->
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <node.version>14.18.1</node.version>
+        <!-- Blank line to avoid conflicts -->
+        <npm.version>6.14.15</npm.version>
+        <!-- Blank line to avoid conflicts -->
+        <yarn.version>1.22.19</yarn.version>
+        <!-- END.DEPENDENCY.VERSIONS -->
+
+        <nodePath>${project.build.directory}</nodePath>
+        <frontend.install.cmd>${frontend.install.cmd.forDevelopment}</frontend.install.cmd>
+        <frontend.install.cmd.forDevelopment>install --pure-lockfile --prefer-offline --mutex network</frontend.install.cmd.forDevelopment>
+        <frontend.install.cmd.noDevDependencies>install --production --frozen-lockfile --prefer-offline --mutex network --no-progress</frontend.install.cmd.noDevDependencies>
+        <frontend.process.resources.args>--skip-minification=${frontend.minify.skip} --production=${frontend.dist.mode}</frontend.process.resources.args>
+        <frontend.minify.skip>false</frontend.minify.skip>
+        <frontend.dist.mode>false</frontend.dist.mode>
+        <instrument.js.coverage>false</instrument.js.coverage>
+
+        <!--code coverage-->
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.language>java</sonar.language>
+        <sonar.coverage.exclusions>jira-distribution/**, jira-functional-tests/**, jira-ide-support/**, jira-internal-testing/**, jira-page-objects/**,
+            jira-ui-test-utils/**, jirahome/**, jmake_src/**, node_modules/**, tomcat/**, jira-components/jira-webapp/**, jira-components/jira-tests-parent/**,
+            jira-components/jira-lucene-dmz/**</sonar.coverage.exclusions>
+
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <frontend.maven.plugin.version>1.15.0</frontend.maven.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.failsafe.version>3.3.0</maven.failsafe.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.findbugs.findsecbugs.version>1.2.0</maven.findbugs.findsecbugs.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.findbugs.jira.version>1.0-alpha2</maven.findbugs.jira.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.findbugs.version>3.0.5</maven.findbugs.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.source.plugin.version>2.2.1</maven.source.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.surefire.version>3.3.0</maven.surefire.version>
+        <!-- Blank line to avoid conflicts -->
+        <tomcat9x.version>9.0.100-atlassian-hosted</tomcat9x.version>
+        <!-- Blank line to avoid conflicts -->
+        <tomcat9x.version.no-suffix>9.0.100</tomcat9x.version.no-suffix>
+
+        <!-- END.DEPENDENCY.VERSIONS -->
+        <docsversion-maven-plugin.version>2.0.0</docsversion-maven-plugin.version>
+
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>skip-minification</id>
+            <activation>
+                <property>
+                    <name>jira.minify.skip</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <properties>
+                <frontend.minify.skip>true</frontend.minify.skip>
+            </properties>
+        </profile>
+        <profile>
+            <id>jmake</id>
+            <modules>
+                <module>jmake_src</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>ide-setup</id>
+            <modules>
+                <module>jira-ide-support</module>
+            </modules>
+        </profile>
+        <profile>
+            <!-- Used when ATLASSIAN builds the source distribution for customers, which customers will later
+                 download and use to build JIRA themselves. -->
+            <id>distribution</id>
+            <modules>
+                <module>jira-distribution</module>
+            </modules>
+            <properties>
+                <frontend.dist.mode>true</frontend.dist.mode>
+                <frontend.install.cmd>${frontend.install.cmd.noDevDependencies}</frontend.install.cmd>
+                <!-- Read from mvnvm.properties file by properties-maven-plugin -->
+                <maven.version>${mvnvm.mvn_version}</maven.version>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>properties-maven-plugin</artifactId>
+                        <version>1.2.1</version>
+                        <executions>
+                            <execution>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>read-project-properties</goal>
+                                </goals>
+                                <configuration>
+                                    <files>
+                                        <file>${maven.multiModuleProjectDirectory}/mvnvm.properties</file>
+                                    </files>
+                                    <keyPrefix>mvnvm.</keyPrefix>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <!-- Used when CUSTOMERS build JIRA themselves from source given to them via our source distribution. -->
+            <id>build-from-source-dist</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <frontend.dist.mode>true</frontend.dist.mode>
+                <frontend.install.cmd>${frontend.install.cmd.noDevDependencies}</frontend.install.cmd>
+                <maven.test.skip>true</maven.test.skip> <!-- setting the prop here will not activate other profiles -->
+            </properties>
+        </profile>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-enforcer-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>enforce-no-snapshots</id>
+                                <goals>
+                                    <goal>enforce</goal>
+                                </goals>
+                                <phase>validate</phase>
+                                <configuration>
+                                    <rules>
+                                        <requireReleaseVersion>
+                                            <message>No Snapshots Allowed!</message>
+                                        </requireReleaseVersion>
+                                    </rules>
+                                    <fail>true</fail>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>api-core-javadoc</id>
+            <!-- call with javadoc:aggregate-jar -->
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <version>2.3</version>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>copy-doclava-artifact</id>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>unpack</goal>
+                                </goals>
+                                <configuration>
+                                    <artifactItems>
+                                        <artifactItem>
+                                            <groupId>com.atlassian.devrel</groupId>
+                                            <artifactId>doclava-theme</artifactId>
+                                            <version>${doclava.theme.version}</version>
+                                            <outputDirectory>${doclava.theme.dir}</outputDirectory>
+                                        </artifactItem>
+                                    </artifactItems>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven.javadoc.version}</version>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <docletArtifact>
+                                <groupId>com.google.doclava</groupId>
+                                <artifactId>doclava</artifactId>
+                                <version>1.0.6-atlassian-6</version>
+                            </docletArtifact>
+                            <!--
+                                Don't fail build on errors; this is due to a malformed package.html
+                                in opensymphony/sitemesh/2.5-atlassian-3/sitemesh-2.5-atlassian-3.jar.
+                                See https://extranet.atlassian.com/jira/browse/BUILDENG-1003 for info
+                                on the fix and when this can be removed.
+                             -->
+                            <failOnError>false</failOnError>
+                            <quiet>true</quiet>
+                            <doclet>com.google.doclava.Doclava</doclet>
+                            <useStandardDocletOptions>false</useStandardDocletOptions>
+                            <bootclasspath>${sun.boot.class.path}</bootclasspath>
+                            <doclint>
+                                -federate JDK http://download.oracle.com/javase/6/docs/api/index.html?
+                                -federationxml JDK ${doclava.theme.dir}/openjdk-6.xml
+                                -federate embedded-crowd-api https://developer.atlassian.com/static/javadoc/embedded-crowd-api/2.3.4/reference
+                                -federate webwork-1.4 https://developer.atlassian.com/static/javadoc/opensymphony-webwork/1.4-atlassian-19/reference
+                                -federate propertyset https://developer.atlassian.com/static/javadoc/opensymphony-propertyset/1.5/reference
+                                -federate velocity https://developer.atlassian.com/static/javadoc/velocity/1.4-atlassian-9/reference
+                                -federate applinks https://developer.atlassian.com/static/javadoc/applinks/3.6.1/reference
+                                -federate atlassian-plugins https://developer.atlassian.com/static/javadoc/plugins/2.10/reference
+                                -federate atlassian-core https://developer.atlassian.com/static/javadoc/atlassian-core/4.6.0/reference
+                                -federate lucene https://developer.atlassian.com/static/javadoc/lucene/3.2.0/reference
+                                -hdf project.name "${project.name}"
+                                -d ${project.build.directory}/apidocs
+                                -templatedir ${doclava.theme.dir}
+                            </doclint>
+                            <maxmemory>2048m</maxmemory>
+                            <excludePackageNames>
+                                com.atlassian.jira.license.*,com.atlassian.jira.webtests.*,com.atlassian.jira.webtest.*,com.atlassian.jira.functest.unittests.*
+                            </excludePackageNames>
+                            <sourcepath>
+                                jira-components/jira-api/src/main/java/com/atlassian/jira;jira-components/jira-core/src/main/java/com/atlassian/jira
+                            </sourcepath>
+                            <additionalDependencies>
+                                <additionalDependency>
+                                    <groupId>org.joda</groupId>
+                                    <artifactId>joda-convert</artifactId>
+                                    <version>1.2</version>
+                                </additionalDependency>
+                            </additionalDependencies>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>all-javadoc</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <version>2.3</version>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>copy-doclava-artifact</id>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>unpack</goal>
+                                </goals>
+                                <configuration>
+                                    <artifactItems>
+                                        <artifactItem>
+                                            <groupId>com.atlassian.devrel</groupId>
+                                            <artifactId>doclava-theme</artifactId>
+                                            <version>${doclava.theme.version}</version>
+                                            <type>jar</type>
+                                            <outputDirectory>${doclava.theme.dir}</outputDirectory>
+                                        </artifactItem>
+                                    </artifactItems>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven.javadoc.version}</version>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <docletArtifact>
+                                <groupId>com.google.doclava</groupId>
+                                <artifactId>doclava</artifactId>
+                                <version>1.0.6-atlassian-6</version>
+                            </docletArtifact>
+                            <!--
+                                Don't fail build on errors; this is due to a malformed package.html
+                                in opensymphony/sitemesh/2.5-atlassian-3/sitemesh-2.5-atlassian-3.jar.
+                                See https://extranet.atlassian.com/jira/browse/BUILDENG-1003 for info
+                                on the fix and when this can be removed.
+                             -->
+                            <failOnError>false</failOnError>
+                            <finalName>jira-project-${project.version}-developer</finalName>
+                            <quiet>true</quiet>
+                            <doclet>com.google.doclava.Doclava</doclet>
+                            <useStandardDocletOptions>false</useStandardDocletOptions>
+                            <bootclasspath>${sun.boot.class.path}</bootclasspath>
+                            <doclint>
+                                -federate JDK http://download.oracle.com/javase/6/docs/api/index.html?
+                                -federationxml JDK ${doclava.theme.dir}/openjdk-6.xml
+                                -federate embedded-crowd-api https://developer.atlassian.com/static/javadoc/embedded-crowd-api/2.3.4/reference
+                                -federate webwork-1.4 https://developer.atlassian.com/static/javadoc/opensymphony-webwork/1.4-atlassian-19/reference
+                                -federate propertyset https://developer.atlassian.com/static/javadoc/opensymphony-propertyset/1.5/reference
+                                -federate velocity https://developer.atlassian.com/static/javadoc/velocity/1.4-atlassian-9/reference
+                                -federate applinks https://developer.atlassian.com/static/javadoc/applinks/3.6.1/reference
+                                -federate atlassian-plugins https://developer.atlassian.com/static/javadoc/plugins/2.10/reference
+                                -federate atlassian-core https://developer.atlassian.com/static/javadoc/atlassian-core/4.6.0/reference
+                                -federate lucene https://developer.atlassian.com/static/javadoc/lucene/3.2.0/reference
+                                -hdf project.name "${project.name}"
+                                -d ${project.build.directory}/apidocs
+                                -templatedir ${doclava.theme.dir}
+                            </doclint>
+                            <maxmemory>2048m</maxmemory>
+                            <excludePackageNames>
+                                com.atlassian.jira.license.*,com.atlassian.jira.webtests.*,com.atlassian.jira.webtest.*,com.atlassian.jira.functest.unittests.*
+                            </excludePackageNames>
+                            <additionalDependencies>
+                                <additionalDependency>
+                                    <groupId>org.joda</groupId>
+                                    <artifactId>joda-convert</artifactId>
+                                    <version>1.2</version>
+                                </additionalDependency>
+                                <additionalDependency>
+                                    <groupId>com.infradna.tool</groupId>
+                                    <artifactId>bridge-method-annotation</artifactId>
+                                    <version>1.11</version>
+                                </additionalDependency>
+                                <additionalDependency>
+                                    <groupId>org.jenkins-ci</groupId>
+                                    <artifactId>annotation-indexer</artifactId>
+                                    <version>1.4</version>
+                                </additionalDependency>
+                            </additionalDependencies>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>fork-compilation</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                <fork>true</fork>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+        <profile>
+            <id>maven3-statistics</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.atlassian.maven.plugins</groupId>
+                        <artifactId>statistics-maven-plugin</artifactId>
+                        <version>0.1.3</version>
+                        <extensions>true</extensions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>jira-metrics</id>
+            <properties>
+                <compile.warn.deprecation>true</compile.warn.deprecation>
+            </properties>
+        </profile>
+        <profile>
+            <id>codestyle</id>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-checkstyle-plugin</artifactId>
+                            <version>3.2.2</version>
+                            <dependencies>
+                                <dependency>
+                                    <groupId>com.puppycrawl.tools</groupId>
+                                    <artifactId>checkstyle</artifactId>
+                                    <version>9.3</version>
+                                </dependency>
+                            </dependencies>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>verify</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>check</goal>
+                                </goals>
+                                <configuration>
+                                    <configLocation>codestyle/checkstyle-rules.xml</configLocation>
+                                    <propertyExpansion>configdir=codestyle</propertyExpansion>
+                                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>clover.func.tests</id>
+            <activation>
+                <property>
+                    <name>clover.func.tests</name>
+                </property>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>com.atlassian.clover</groupId>
+                    <artifactId>clover</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>clover.coverage</id>
+            <activation>
+                <property>
+                    <name>clover.coverage</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.atlassian.maven.plugins</groupId>
+                        <artifactId>clover-maven-plugin</artifactId>
+                        <version>${clover.version}</version>
+                        <configuration>
+                            <generateHtml>${clover.report.html}</generateHtml>
+                            <generateXml>${clover.report.xml}</generateXml>
+                            <outputDirectory>${clover.outputDirectory}</outputDirectory>
+                            <licenseLocation>${clover.licenseLocation}</licenseLocation>
+                            <instrumentation>${clover.instrumentation}</instrumentation>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>setup</id>
+                                <configuration>
+                                    <jdk>${jdkLevel}</jdk>
+                                    <encoding>utf-8</encoding>
+                                    <setTestFailureIgnore>true</setTestFailureIgnore>
+                                    <cloverDatabase>${clover.dbLocation}/${clover.dbName}</cloverDatabase>
+                                    <excludesFile>${clover.blacklist}</excludesFile>
+                                </configuration>
+                                <phase>process-sources</phase>
+                                <goals>
+                                    <goal>setup</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>default-cli</id>
+                                <configuration>
+                                    <baseDir>${clover.dbLocation}</baseDir>
+                                    <reportDescriptor>${clover.reportDescriptor}</reportDescriptor>
+                                    <cloverMergeDatabase>${clover.dbLocation}/${clover.dbName}</cloverMergeDatabase>
+                                </configuration>
+                                <goals>
+                                    <goal>merge</goal>
+                                    <goal>clover</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <reportsDirectory>${clover.resultsDirectory}</reportsDirectory>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <!--
+        When upgrading to a parent-pom (closedsource-pom) that is greater than version 4.0.10 this can be removed
+        but you will also need to change the SOX plan templates to being to use the profile defined in those poms
+        at the time of writing that would be swaping -Partifact-signing for -Psox
+        This change also needs to be made in the following files
+        - pom.xml
+        - jira-distribution/pom.xml
+        - jira-core-distribution/pom.xml
+        -->
+        <profile>
+            <id>artifact-signing</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <!-- Keep this profile in sync with the distribution POM, please..! -->
+            <id>hardmode</id>
+            <properties>
+                <hardmode.jvmargs>-Datlassian.darkfeature.amd.loader.noglobals=true</hardmode.jvmargs>
+                <jira.seleniumtest.jvmargs.hardmode>${hardmode.jvmargs}</jira.seleniumtest.jvmargs.hardmode>
+                <jira.user.hardmode.jvmargs>${hardmode.jvmargs}</jira.user.hardmode.jvmargs>
+            </properties>
+        </profile>
+        <profile>
+            <!--
+            This profile allows frontend-maven-plugin to download yarn and node directly from internal maven repo
+            instead of using github.
+            -->
+            <id>useMavenRestrictedRepoForYarn</id>
+            <activation>
+                <!--
+                Activated on bamboo builds.
+                Deactivate it (passing -P -useMavenRestrictedRepoForYarn as a build parameter) if there are issues
+                when building without access to internal maven repo.
+                -->
+                <property>
+                    <name>env.bamboo_planKey</name>
+                </property>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>com.github.eirslett</groupId>
+                            <artifactId>frontend-maven-plugin</artifactId>
+                            <version>${frontend.maven.plugin.version}</version>
+                            <configuration>
+                                <nodeVersion>v${node.version}</nodeVersion>
+                                <yarnVersion>v${yarn.version}</yarnVersion>
+                                <installDirectory>${nodePath}</installDirectory>
+                                <npmInheritsProxyConfigFromMaven>true</npmInheritsProxyConfigFromMaven>
+                                <serverId>maven-atlassian-com</serverId>
+                                <nodeDownloadRoot>https://packages.atlassian.com/artifactory/nodejs-dist/</nodeDownloadRoot>
+                                <yarnDownloadRoot>https://packages.atlassian.com/artifactory/yarn-dist/</yarnDownloadRoot>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+        <!--code coverage-->
+        <profile>
+            <id>jacoco</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>prepare-agent</id>
+                                <goals>
+                                    <goal>prepare-agent</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <argLine>${argLine}</argLine>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>instrumentJsCoverage</id>
+            <properties>
+                <instrument.js.coverage>true</instrument.js.coverage>
+            </properties>
+        </profile>
+        <profile>
+            <id>bundle-h2</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <h2.scope>compile</h2.scope>
+            </properties>
+        </profile>
+        <profile>
+            <!-- generate the REST OpenAPIs documentation -->
+            <id>generate-openapi-docs</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <property>
+                    <name>jira.generateDocs</name>
+                </property>
+            </activation>
+            <properties>
+                <maven.javadoc.skip>false</maven.javadoc.skip>
+                <openapi.enricher.mode>external</openapi.enricher.mode>
+            </properties>
+            <build>
+                <plugins>
+                    <!--OpenAPI generation-->
+                    <plugin>
+                        <groupId>com.atlassian.bitbucket.server.swagger</groupId>
+                        <artifactId>swagger-maven-plugin</artifactId>
+                        <version>${swagger.maven.plugin.version}</version>
+                        <configuration>
+                            <scanOnlyProjectClasses>true</scanOnlyProjectClasses>
+                            <resourcePackages>
+                                <resourcePackage>com.atlassian</resourcePackage>
+                            </resourcePackages>
+                            <enrichers>
+                                <enricher>com.atlassian.jira.dc.swagger.enricher.JiraEnricher</enricher>
+                            </enrichers>
+                            <outputDirectory>${project.build.directory}/site</outputDirectory>
+                            <outputFilename>swagger</outputFilename>
+                            <outputFormats>JSON,YAML</outputFormats>
+                            <prettyPrint>true</prettyPrint>
+                            <swaggerConfig>
+                                <servers>
+                                    <server>
+                                        <description>Endpoint URL</description>
+                                    </server>
+                                </servers>
+                                <info>
+                                    <title>JIRA REST API Reference</title>
+                                    <version>${project.version}</version>
+                                </info>
+                            </swaggerConfig>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>com.atlassian.dc.swagger</groupId>
+                                <artifactId>processor</artifactId>
+                                <version>${jira.swagger.extras.version}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>com.fasterxml.jackson.core</groupId>
+                                <artifactId>jackson-databind</artifactId>
+                                <version>${fasterxml.jackson.version}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>com.fasterxml.jackson.core</groupId>
+                                <artifactId>jackson-core</artifactId>
+                                <version>${fasterxml.jackson.version}</version>
+                            </dependency>
+                        </dependencies>
+                        <executions>
+                            <execution>
+                                <phase>compile</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <configuration>
+                    <rules>
+                        <banVersionDeps implementation="com.atlassian.maven.enforcer.BanVersionDeps">
+                            <bannedDependencyVersionRegexp>(?i)^.*-(rc|m)-?[0-9]+(-.+)?$</bannedDependencyVersionRegexp>
+                            <noFailReactorVersionRegexp>(?i)^.*-m-?[0-9]+(-.+)?$</noFailReactorVersionRegexp>
+                            <excludes>
+                                <exclude>com.atlassian.refapp:atlassian-refapp-pageobjects</exclude>
+                                <exclude>com.esotericsoftware:kryo</exclude>
+                                <exclude>net.sourceforge.jwebunit:jwebunit-core</exclude>
+                                <exclude>net.sourceforge.jwebunit:jwebunit-htmlunit-plugin</exclude>
+                                <exclude>com.atlassian.confluence:confluence-webdriver-pageobjects</exclude>
+                                <exclude>com.atlassian.crowd:*</exclude>
+                                <exclude>com.atlassian.plugins.authentication:atlassian-authentication-plugin</exclude>
+                                <exclude>com.atlassian.templaterenderer:*</exclude>
+                            </excludes>
+                        </banVersionDeps>
+                    </rules>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>enforce-platform-version-in-sync</id>
+                        <goals><goal>enforce</goal></goals>
+                        <phase>validate</phase>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <rules>
+                                <requireProperty>
+                                    <property>platform.dependencies.version</property>
+                                    <regex>${project.parent.parent.version}</regex>
+                                    <regexMessage>Please keep parent version (${project.parent.parent.version}) in sync with platform.dependencies.version (${platform.dependencies.version}) - both are defined in jira-bom </regexMessage>
+                                </requireProperty>
+                            </rules>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce-versions</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[3.2.5,3.10.1]</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <version>[17,)</version>
+                                </requireJavaVersion>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce-jakarta-servlet-four</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>
+                                        Something is including an old version of the Servlet API.
+                                        |
+                                        | The servlet API artifactId has changed, and depending on the old version at a scope other
+                                        | than provided can cause problems. Dependencies with scope provided are OK, as 3.0 is API
+                                        | compatible with 2.x.
+                                        |
+                                        | If you hit this enforcer rule despite using scope provided, be aware that Maven 3.0.5 (at
+                                        | least) can compute dependencies wrong, so you may need to add exclusions elements to your
+                                        | poms as guided by occurrences of javax.servlet:servlet-api in dependency:tree output.
+                                        |
+                                        | Same for 4.0 -&gt; jakarta move
+                                    </message>
+                                    <excludes>
+                                        <!-- This picks 2.x and 3.x servlet -->
+                                        <exclude>javax.servlet:servlet-api</exclude>
+                                        <exclude>javax.servlet:javax.servlet-api</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <!-- Allow scope provided and test as per message above -->
+                                        <include>javax.servlet:servlet-api:*:*:provided</include>
+                                        <include>javax.servlet:servlet-api:*:*:test</include>
+
+                                        <include>javax.servlet:javax.servlet-api:*:*:provided</include>
+                                        <include>javax.servlet:javax.servlet-api:*:*:test</include>
+                                    </includes>
+                                </bannedDependencies>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce-ban-javax</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>
+                                        Since platform 7 we should use jakarta.* mvn artifacts instead of javax.*
+                                    </message>
+                                    <excludes>
+                                        <exclude>javax.*:*</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <!-- Allow scope provided and test -->
+                                        <include>javax.*:*:*:*:provided</include>
+                                        <include>javax.*:*:*:*:test</include>
+                                    </includes>
+                                </bannedDependencies>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce-bouncycastle</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>make sure bouncycastle bc*-jdk14, 15 or 16 are not accidentally
+                                        included as transitive dependencies. Use bc*-lts8on instead
+                                    </message>
+                                    <excludes>
+                                        <exclude>*bouncycastle:*</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <include>org.bouncycastle:*-lts8on</include>
+                                    </includes>
+                                </bannedDependencies>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce_spring_scanner_scope</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>spring-scanner-runtime 1.x must be 'runtime' scoped in plugins (see CONFDEV-39702); spring-scanner-runtime 2.x must NOT be embedded, should not be depended on at all (see SCANNER-17).</message>
+                                    <excludes>
+                                        <exclude>com.atlassian.plugin:atlassian-spring-scanner-runtime</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <!-- The 1.x version is designed to have 'scanner-runtime' embedded inside each plugin,
+                                             and numerous plugins still have that setup, so we allow that here until everyone stops using 1.x. -->
+                                        <include>com.atlassian.plugin:atlassian-spring-scanner-runtime:(,2):*:runtime</include>
+                                        <!-- The 2.x version is used 'provided', should not be compile/runtime in consuming plugins.
+                                             Really only want 2.0 in jira-bundled-plugins itself, other plugins need not depend on it at all, but enforcer can't do that; harmless.
+                                             'runtime'/'compile' in plugins is definitely banned though. -->
+                                        <include>com.atlassian.plugin:atlassian-spring-scanner-runtime:[2,):*:provided</include>
+                                    </includes>
+                                </bannedDependencies>
+                                <bannedDependencies>
+                                    <searchTransitive>true</searchTransitive>
+                                    <message>spring-scanner-annotations 1.x must be 'compile' scoped in plugins (see CONFDEV-39702); 2.x annotations must be 'provided' scope (see SCANNER-17).</message>
+                                    <excludes>
+                                        <exclude>com.atlassian.plugin:atlassian-spring-scanner-annotation</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <!-- The 1.x version allows scanner-annotations to be embedded OR provided - either works.
+                                             Numerous plugins still have that setup, so we allow that here until everyone stops using 1.x. -->
+                                        <include>com.atlassian.plugin:atlassian-spring-scanner-annotation:(,2):*:compile</include>
+                                        <!-- The 2.x version is used 'provided' only, and is shipped as bundled plugins; should not be compile/runtime in consuming plugins. -->
+                                        <include>com.atlassian.plugin:atlassian-spring-scanner-annotation:[2,):*:provided</include>
+                                    </includes>
+                                </bannedDependencies>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>beanshell-is-evil</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <phase>compile</phase>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <excludes>
+                                        <exclude>bsf</exclude>
+                                        <exclude>bsh</exclude>
+                                    </excludes>
+                                    <message>JRASERVER-63676: Beanshell is dangerous. It allows for RCE</message>
+                                </bannedDependencies>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>install node and yarn</id>
+                        <goals>
+                            <goal>install-node-and-yarn</goal>
+                        </goals>
+                        <phase>initialize</phase>
+                        <inherited>false</inherited>
+                    </execution>
+                    <execution>
+                        <id>yarn install</id>
+                        <goals>
+                            <goal>yarn</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>${frontend.install.cmd}</arguments>
+                            <environmentVariables>
+                                <FRONTEND_DIST_MODE>${frontend.dist.mode}</FRONTEND_DIST_MODE>
+                            </environmentVariables>
+                        </configuration>
+                        <phase>initialize</phase>
+                        <inherited>false</inherited>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <configuration>
+                    <fast>true</fast>
+                    <filesets>
+                        <fileset>
+                            <directory>node_modules</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>docsversion-maven-plugin</artifactId>
+                    <version>${docsversion-maven-plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <!--
+                        This is to override maven-surefire-plugin version defined in com.atlassian.pom:base-pom.
+                        The current com.atlassian.pom:base-pom:5.0.29 points maven-surefire-plugin:2.22.0,
+                        but in order to fix https://bulldog.internal.atlassian.com/browse/JSEV-2951 we need
+                        maven-surefire-plugin 2.22.3+ (not released as of today yet) or 3.0.0-M6+
+                    -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven.surefire.version}</version>
+                    <configuration>
+                        <excludes>
+                            <exclude>**/*$*</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>${maven.failsafe.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.lesscss</groupId>
+                    <artifactId>lesscss-maven-plugin</artifactId>
+                    <version>${less-transformer.version}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <configuration>
+                        <maxmem>512m</maxmem>
+                        <source>${jdkLevel}</source>
+                        <target>${jdkLevel}</target>
+                        <showDeprecation>${compile.warn.deprecation}</showDeprecation>
+                        <compilerArgs>
+                            <arg>--add-exports=java.base/sun.util.calendar=ALL-UNNAMED</arg>
+                            <arg>--add-exports=java.base/sun.reflect.generics.parser=ALL-UNNAMED</arg>
+                            <arg>-Xmaxwarns</arg>
+                            <arg>100000</arg>
+                        </compilerArgs>
+                        <useIncrementalCompilation>false</useIncrementalCompilation>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven.javadoc.version}</version>
+                    <configuration>
+                        <maxmemory>2048m</maxmemory>
+                        <doclint>${jira.doclint}</doclint>
+                        <release combine.self="override"/>
+                        <source>${jdkLevel}</source>
+                        <additionalJOptions>
+                            <additionalJOption>${jira.doclint.params}</additionalJOption>
+                            <additionalJOption>--add-exports=java.base/sun.util.calendar=ALL-UNNAMED</additionalJOption>
+                        </additionalJOptions>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.4.0</version>
+                    <configuration>
+                        <useJvmChmod>true</useJvmChmod>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.4.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.groovy.maven</groupId>
+                    <artifactId>gmaven-plugin</artifactId>
+                    <version>1.0</version>
+                </plugin>
+                <plugin>
+                    <!-- Remove this override once on 4.0.25 or later of the base POM -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>pseudo-loc-maven-plugin</artifactId>
+                    <version>1.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>2.3</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <arguments>${release.args}</arguments>
+                        <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.scm</groupId>
+                            <artifactId>maven-scm-provider-gitexe</artifactId>
+                            <version>1.9</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <!-- This plugin has aggregator-style goals. Check BUILDENG-4706 for more details why it should never
+                      be called from inside the normal lifecycle -->
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>1.0.1</version>
+                    <configuration>
+                        <licensesDirectory>${thirdpartylicensing.licenses}</licensesDirectory>
+                        <bomFile>${thirdpartylicensing.bom}</bomFile>
+                        <nonMavenDependenciesFile>${thirdpartylicensing.dir}/missing-non-maven-dependencies.properties</nonMavenDependenciesFile>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>amps-maven-plugin</artifactId>
+                    <version>${amps.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <skipBanningDependencies>true</skipBanningDependencies>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>jira-maven-plugin</artifactId>
+                    <version>${amps.version}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <skipBanningDependencies>true</skipBanningDependencies>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.plugin</groupId>
+                    <artifactId>atlassian-spring-scanner-maven-plugin</artifactId>
+                    <version>${atlassian-spring-scanner.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>atlassian-spring-scanner</goal>
+                            </goals>
+                            <phase>process-classes</phase>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <!-- Enable this to get build-time logging of annotations atlassian-spring-scanner-maven-plugin has noticed -->
+                        <verbose>false</verbose>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.6.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>maven-source-routes-plugin</artifactId>
+                    <version>1.5</version>
+                    <!--
+                    Defined also in parent pom. Just here to disable it.
+                    The plugin is now redundant because the project is deployed to the new nexus-atlassian-closedsource
+                    service which applies the permissions based on the file type.
+                    TODO: remove when upgrading to parent pom 3.0.91 or later
+                    -->
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>disable-plugin</id>
+                            <phase>none</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.jasig.mojo.jspc</groupId>
+                    <artifactId>jspc-maven-plugin</artifactId>
+                    <version>2.0.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.jasig.mojo.jspc</groupId>
+                            <artifactId>jspc-compiler-tomcat7</artifactId>
+                            <version>2.0.0</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.eirslett</groupId>
+                    <artifactId>frontend-maven-plugin</artifactId>
+                    <version>${frontend.maven.plugin.version}</version>
+                    <configuration>
+                        <nodeVersion>v${node.version}</nodeVersion>
+                        <yarnVersion>v${yarn.version}</yarnVersion>
+                        <installDirectory>${nodePath}</installDirectory>
+                        <npmInheritsProxyConfigFromMaven>true</npmInheritsProxyConfigFromMaven>
+                        <workingDirectory>${maven.multiModuleProjectDirectory}/</workingDirectory>
+                        <installDirectory>${maven.multiModuleProjectDirectory}/target</installDirectory>
+                    </configuration>
+                </plugin>
+                <!--code coverage-->
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.8</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-http</artifactId>
+                <version>3.3.3-atlassian-03</version>
+            </extension>
+        </extensions>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>2.7.1</version>
+                <configuration>
+                    <targetJdk>${jdkLevel}</targetJdk>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jdepend-maven-plugin</artifactId>
+                <version>2.0-beta-2</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <!-- force bom into reactor -->
+    <dependencies>
+        <dependency>
+            <groupId>com.atlassian.jira</groupId>
+            <artifactId>jira-internal-bom</artifactId>
+            <version>10.3.4</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>

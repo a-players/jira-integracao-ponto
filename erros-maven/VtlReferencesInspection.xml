@@ -1,0 +1,266 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/generic/webapp-unauthorized.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/generic/webapp-unauthorized.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/generic/webapp-unauthorized.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/generic/webapp-unauthorized.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>12</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="VtlReferencesInspection" severity="WARNING" attribute_key="INFO_ATTRIBUTES">References inspection</problem_class>
+  <description>Cannot resolve variable 'i18n'</description>
+  <highlighted_element>i18n</highlighted_element>
+  <language>VTL</language>
+  <offset>42</offset>
+  <length>4</length>
+</problem>
+</problems>

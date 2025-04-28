@@ -1,0 +1,14 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 08:40:00 BRT 2025
+https\://maven.atlassian.com/repository/public/.lastUpdated=1743766155873
+https\://repo1.maven.org/maven2/.error=
+https\://packages.atlassian.com/maven/repository/public/.lastUpdated=1743765284434
+https\://packages.atlassian.com/maven/repository/public/.error=
+https\://packages.atlassian.com/maven/public/.lastUpdated=1743765284539
+https\://repo1.maven.org/maven2/.lastUpdated=1743766799711
+https\://packages.atlassian.com/maven-public/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1743766800717
+https\://packages.atlassian.com/maven-public/.lastUpdated=1743766800573
+https\://packages.atlassian.com/maven/public/.error=
+https\://repo.maven.apache.org/maven2/.error=
+https\://maven.atlassian.com/repository/public/.error=

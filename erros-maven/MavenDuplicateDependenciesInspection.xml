@@ -1,0 +1,170 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom</file>
+  <line>382</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom</file>
+  <line>560</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom</file>
+  <line>1783</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom</file>
+  <line>2086</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/atlassian-crowd/4.3.6-743967e012/atlassian-crowd-4.3.6-743967e012.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/gadgets/atlassian-gadgets/7.0.3/atlassian-gadgets-7.0.3.pom</file>
+  <line>430</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/gadgets/atlassian-gadgets/7.0.3/atlassian-gadgets-7.0.3.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/gadgets/atlassian-gadgets/7.0.3/atlassian-gadgets-7.0.3.pom</file>
+  <line>786</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/gadgets/atlassian-gadgets/7.0.3/atlassian-gadgets-7.0.3.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>13</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.pom</file>
+  <line>29</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>&lt;html&gt;&lt;body&gt;Dependency is duplicated in file(s)#treeend: &lt;a href ='#navigation/C:/Users/FernandoHorn/Documents/linx-jira-dc/jira-integracao-ponto/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.pom:1359'&gt;Web Fragments API for Atlassian Plugins&lt;/a&gt; &lt;/body&gt;&lt;/html&gt;</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>9</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.pom</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>&lt;html&gt;&lt;body&gt;Dependency is duplicated in file(s)#treeend: &lt;a href ='#navigation/C:/Users/FernandoHorn/Documents/linx-jira-dc/jira-integracao-ponto/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webfragment-api/4.1.0/atlassian-plugins-webfragment-api-4.1.0.pom:1183'&gt;Web Fragments API for Atlassian Plugins&lt;/a&gt; &lt;/body&gt;&lt;/html&gt;</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>9</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.0.9/maven-2.0.9.pom</file>
+  <line>307</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.0.9/maven-2.0.9.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.0.9/maven-2.0.9.pom</file>
+  <line>338</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.0.9/maven-2.0.9.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.2.0/maven-2.2.0.pom</file>
+  <line>356</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.2.0/maven-2.2.0.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.2.0/maven-2.2.0.pom</file>
+  <line>386</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven/2.2.0/maven-2.2.0.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>Duplicated dependency</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>7</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom</file>
+  <line>466</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>&lt;html&gt;&lt;body&gt;Dependency is duplicated in file(s)#treeend: &lt;a href ='#navigation/C:/Users/FernandoHorn/Documents/linx-jira-dc/jira-integracao-ponto/backend/localrepo/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom:16984'&gt;VelocityTools&lt;/a&gt; &lt;/body&gt;&lt;/html&gt;</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>9</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom</file>
+  <line>472</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom" />
+  <problem_class id="MavenDuplicateDependenciesInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate Dependencies</problem_class>
+  <description>&lt;html&gt;&lt;body&gt;Dependency is duplicated in file(s)#treeend: &lt;a href ='#navigation/C:/Users/FernandoHorn/Documents/linx-jira-dc/jira-integracao-ponto/backend/localrepo/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.pom:16771'&gt;VelocityTools&lt;/a&gt; &lt;/body&gt;&lt;/html&gt;</description>
+  <highlighted_element>dependency</highlighted_element>
+  <language>XML</language>
+  <offset>9</offset>
+  <length>10</length>
+</problem>
+</problems>

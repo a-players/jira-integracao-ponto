@@ -1,0 +1,1214 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/amazonaws/aws-java-sdk-bom/1.11.310/aws-java-sdk-bom-1.11.310.pom</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/amazonaws/aws-java-sdk-bom/1.11.310/aws-java-sdk-bom-1.11.310.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.amazonaws&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/amazonaws/aws-java-sdk-bom/1.12.670/aws-java-sdk-bom-1.12.670.pom</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/amazonaws/aws-java-sdk-bom/1.12.670/aws-java-sdk-bom-1.12.670.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.amazonaws&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>32</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/activeobjects/activeobjects-spi/1.2.3/activeobjects-spi-1.2.3.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/activeobjects/activeobjects-spi/1.2.3/activeobjects-spi-1.2.3.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.activeobjects&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/embedded-crowd/2.10.4/embedded-crowd-2.10.4.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/embedded-crowd/2.10.4/embedded-crowd-2.10.4.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.crowd&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/embedded-crowd/4.3.6-743967e012/embedded-crowd-4.3.6-743967e012.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/embedded-crowd/4.3.6-743967e012/embedded-crowd-4.3.6-743967e012.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.crowd&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/embedded-crowd/6.0.6/embedded-crowd-6.0.6.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/crowd/embedded-crowd/6.0.6/embedded-crowd-6.0.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.crowd&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/jira/jira-project/10.3.4/jira-project-10.3.4.pom</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/jira/jira-project/10.3.4/jira-project-10.3.4.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.jira&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webresource/3.5.41/atlassian-plugins-webresource-3.5.41.pom</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webresource/3.5.41/atlassian-plugins-webresource-3.5.41.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.plugins&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webresource-compiler-gcc/3.5.41/atlassian-plugins-webresource-compiler-gcc-3.5.41.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webresource-compiler-gcc/3.5.41/atlassian-plugins-webresource-compiler-gcc-3.5.41.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.plugins&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webresource-spi/3.5.41/atlassian-plugins-webresource-spi-3.5.41.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/plugins/atlassian-plugins-webresource-spi/3.5.41/atlassian-plugins-webresource-spi-3.5.41.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.plugins&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-closedsource-pom/25/atlassian-closedsource-pom-25.pom</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-closedsource-pom/25/atlassian-closedsource-pom-25.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/15/atlassian-public-pom-15.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/15/atlassian-public-pom-15.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/17/atlassian-public-pom-17.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/17/atlassian-public-pom-17.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/20/atlassian-public-pom-20.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/20/atlassian-public-pom-20.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/23/atlassian-public-pom-23.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/23/atlassian-public-pom-23.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/24/atlassian-public-pom-24.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/24/atlassian-public-pom-24.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/28/atlassian-public-pom-28.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/28/atlassian-public-pom-28.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/29.1/atlassian-public-pom-29.1.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/29.1/atlassian-public-pom-29.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/29.2/atlassian-public-pom-29.2.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/29.2/atlassian-public-pom-29.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/29.6/atlassian-public-pom-29.6.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/29.6/atlassian-public-pom-29.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/35/atlassian-public-pom-35.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/35/atlassian-public-pom-35.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/39/atlassian-public-pom-39.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/39/atlassian-public-pom-39.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/42/atlassian-public-pom-42.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/atlassian/pom/atlassian-public-pom/42/atlassian-public-pom-42.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.atlassian.pom&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler/v20151216/closure-compiler-v20151216.pom</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler/v20151216/closure-compiler-v20151216.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler/v20181028/closure-compiler-v20181028.pom</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler/v20181028/closure-compiler-v20181028.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-externs/v20181008/closure-compiler-externs-v20181008.pom</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-externs/v20181008/closure-compiler-externs-v20181008.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-externs/v20181028/closure-compiler-externs-v20181028.pom</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-externs/v20181028/closure-compiler-externs-v20181028.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-main/v20181008/closure-compiler-main-v20181008.pom</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-main/v20181008/closure-compiler-main-v20181008.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-main/v20181028/closure-compiler-main-v20181028.pom</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-main/v20181028/closure-compiler-main-v20181028.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-unshaded/v20181008/closure-compiler-unshaded-v20181008.pom</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/javascript/closure-compiler-unshaded/v20181008/closure-compiler-unshaded-v20181008.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.javascript&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>40</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/google/jsinterop/jsinterop-annotations/1.0.0/jsinterop-annotations-1.0.0.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/google/jsinterop/jsinterop-annotations/1.0.0/jsinterop-annotations-1.0.0.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.google.jsinterop&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>39</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.pom</file>
+  <line>24</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.sun.activation&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/jakarta.mail/1.6.5-atlassian-2/jakarta.mail-1.6.5-atlassian-2.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/jakarta.mail/1.6.5-atlassian-2/jakarta.mail-1.6.5-atlassian-2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.sun.mail&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/jakarta.mail/1.6.7/jakarta.mail-1.6.7.pom</file>
+  <line>30</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/jakarta.mail/1.6.7/jakarta.mail-1.6.7.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.sun.mail&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/javax.mail/1.5.6/javax.mail-1.5.6.pom</file>
+  <line>54</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/javax.mail/1.5.6/javax.mail-1.5.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.sun.mail&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.pom</file>
+  <line>54</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/com/sun/mail/javax.mail/1.6.0/javax.mail-1.6.0.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;com.sun.mail&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant/1.10.5/ant-1.10.5.pom</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant/1.10.5/ant-1.10.5.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant/1.7.1/ant-1.7.1.pom</file>
+  <line>33</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant/1.7.1/ant-1.7.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant/1.8.2/ant-1.8.2.pom</file>
+  <line>33</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant/1.8.2/ant-1.8.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant-launcher/1.10.5/ant-launcher-1.10.5.pom</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant-launcher/1.10.5/ant-launcher-1.10.5.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom</file>
+  <line>33</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant-launcher/1.7.1/ant-launcher-1.7.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom</file>
+  <line>33</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.ant&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-compress/1.11/commons-compress-1.11.pom</file>
+  <line>26</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-compress/1.11/commons-compress-1.11.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom</file>
+  <line>26</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom</file>
+  <line>26</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.pom</file>
+  <line>28</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom</file>
+  <line>28</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.commons&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>37</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-client/4.0.1/httpcomponents-client-4.0.1.pom</file>
+  <line>35</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-client/4.0.1/httpcomponents-client-4.0.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom</file>
+  <line>35</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom</file>
+  <line>35</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-client/4.1.3/httpcomponents-client-4.1.3.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.pom</file>
+  <line>39</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-core/4.0.1/httpcomponents-core-4.0.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-core/4.1.4/httpcomponents-core-4.1.4.pom</file>
+  <line>35</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/httpcomponents/httpcomponents-core/4.1.4/httpcomponents-core-4.1.4.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>44</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-plugin-registry/2.0.8/maven-plugin-registry-2.0.8.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>35</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.pom</file>
+  <line>31</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven.shared&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom</file>
+  <line>30</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/maven/shared/maven-filtering/1.1/maven-filtering-1.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.maven.shared&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>42</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.struts&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-parent/1.3.8/struts-parent-1.3.8.pom</file>
+  <line>30</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-parent/1.3.8/struts-parent-1.3.8.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.struts&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>4</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.struts&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.apache.struts&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>36</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/1.2-alpha-6/plexus-classworlds-1.2-alpha-6.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/1.2-alpha-6/plexus-classworlds-1.2-alpha-6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/1.2-alpha-7/plexus-classworlds-1.2-alpha-7.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/1.2-alpha-7/plexus-classworlds-1.2-alpha-7.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom</file>
+  <line>25</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/1.2-alpha-9/plexus-classworlds-1.2-alpha-9.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-classworlds/2.4/plexus-classworlds-2.4.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.12/plexus-components-1.1.12.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-components/1.1.9/plexus-components-1.1.9.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-15/plexus-containers-1.0-alpha-15.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-15/plexus-containers-1.0-alpha-15.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-16/plexus-containers-1.0-alpha-16.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-16/plexus-containers-1.0-alpha-16.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-20/plexus-containers-1.0-alpha-20.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-20/plexus-containers-1.0-alpha-20.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0-alpha-30/plexus-containers-1.0-alpha-30.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.codehaus.plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.jboss.weld&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>3</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.jboss.weld&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>3</offset>
+  <length>33</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>1</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/jcl-over-slf4j/1.6.1/jcl-over-slf4j-1.6.1.pom</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/jcl-over-slf4j/1.6.1/jcl-over-slf4j-1.6.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>1</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.4.3/slf4j-api-1.4.3.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.2/slf4j-api-1.5.2.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.2/slf4j-api-1.5.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.6.2/slf4j-api-1.6.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom</file>
+  <line>14</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>1</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-nop/1.6.2/slf4j-nop-1.6.2.pom</file>
+  <line>14</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-nop/1.6.2/slf4j-nop-1.6.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>1</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.pom</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/plexus/plexus-containers/1.0.2/plexus-containers-1.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>25</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/plexus/plexus-utils/1.0.2/plexus-utils-1.0.2.pom" />
+  <problem_class id="MavenRedundantGroupId" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant groupId</problem_class>
+  <description>Definition of groupId is redundant, because it's inherited from the parent</description>
+  <highlighted_element>&lt;groupId&gt;plexus&lt;/groupId&gt;</highlighted_element>
+  <language>XML</language>
+  <offset>2</offset>
+  <length>25</length>
+</problem>
+</problems>

@@ -1,0 +1,110 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>128</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>148</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>149</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>136</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>156</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>157</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>133</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>6</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>153</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>154</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="ES6ConvertVarToLetConst" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">'var' is used instead of 'let' or 'const'</problem_class>
+  <description>'var' is used instead of 'let' or 'const'</description>
+  <highlighted_element>var</highlighted_element>
+  <language>JavaScript</language>
+  <offset>14</offset>
+  <length>3</length>
+</problem>
+</problems>

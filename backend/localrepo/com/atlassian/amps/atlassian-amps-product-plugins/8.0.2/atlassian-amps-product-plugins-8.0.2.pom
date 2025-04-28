@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.amps</groupId>
+        <artifactId>atlassian-amps-parent</artifactId>
+        <version>8.0.2</version>
+    </parent>
+
+    <artifactId>atlassian-amps-product-plugins</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Maven Plugin Suite (product plugins parent pom)</name>
+
+    <modules>
+        <module>bitbucket-maven-plugin</module>
+        <module>bamboo-maven-plugin</module>
+        <module>confluence-maven-plugin</module>
+        <module>jira-maven-plugin</module>
+        <module>refapp-maven-plugin</module>
+        <module>fecru-maven-plugin</module>
+        <module>crowd-maven-plugin</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.atlassian.maven.plugins</groupId>
+            <artifactId>amps-maven-plugin</artifactId>
+            <type>maven-plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>net.lingala.zip4j</groupId>
+            <artifactId>zip4j</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>invoker</id>
+
+            <properties>
+                <invoker.test>*Test</invoker.test>
+            </properties>
+
+            <dependencies>
+                <dependency>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>amps-maven-plugin</artifactId>
+                    <version>${project.version}</version>
+                    <type>zip</type>
+                    <classifier>integration-tests</classifier>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-dependency-plugin</artifactId>
+                            <executions>
+                                <execution>
+                                    <id>unpack-dependencies</id>
+                                    <phase>pre-integration-test</phase>
+                                    <goals>
+                                        <goal>unpack-dependencies</goal>
+                                    </goals>
+                                    <configuration>
+                                        <includeTypes>zip</includeTypes>
+                                        <outputDirectory>${project.build.directory}/it-unfiltered</outputDirectory>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-resources-plugin</artifactId>
+                            <executions>
+                                <execution>
+                                    <id>copy-integration-tests-with-filtering</id>
+                                    <phase>pre-integration-test</phase>
+                                    <goals>
+                                        <goal>copy-resources</goal>
+                                    </goals>
+                                    <configuration>
+                                        <outputDirectory>${project.build.directory}/it</outputDirectory>
+                                        <resources>
+                                            <resource>
+                                                <directory>${project.build.directory}/it-unfiltered</directory>
+                                                <filtering>true</filtering>
+                                                <includes>
+                                                    <include>**/pom.xml</include>
+                                                    <include>**/invoker.properties</include>
+                                                    <include>settings.xml</include>
+                                                </includes>
+                                            </resource>
+                                        </resources>
+                                    </configuration>
+                                </execution>
+                                <execution>
+                                    <id>copy-integration-tests-without-filtering</id>
+                                    <phase>pre-integration-test</phase>
+                                    <goals>
+                                        <goal>copy-resources</goal>
+                                    </goals>
+                                    <configuration>
+                                        <outputDirectory>${project.build.directory}/it</outputDirectory>
+                                        <resources>
+                                            <resource>
+                                                <directory>${project.build.directory}/it-unfiltered</directory>
+                                                <filtering>false</filtering>
+                                                <excludes>
+                                                    <exclude>**/pom.xml</exclude>
+                                                    <exclude>**/invoker.properties</exclude>
+                                                    <exclude>settings.xml</exclude>
+                                                </excludes>
+                                            </resource>
+                                        </resources>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-invoker-plugin</artifactId>
+                            <configuration>
+                                <projectsDirectory>${project.build.directory}/it</projectsDirectory>
+                                <settingsFile>${project.build.directory}/it/settings.xml</settingsFile>
+                                <!-- Cache artifacts between integration test runs. This is primarily intended
+                                     to help AMPS developers, rather than Bamboo/CI.
+                                     The cache is created in the AMPS project root, providing a single location
+                                     that is shared by all product plugins. -->
+                                <localRepositoryPath>${root.dir}/invoker-repo</localRepositoryPath>
+                                <postBuildHookScript>validate</postBuildHookScript>
+                                <preBuildHookScript>setup</preBuildHookScript>
+                                <addTestClassPath>true</addTestClassPath>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <id>integration-test</id>
+                                    <goals>
+                                        <goal>install</goal>
+                                        <goal>run</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+                <plugins>
+                    <!-- Set a root.dir property for the project's root (as opposed to ${project.basedir}, which
+                         is the _current module's_ root). This will be where the amps-parent-pom is. -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>build-helper-maven-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>set-root-dir</id>
+                                <goals>
+                                    <goal>rootlocation</goal>
+                                </goals>
+                                <configuration>
+                                    <rootLocationProperty>root.dir</rootLocationProperty>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+         </profile>
+     </profiles>
+</project>

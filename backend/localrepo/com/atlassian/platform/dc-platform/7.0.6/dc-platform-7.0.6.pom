@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>closedsource-pom</artifactId>
+        <groupId>com.atlassian.pom</groupId>
+        <version>6.3.8</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.atlassian.platform</groupId>
+    <artifactId>dc-platform</artifactId>
+    <packaging>pom</packaging>
+    <version>7.0.6</version>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:server-platform/dc-platform.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:server-platform/dc-platform.git</developerConnection>
+        <url>https://bitbucket.org/server-platform/dc-platform</url>
+        <tag>dc-platform-7.0.6</tag>
+    </scm>
+
+    <modules>
+        <module>dependencies</module>
+        <module>openrewrite-recipes</module>
+        <module>refapp</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.atlassian.drs</groupId>
+                    <artifactId>dependency-report-maven-plugin</artifactId>
+                    <version>2.0.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.3.2</version>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <!-- This ensure node_modules is removed on mvn clean and prevents issues with the
+                                generated node files from other platform versions. This should fix local builds for all branches. -->
+                                <directory>${project.basedir}/node_modules</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <ignoredArtifactsTrees>guru.nidi.com.eclipsesource.j2v8:j2v8_macosx_x86_64,guru.nidi.com.eclipsesource.j2v8:j2v8_linux_x86_64</ignoredArtifactsTrees>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.atlassian.drs</groupId>
+                <artifactId>dependency-report-maven-plugin</artifactId>
+                <configuration>
+                    <gracefulFailure>true</gracefulFailure>
+                    <projectId>2be7062a-9b23-4561-9fbb-aa84979ecfd2</projectId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>upload</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

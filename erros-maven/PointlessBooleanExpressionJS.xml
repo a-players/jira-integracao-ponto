@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>345</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="PointlessBooleanExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless statement or boolean expression</problem_class>
+  <description>Can be simplified to team #loc</description>
+  <highlighted_element>team &amp;&amp; team != null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>11</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>354</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="PointlessBooleanExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless statement or boolean expression</problem_class>
+  <description>Can be simplified to account #loc</description>
+  <highlighted_element>account &amp;&amp; account != null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>11</offset>
+  <length>26</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>363</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="PointlessBooleanExpressionJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Pointless statement or boolean expression</problem_class>
+  <description>Can be simplified to categoryaccount #loc</description>
+  <highlighted_element>categoryaccount &amp;&amp; categoryaccount != null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>11</offset>
+  <length>42</length>
+</problem>
+</problems>

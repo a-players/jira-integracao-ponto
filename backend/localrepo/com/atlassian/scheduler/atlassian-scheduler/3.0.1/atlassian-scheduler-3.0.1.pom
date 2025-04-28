@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>5.0.29</version>
+    </parent>
+
+    <groupId>com.atlassian.scheduler</groupId>
+    <artifactId>atlassian-scheduler</artifactId>
+    <version>3.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Scheduler</name>
+    <description>Atlassian Scheduler provides task scheduling services for Atlassian products and their plugins
+    </description>
+    <url>https://docs.atlassian.com/${project.artifactId}/${project.version}</url>
+
+    <modules>
+        <module>atlassian-scheduler-api</module>
+        <module>atlassian-scheduler-core</module>
+        <module>atlassian-scheduler-core-test</module>
+        <module>atlassian-scheduler-quartz1</module>
+        <module>atlassian-scheduler-quartz2</module>
+        <module>atlassian-scheduler-tenancy</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:atlassian/atlassian-scheduler.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:atlassian/atlassian-scheduler.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-scheduler</url>
+        <tag>atlassian-scheduler-3.0.1</tag>
+    </scm>
+    <issueManagement>
+        <system>Jira</system>
+        <url>https://jira.atlassian.com/browse/SCHEDULER</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://ecosystem-bamboo.internal.atlassian.com/browse/SCHED</url>
+    </ciManagement>
+
+    <properties>
+        <platform.version>5.0.31</platform.version>
+        <joda.time.version>2.10.10</joda.time.version>
+        <quartz1.version>1.8.7-atlassian-3</quartz1.version>
+        <quartz2.version>2.1.7</quartz2.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.atlassian.platform</groupId>
+                <artifactId>platform</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform</groupId>
+                <artifactId>third-party</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Externals -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
+            </dependency>
+
+            <!-- Inter-module -->
+            <dependency>
+                <groupId>com.atlassian.scheduler</groupId>
+                <artifactId>atlassian-scheduler-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.scheduler</groupId>
+                <artifactId>atlassian-scheduler-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.scheduler</groupId>
+                <artifactId>atlassian-scheduler-core-test</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

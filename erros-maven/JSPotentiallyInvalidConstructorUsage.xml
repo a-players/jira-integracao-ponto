@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>58</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSPotentiallyInvalidConstructorUsage" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Potentially invalid constructor usage</problem_class>
+  <description>Constructor names usually start with an uppercase letter. A typo?</description>
+  <highlighted_element>jsPDF</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>5</length>
+</problem>
+</problems>

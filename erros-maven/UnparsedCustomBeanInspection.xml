@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/META-INF/spring/plugin-context.xml</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/META-INF/spring/plugin-context.xml" />
+  <problem_class id="UnparsedCustomBeanInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unparsed custom Spring beans</problem_class>
+  <description>Unsupported tag 'scan-indexes' for namespace 'http://www.atlassian.com/schema/atlassian-scanner', please file issue (Help|Submit a Bug Report…)</description>
+  <highlighted_element>atlassian-scanner:scan-indexes</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/META-INF/spring/plugin-context.xml</file>
+  <line>1</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/META-INF/spring/plugin-context.xml" />
+  <problem_class id="UnparsedCustomBeanInspection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unparsed custom Spring beans</problem_class>
+  <description>Unsupported tag 'scan-indexes' for namespace 'http://www.atlassian.com/schema/atlassian-scanner', please file issue (Help|Submit a Bug Report…)</description>
+  <highlighted_element>atlassian-scanner:scan-indexes</highlighted_element>
+  <language>XML</language>
+  <offset>480</offset>
+  <length>30</length>
+</problem>
+</problems>

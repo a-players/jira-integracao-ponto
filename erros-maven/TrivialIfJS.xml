@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>78</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="TrivialIfJS" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Redundant 'if' statement</problem_class>
+  <description>&lt;code&gt;if&lt;/code&gt; statement can be simplified #loc</description>
+  <highlighted_element>if</highlighted_element>
+  <language>JavaScript</language>
+  <offset>2</offset>
+  <length>2</length>
+</problem>
+</problems>

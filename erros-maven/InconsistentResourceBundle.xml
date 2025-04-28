@@ -1,0 +1,314 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto.properties</file>
+  <line>173</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Untranslated property 'relatorio.hours.page.wronginterval'. Should be overridden in the 'integracaoponto_pt_BR.properties'.</description>
+  <highlighted_element>relatorio.hours.page.wronginterval=Start Date cannot be higher than End Date</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>76</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>135</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.accountsearch'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.accountsearch=Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>136</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.accountsearchplaceholder'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.accountsearchplaceholder=Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>137</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.categoryaccountsearch'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.categoryaccountsearch=Categoria da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>55</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>138</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.categoryaccountsearchplaceholder'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.categoryaccountsearchplaceholder= Categoria da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>67</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>153</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.timesheets.page.reason'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.timesheets.page.reason=Coment\u00e1rio</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>48</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>170</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.reason'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.reason=Coment\u00e1rio</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>43</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.account'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.account=Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>180</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.keyaccount'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.keyaccount=Chave da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>181</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.leader'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.leader=L\u00edder</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>182</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.status'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.status=Status</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties</file>
+  <line>183</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.cataccount'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.cataccount=Categoria da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>50</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties</file>
+  <line>173</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Untranslated property 'relatorio.hours.page.wronginterval'. Should be overridden in the 'integracaoponto_pt_BR.properties'.</description>
+  <highlighted_element>relatorio.hours.page.wronginterval=Start Date cannot be higher than End Date</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>76</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>135</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.accountsearch'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.accountsearch=Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>136</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.accountsearchplaceholder'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.accountsearchplaceholder=Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>45</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>137</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.categoryaccountsearch'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.categoryaccountsearch=Categoria da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>55</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>138</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.page.categoryaccountsearchplaceholder'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.page.categoryaccountsearchplaceholder= Categoria da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>67</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>153</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.timesheets.page.reason'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.timesheets.page.reason=Coment\u00e1rio</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>48</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>170</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.reason'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.reason=Coment\u00e1rio</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>43</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.account'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.account=Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>180</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.keyaccount'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.keyaccount=Chave da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>46</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>181</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.leader'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.leader=L\u00edder</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>38</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>182</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.status'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.status=Status</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>34</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties</file>
+  <line>183</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto_pt_BR.properties" />
+  <problem_class id="InconsistentResourceBundle" severity="ERROR" attribute_key="ERRORS_ATTRIBUTES">Inconsistent resource bundle</problem_class>
+  <hints />
+  <description>Inconsistent property 'relatorio.hours.page.cataccount'. Must be defined in the parent file 'integracaoponto.properties'.</description>
+  <highlighted_element>relatorio.hours.page.cataccount=Categoria da Conta</highlighted_element>
+  <language>Properties</language>
+  <offset>0</offset>
+  <length>50</length>
+</problem>
+</problems>

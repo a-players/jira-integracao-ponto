@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>$i18n.getText("menu.label") - $i18n.getText("menu-itens-relatorio.label")</title>
+    <meta name="decorator" content="atl.header">
+    <link type="text/css" rel="stylesheet" href="/download/resources/com.mindproapps.jira.integracaoponto:integracaoponto-resources/integracaoponto-main-min.css" media="all">
+</head>
+<body>
+    <section id="integracaoponto-webapp"></section>
+        <script src="/download/resources/com.mindproapps.jira.integracaoponto:integracaoponto-resources/integracaoponto-1-bundle-min.js"></script>
+        <script src="/download/resources/com.mindproapps.jira.integracaoponto:integracaoponto-resources/integracaoponto-2-bundle-min.js"></script>
+        <script src="/download/resources/com.mindproapps.jira.integracaoponto:integracaoponto-resources/integracaoponto-3-bundle-min.js"></script>
+        <script src="/download/resources/com.mindproapps.jira.integracaoponto:integracaoponto-resources/integracaoponto-main-min.js"></script>
+
+</body>
+</html>

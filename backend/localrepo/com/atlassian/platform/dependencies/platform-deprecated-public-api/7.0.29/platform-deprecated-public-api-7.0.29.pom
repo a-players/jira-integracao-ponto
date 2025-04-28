@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.platform.dependencies</groupId>
+        <artifactId>platform-deps</artifactId>
+        <version>7.0.29</version>
+    </parent>
+
+    <artifactId>platform-deprecated-public-api</artifactId>
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- TODO remove Crowd deprecated dependencies in Platform 8 -->
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-persistence</artifactId>
+                <version>${crowd.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-common</artifactId>
+                <version>${crowd.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>embedded-crowd-spi</artifactId>
+                <version>${crowd.version}</version>
+            </dependency>
+
+            <!-- to be DMZ'd in Platform 8 -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.atlassian.crowd</groupId>
+            <artifactId>crowd-persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.crowd</groupId>
+            <artifactId>crowd-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.atlassian.crowd</groupId>
+            <artifactId>embedded-crowd-spi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>closedsource-pom</artifactId>
+        <groupId>com.atlassian.pom</groupId>
+        <version>6.3.4</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.atlassian.platform</groupId>
+    <artifactId>dc-platform</artifactId>
+    <packaging>pom</packaging>
+    <version>7.0.0-m31</version>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:server-platform/dc-platform.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:server-platform/dc-platform.git</developerConnection>
+        <url>https://bitbucket.org/server-platform/dc-platform</url>
+        <tag>dc-platform-7.0.0-m31</tag>
+    </scm>
+
+    <modules>
+        <module>dependencies</module>
+        <module>openrewrite-recipes</module>
+        <module>refapp</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <ignoredArtifactsTrees>guru.nidi.com.eclipsesource.j2v8:j2v8_macosx_x86_64,guru.nidi.com.eclipsesource.j2v8:j2v8_linux_x86_64</ignoredArtifactsTrees>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

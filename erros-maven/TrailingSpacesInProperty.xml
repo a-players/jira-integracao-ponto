@@ -1,0 +1,38 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties</file>
+  <line>93</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties" />
+  <problem_class id="TrailingSpacesInProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Trailing spaces in property</problem_class>
+  <description>Trailing spaces</description>
+  <highlighted_element />
+  <language>Properties</language>
+  <offset>24</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties</file>
+  <line>94</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties" />
+  <problem_class id="TrailingSpacesInProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Trailing spaces in property</problem_class>
+  <description>Trailing spaces</description>
+  <highlighted_element />
+  <language>Properties</language>
+  <offset>26</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties</file>
+  <line>120</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/integracaoponto.properties" />
+  <problem_class id="TrailingSpacesInProperty" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Trailing spaces in property</problem_class>
+  <description>Trailing spaces</description>
+  <highlighted_element />
+  <language>Properties</language>
+  <offset>64</offset>
+  <length>1</length>
+</problem>
+</problems>

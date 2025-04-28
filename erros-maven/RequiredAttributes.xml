@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/email.html</file>
+  <line>7</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/email.html" />
+  <problem_class id="RequiredAttributes" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing required attribute</problem_class>
+  <description>Element meta doesn't have required attribute content</description>
+  <highlighted_element>meta</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/email.html</file>
+  <line>7</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/email.html" />
+  <problem_class id="RequiredAttributes" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Missing required attribute</problem_class>
+  <description>Element meta doesn't have required attribute content</description>
+  <highlighted_element>meta</highlighted_element>
+  <language>XML</language>
+  <offset>5</offset>
+  <length>4</length>
+</problem>
+</problems>

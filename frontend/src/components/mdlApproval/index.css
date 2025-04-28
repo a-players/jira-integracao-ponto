@@ -1,0 +1,31 @@
+.reject-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reject-header {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.reject-header-field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+}
+
+.reject-header-field-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.reject-header-field-value {
+  text-align: center;
+}
+
+.reject-body-field-title {
+  font-weight: bold;
+  text-align: left;
+}

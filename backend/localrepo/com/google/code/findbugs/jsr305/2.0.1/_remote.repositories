@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 06:00:40 BRT 2025
+jsr305-2.0.1.jar>maven-central=
+jsr305-2.0.1.pom>maven-central=

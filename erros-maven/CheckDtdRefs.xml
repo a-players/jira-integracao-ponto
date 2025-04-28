@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom</file>
+  <line>150</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom" />
+  <problem_class id="CheckDtdRefs" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Unresolved DTD reference</problem_class>
+  <description>Unresolved entity reference oslash</description>
+  <highlighted_element>oslash</highlighted_element>
+  <language>XML</language>
+  <offset>26</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/localrepo/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom</file>
+  <line>150</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/localrepo/plexus/plexus-root/1.0.3/plexus-root-1.0.3.pom" />
+  <problem_class id="CheckDtdRefs" severity="ERROR" attribute_key="WRONG_REFERENCES_ATTRIBUTES">Unresolved DTD reference</problem_class>
+  <description>Unresolved entity reference oslash</description>
+  <highlighted_element>oslash</highlighted_element>
+  <language>XML</language>
+  <offset>26</offset>
+  <length>6</length>
+</problem>
+</problems>

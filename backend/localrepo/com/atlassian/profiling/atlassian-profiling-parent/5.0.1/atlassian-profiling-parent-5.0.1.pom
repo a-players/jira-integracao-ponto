@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>6.3.1</version>
+    </parent>
+
+    <groupId>com.atlassian.profiling</groupId>
+    <artifactId>atlassian-profiling-parent</artifactId>
+    <version>5.0.1</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Profiling - Parent POM</name>
+    <description>A simple framework for run-time profiling an application, focused on JEE web applications.
+    </description>
+    <url>https://docs.atlassian.com/${project.artifactId}/${project.version}</url>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:atlassian/atlassian-profiling.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:atlassian/atlassian-profiling.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-profiling</url>
+        <tag>atlassian-profiling-parent-5.0.1</tag>
+    </scm>
+
+    <issueManagement>
+        <system>Jira</system>
+        <url>https://ecosystem.atlassian.net/browse/PROF</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://bamboo.developer.atlassian.com/browse/ATLASSIANPROFILING</url>
+    </ciManagement>
+
+    <modules>
+        <module>external-libraries-bom</module>
+        <module>atlassian-profiling-base</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Java 17 compatibility, remove when parent POM supports Java 17 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.6.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <!-- override configuration for maven-enforcer-plugin and change requirement to Java 17,
+                 remove when parent POM will require Java 17 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-build-environment</id>
+                        <!-- override base-pom configuration and run enforce-build-environment during validate phase instead of compile phase -->
+                        <phase>validate</phase>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>17</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

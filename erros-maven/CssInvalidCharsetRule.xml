@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css</file>
+  <line>410</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" />
+  <problem_class id="CssInvalidCharsetRule" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Misplaced or incorrect @charset</problem_class>
+  <description>@charset rule must be placed at the very beginning of the stylesheet</description>
+  <highlighted_element>@charset &quot;UTF-8&quot;;</highlighted_element>
+  <language>CSS</language>
+  <offset>0</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css</file>
+  <line>410</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" />
+  <problem_class id="CssInvalidCharsetRule" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Misplaced or incorrect @charset</problem_class>
+  <description>@charset rule must be placed at the very beginning of the stylesheet</description>
+  <highlighted_element>@charset &quot;UTF-8&quot;;</highlighted_element>
+  <language>CSS</language>
+  <offset>0</offset>
+  <length>17</length>
+</problem>
+</problems>

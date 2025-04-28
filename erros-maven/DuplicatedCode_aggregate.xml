@@ -1,0 +1,85 @@
+<root>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" line="1" start="0" end="34286" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" line="1" start="0" end="34286" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" line="139" start="2243" end="2525" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" line="139" start="2243" end="2525" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.css" line="1" start="0" end="283" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" line="374" start="6859" end="7114" />
+  <fragment file="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" line="1348" start="33627" end="33882" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" line="374" start="6859" end="7114" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" line="1348" start="33627" end="33882" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/App.css" line="1" start="0" end="255" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.css" line="133" start="2662" end="2917" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" line="393" start="7161" end="7414" />
+  <fragment file="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" line="1367" start="33929" end="34182" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min-min.css" line="1" start="5383" end="5569" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min-min.css" line="1" start="28845" end="29031" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" line="393" start="7161" end="7414" />
+  <fragment file="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" line="1367" start="33929" end="34182" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/App.css" line="20" start="302" end="555" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.css" line="152" start="2964" end="3217" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" line="28" start="1909" end="2447" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" line="34" start="2535" end="3049" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" line="31" start="2380" end="2918" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" line="32" start="2486" end="3024" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" line="29" start="1863" end="2401" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" line="46" start="2488" end="3944" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" line="52" start="3080" end="4392" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" line="49" start="2967" end="4453" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" line="50" start="3065" end="4523" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" line="52" start="2608" end="4034" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" line="130" start="6930" end="8377" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" line="138" start="7962" end="9409" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" line="135" start="6950" end="8397" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" line="179" start="8385" end="10699" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" line="165" start="8681" end="10995" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" line="187" start="9417" end="11731" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" line="184" start="8405" end="10719" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" line="180" start="8435" end="9270" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" line="178" start="9188" end="10023" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" line="166" start="8731" end="9566" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" line="188" start="9467" end="10302" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" line="185" start="8455" end="9290" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" line="204" start="9309" end="10428" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" line="203" start="10089" end="11208" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" line="190" start="9605" end="10724" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" line="212" start="10341" end="11460" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" line="209" start="9329" end="10448" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" line="33" start="1189" end="1836" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" line="103" start="5670" end="6317" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" line="158" start="8915" end="9562" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" line="114" start="6449" end="8073" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" line="169" start="9685" end="11309" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" line="150" start="8348" end="9103" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" line="139" start="7860" end="8671" />
+</duplicate>
+<duplicate cost="1" hash="0">
+  <fragment file="file://$PROJECT_DIR$/frontend/src/services/reports/index.js" line="6" start="273" end="812" />
+  <fragment file="file://$PROJECT_DIR$/frontend/src/services/reports/index.js" line="21" start="980" end="1519" />
+</duplicate>
+</root>

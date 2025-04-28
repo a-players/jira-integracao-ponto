@@ -1,0 +1,470 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>6</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/button&quot; package is not installed</description>
+  <highlighted_element>^15.1.2</highlighted_element>
+  <language>JSON</language>
+  <offset>25</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>7</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/css-reset&quot; package is not installed</description>
+  <highlighted_element>^6.0.4</highlighted_element>
+  <language>JSON</language>
+  <offset>28</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/datetime-picker&quot; package is not installed</description>
+  <highlighted_element>^10.0.6</highlighted_element>
+  <language>JSON</language>
+  <offset>34</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/modal-dialog&quot; package is not installed</description>
+  <highlighted_element>^11.2.3</highlighted_element>
+  <language>JSON</language>
+  <offset>31</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/radio&quot; package is not installed</description>
+  <highlighted_element>^5.0.2</highlighted_element>
+  <language>JSON</language>
+  <offset>24</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/select&quot; package is not installed</description>
+  <highlighted_element>^13.1.0</highlighted_element>
+  <language>JSON</language>
+  <offset>25</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/single-select&quot; package is not installed</description>
+  <highlighted_element>^10.0.3</highlighted_element>
+  <language>JSON</language>
+  <offset>32</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/tabs&quot; package is not installed</description>
+  <highlighted_element>^12.1.1</highlighted_element>
+  <language>JSON</language>
+  <offset>23</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>14</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/textarea&quot; package is not installed</description>
+  <highlighted_element>^4.0.0</highlighted_element>
+  <language>JSON</language>
+  <offset>27</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>15</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@atlaskit/tooltip&quot; package is not installed</description>
+  <highlighted_element>^17.1.2</highlighted_element>
+  <language>JSON</language>
+  <offset>26</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>16</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@fortawesome/fontawesome-svg-core&quot; package is not installed</description>
+  <highlighted_element>^1.2.32</highlighted_element>
+  <language>JSON</language>
+  <offset>42</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>17</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@fortawesome/free-solid-svg-icons&quot; package is not installed</description>
+  <highlighted_element>^5.15.1</highlighted_element>
+  <language>JSON</language>
+  <offset>42</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>18</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@fortawesome/react-fontawesome&quot; package is not installed</description>
+  <highlighted_element>^0.1.13</highlighted_element>
+  <language>JSON</language>
+  <offset>39</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@testing-library/jest-dom&quot; package is not installed</description>
+  <highlighted_element>^5.11.5</highlighted_element>
+  <language>JSON</language>
+  <offset>34</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>20</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@testing-library/react&quot; package is not installed</description>
+  <highlighted_element>^11.1.1</highlighted_element>
+  <language>JSON</language>
+  <offset>31</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>21</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@testing-library/user-event&quot; package is not installed</description>
+  <highlighted_element>^12.2.0</highlighted_element>
+  <language>JSON</language>
+  <offset>36</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>22</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;axios&quot; package is not installed</description>
+  <highlighted_element>^0.21.0</highlighted_element>
+  <language>JSON</language>
+  <offset>14</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>23</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;clean-webpack-plugin&quot; package is not installed</description>
+  <highlighted_element>^3.0.0</highlighted_element>
+  <language>JSON</language>
+  <offset>29</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>24</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;date-fns&quot; package is not installed</description>
+  <highlighted_element>^2.23.0</highlighted_element>
+  <language>JSON</language>
+  <offset>17</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>25</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;jspdf&quot; package is not installed</description>
+  <highlighted_element>^2.1.1</highlighted_element>
+  <language>JSON</language>
+  <offset>14</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>26</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;jspdf-autotable&quot; package is not installed</description>
+  <highlighted_element>^3.5.13</highlighted_element>
+  <language>JSON</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>27</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;moment&quot; package is not installed</description>
+  <highlighted_element>^2.29.1</highlighted_element>
+  <language>JSON</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>28</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;multiselect-react-dropdown&quot; package is not installed</description>
+  <highlighted_element>^1.6.2</highlighted_element>
+  <language>JSON</language>
+  <offset>35</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>29</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;prop-types&quot; package is not installed</description>
+  <highlighted_element>^15.7.2</highlighted_element>
+  <language>JSON</language>
+  <offset>19</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>30</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react&quot; package is not installed</description>
+  <highlighted_element>^16.14.0</highlighted_element>
+  <language>JSON</language>
+  <offset>14</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>31</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react-datepicker&quot; package is not installed</description>
+  <highlighted_element>^4.2.1</highlighted_element>
+  <language>JSON</language>
+  <offset>25</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>32</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react-dom&quot; package is not installed</description>
+  <highlighted_element>^16.14.0</highlighted_element>
+  <language>JSON</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>33</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react-intl&quot; package is not installed</description>
+  <highlighted_element>^2.9.0</highlighted_element>
+  <language>JSON</language>
+  <offset>19</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react-pdf&quot; package is not installed</description>
+  <highlighted_element>^7.1.3</highlighted_element>
+  <language>JSON</language>
+  <offset>18</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>35</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react-router-dom&quot; package is not installed</description>
+  <highlighted_element>^5.2.0</highlighted_element>
+  <language>JSON</language>
+  <offset>25</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>36</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;react-scripts&quot; package is not installed</description>
+  <highlighted_element>4.0.0</highlighted_element>
+  <language>JSON</language>
+  <offset>22</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>37</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;styled-components&quot; package is not installed</description>
+  <highlighted_element>^3.4.10</highlighted_element>
+  <language>JSON</language>
+  <offset>26</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>38</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;web-vitals&quot; package is not installed</description>
+  <highlighted_element>^0.2.4</highlighted_element>
+  <language>JSON</language>
+  <offset>19</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>39</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;webpack-bundle-analyzer&quot; package is not installed</description>
+  <highlighted_element>^4.1.0</highlighted_element>
+  <language>JSON</language>
+  <offset>32</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>40</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;xlsx&quot; package is not installed</description>
+  <highlighted_element>^0.16.8</highlighted_element>
+  <language>JSON</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>67</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@babel/plugin-syntax-dynamic-import&quot; package is not installed</description>
+  <highlighted_element>^7.8.3</highlighted_element>
+  <language>JSON</language>
+  <offset>44</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>68</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;@babel/preset-react&quot; package is not installed</description>
+  <highlighted_element>^7.12.5</highlighted_element>
+  <language>JSON</language>
+  <offset>28</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>69</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;source-map-loader&quot; package is not installed</description>
+  <highlighted_element>^1.1.2</highlighted_element>
+  <language>JSON</language>
+  <offset>26</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/package.json</file>
+  <line>70</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/package.json" />
+  <problem_class id="PackageJsonMismatchedDependency" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Mismatched dependencies in package.json</problem_class>
+  <description>The &quot;webpack-cli&quot; package is not installed</description>
+  <highlighted_element>^4.2.0</highlighted_element>
+  <language>JSON</language>
+  <offset>20</offset>
+  <length>6</length>
+</problem>
+</problems>

@@ -1,0 +1,168 @@
+
+label {
+    right: 2px;
+    position: relative;
+}
+
+.hdrtimesheets-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(221, 232, 241);
+    position: relative;
+}
+
+.hdrtimesheets-left-elements {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    max-width: 80%;
+    width: 80%;
+}
+
+.hdrtimesheets-right-elements {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    max-width: 20%;
+    width: 20%;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hdrtimesheets-element {
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hdrtimesheets-element-button {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute; /* Adicione esta linha */
+    right: 0; /* Coloque o botão no canto direito */
+}
+
+.search-wrapper._2iA8p44d0WZ-WqRBGcAuEV  {
+    border: 1px solid gray;
+    border-radius: 0;
+    padding: 0px;
+}
+
+.hdrtimesheets-element-button input.searchBox {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
+    box-sizing: border-box;
+    outline: none;
+}
+    
+.btn-export {
+    background-color: white;
+    color:  rgba(145, 137, 137, 0.555);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.typeahead {
+    position: absolute;
+    z-index: 10000;
+}
+
+.TypeAheadDropDown {
+    width: fit-content;
+    background-color: white;
+}
+    
+.TypeAheadDropDown input, .hdrtimesheets-element input {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    border: 1px solid gray;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
+    box-sizing: border-box;
+    outline: none;
+}
+    
+.TypeAheadDropDown ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid gray;
+}
+    
+.TypeAheadDropDown li{
+    padding: 10px 5px ;
+    cursor: pointer;
+    background: white;
+}
+    
+.TypeAheadDropDown li:hover{
+    background: lightgray;
+    text-decoration: underline;
+}
+
+.visible-columns-label {
+    margin-right: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.multiselect-container {
+    display: inline;
+    float: right;
+    padding-top: 5px;
+}
+
+.block-visible {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #666;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 99;
+    visibility: visible;
+    align-content: center;
+ }
+
+ .block-hidden {
+   visibility: hidden;
+ }
+
+ .loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

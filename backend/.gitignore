@@ -1,0 +1,11 @@
+/.idea/
+/target/
+/integracaoponto.iml
+/bin/
+/.vscode/
+/workspace.code-workspace
+.classpath
+.factorypath
+.project
+.settings/
+dist/**

@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 03:33:52 BRT 2025
+plugin-module-codegen-maven-client-8.0.2.jar>atlassian-proxy=
+plugin-module-codegen-maven-client-8.0.2.pom>atlassian-proxy=

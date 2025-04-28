@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>$i18n.getText("menu.label")</title>
+    <meta name="decorator" content="atl.header">
+</head>
+<body>
+    <div class="aui-page-panel">
+        <div class="aui-page-panel-inner">
+            <section class="aui-page-panel-content">
+                <div class="aui-message aui-message-error">
+                    <p class="title">
+                        <strong>Sorry, you don't have permissions to access this functionality.</strong>
+                    </p>
+                    <p>In case you need access please request the Jira Administrator to grant you access.</p>
+               </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

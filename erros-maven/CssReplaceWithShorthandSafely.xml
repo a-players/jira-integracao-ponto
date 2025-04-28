@@ -1,0 +1,50 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css</file>
+  <line>432</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border' shorthand</description>
+  <highlighted_element>border: 8px solid transparent</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css</file>
+  <line>437</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/css/integracaoponto-main-min.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border' shorthand</description>
+  <highlighted_element>border-width: 8px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css</file>
+  <line>432</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border' shorthand</description>
+  <highlighted_element>border: 8px solid transparent</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>29</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css</file>
+  <line>437</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/css/integracaoponto-main-min.css" />
+  <problem_class id="CssReplaceWithShorthandSafely" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Properties may be safely replaced with a shorthand</problem_class>
+  <description>Properties may be safely replaced with 'border' shorthand</description>
+  <highlighted_element>border-width: 8px</highlighted_element>
+  <language>CSS</language>
+  <offset>2</offset>
+  <length>17</length>
+</problem>
+</problems>

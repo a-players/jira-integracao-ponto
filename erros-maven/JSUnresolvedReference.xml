@@ -1,0 +1,2126 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/babel.config.js</file>
+  <line>1</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/babel.config.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type module #loc</description>
+  <highlighted_element>module</highlighted_element>
+  <language>JavaScript</language>
+  <offset>0</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>31</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable teamName #loc</description>
+  <highlighted_element>teamName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>66</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>42</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable teamName #loc</description>
+  <highlighted_element>teamName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>55</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable teamName #loc</description>
+  <highlighted_element>teamName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>115</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>68</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable accountName #loc</description>
+  <highlighted_element>accountName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>74</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>79</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable accountName #loc</description>
+  <highlighted_element>accountName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>31</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>91</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable accountName #loc</description>
+  <highlighted_element>accountName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>142</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable categoryaccountName #loc</description>
+  <highlighted_element>categoryaccountName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>90</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>116</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable categoryaccountName #loc</description>
+  <highlighted_element>categoryaccountName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>39</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js</file>
+  <line>128</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/hdrTimesheetsReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable categoryaccountName #loc</description>
+  <highlighted_element>categoryaccountName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>197</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js</file>
+  <line>28</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable timeSheetApprovalId #loc</description>
+  <highlighted_element>timeSheetApprovalId</highlighted_element>
+  <language>JavaScript</language>
+  <offset>41</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js</file>
+  <line>53</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>82</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js</file>
+  <line>61</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>82</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js</file>
+  <line>65</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>89</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlHistorico/index.js</file>
+  <line>49</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlHistorico/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable updatedDate #loc</description>
+  <highlighted_element>updatedDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>58</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlHistorico/index.js</file>
+  <line>50</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlHistorico/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable previousInformedEmail #loc</description>
+  <highlighted_element>previousInformedEmail</highlighted_element>
+  <language>JavaScript</language>
+  <offset>58</offset>
+  <length>21</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/mdlHistorico/index.js</file>
+  <line>52</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/mdlHistorico/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable actorName #loc</description>
+  <highlighted_element>actorName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>58</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable csvData #loc</description>
+  <highlighted_element>csvData</highlighted_element>
+  <language>JavaScript</language>
+  <offset>25</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable fileName #loc</description>
+  <highlighted_element>fileName</highlighted_element>
+  <language>JavaScript</language>
+  <offset>26</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable utils #loc</description>
+  <highlighted_element>utils</highlighted_element>
+  <language>JavaScript</language>
+  <offset>24</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js</file>
+  <line>19</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;json_to_sheet()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>json_to_sheet</highlighted_element>
+  <language>JavaScript</language>
+  <offset>30</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js</file>
+  <line>23</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/shared/exportcsv/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;saveAs()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>saveAs</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>25</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable accountHoursDTOList #loc</description>
+  <highlighted_element>accountHoursDTOList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>28</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>101</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable account #loc</description>
+  <highlighted_element>account</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>102</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable keyaccount #loc</description>
+  <highlighted_element>keyaccount</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>103</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable leader #loc</description>
+  <highlighted_element>leader</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable categoryaccount #loc</description>
+  <highlighted_element>categoryaccount</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>106</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable totalHours #loc</description>
+  <highlighted_element>totalHours</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>16</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable submittedTimesheets #loc</description>
+  <highlighted_element>submittedTimesheets</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>46</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable timeSheetApprovalId #loc</description>
+  <highlighted_element>timeSheetApprovalId</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>47</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>50</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable workerKey #loc</description>
+  <highlighted_element>workerKey</highlighted_element>
+  <language>JavaScript</language>
+  <offset>226</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>51</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>61</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>54</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>52</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>54</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>78</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>54</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>103</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>58</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable canApprove #loc</description>
+  <highlighted_element>canApprove</highlighted_element>
+  <language>JavaScript</language>
+  <offset>53</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>61</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>61</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>61</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>79</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>66</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>81</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>66</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>100</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>66</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>125</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>67</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable timeSheetApprovalId #loc</description>
+  <highlighted_element>timeSheetApprovalId</highlighted_element>
+  <language>JavaScript</language>
+  <offset>152</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>73</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable canApprove #loc</description>
+  <highlighted_element>canApprove</highlighted_element>
+  <language>JavaScript</language>
+  <offset>53</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>87</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable readyToSubmitTimesheets #loc</description>
+  <highlighted_element>readyToSubmitTimesheets</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>117</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>120</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable workerKey #loc</description>
+  <highlighted_element>workerKey</highlighted_element>
+  <language>JavaScript</language>
+  <offset>226</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>121</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>61</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>124</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>52</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>124</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>78</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>124</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>103</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>128</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable canApprove #loc</description>
+  <highlighted_element>canApprove</highlighted_element>
+  <language>JavaScript</language>
+  <offset>53</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>142</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable openTimesheets #loc</description>
+  <highlighted_element>openTimesheets</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>172</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>175</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable workerKey #loc</description>
+  <highlighted_element>workerKey</highlighted_element>
+  <language>JavaScript</language>
+  <offset>226</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>176</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>61</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>52</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>78</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>103</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>183</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable canApprove #loc</description>
+  <highlighted_element>canApprove</highlighted_element>
+  <language>JavaScript</language>
+  <offset>53</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>197</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approvedTimesheets #loc</description>
+  <highlighted_element>approvedTimesheets</highlighted_element>
+  <language>JavaScript</language>
+  <offset>19</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>226</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable timeSheetApprovalId #loc</description>
+  <highlighted_element>timeSheetApprovalId</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>227</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>50</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>230</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable workerKey #loc</description>
+  <highlighted_element>workerKey</highlighted_element>
+  <language>JavaScript</language>
+  <offset>226</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>231</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>61</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>234</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>52</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>234</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>78</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>234</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>103</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>256</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable canApprove #loc</description>
+  <highlighted_element>canApprove</highlighted_element>
+  <language>JavaScript</language>
+  <offset>53</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>31</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approvedTimesheetsList #loc</description>
+  <highlighted_element>approvedTimesheetsList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>31</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>117</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodStartDateISO #loc</description>
+  <highlighted_element>periodStartDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>94</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>117</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodEndDateISO #loc</description>
+  <highlighted_element>periodEndDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>170</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>118</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable usuario #loc</description>
+  <highlighted_element>usuario</highlighted_element>
+  <language>JavaScript</language>
+  <offset>62</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>119</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>62</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>120</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approver #loc</description>
+  <highlighted_element>approver</highlighted_element>
+  <language>JavaScript</language>
+  <offset>62</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>121</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable hoursTempo #loc</description>
+  <highlighted_element>hoursTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>69</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>122</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>64</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>122</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>90</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>122</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>115</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>127</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable actionDate #loc</description>
+  <highlighted_element>actionDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>62</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js</file>
+  <line>29</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodStart #loc</description>
+  <highlighted_element>periodStart</highlighted_element>
+  <language>JavaScript</language>
+  <offset>69</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js</file>
+  <line>29</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodEnd #loc</description>
+  <highlighted_element>periodEnd</highlighted_element>
+  <language>JavaScript</language>
+  <offset>114</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js</file>
+  <line>30</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable previousState #loc</description>
+  <highlighted_element>previousState</highlighted_element>
+  <language>JavaScript</language>
+  <offset>46</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js</file>
+  <line>31</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable currentState #loc</description>
+  <highlighted_element>currentState</highlighted_element>
+  <language>JavaScript</language>
+  <offset>46</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js</file>
+  <line>32</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAuditPeriod/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable updatedDate #loc</description>
+  <highlighted_element>updatedDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>46</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>44</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable email #loc</description>
+  <highlighted_element>email</highlighted_element>
+  <language>JavaScript</language>
+  <offset>42</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>45</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable pontoEmail #loc</description>
+  <highlighted_element>pontoEmail</highlighted_element>
+  <language>JavaScript</language>
+  <offset>42</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>96</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable rn #loc</description>
+  <highlighted_element>rn</highlighted_element>
+  <language>JavaScript</language>
+  <offset>114</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>96</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable rn #loc</description>
+  <highlighted_element>rn</highlighted_element>
+  <language>JavaScript</language>
+  <offset>154</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>96</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable totalCount #loc</description>
+  <highlighted_element>totalCount</highlighted_element>
+  <language>JavaScript</language>
+  <offset>221</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>104</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable pagesMap #loc</description>
+  <highlighted_element>pagesMap</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable pagesMap #loc</description>
+  <highlighted_element>pagesMap</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js</file>
+  <line>108</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblCadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable pagesMap #loc</description>
+  <highlighted_element>pagesMap</highlighted_element>
+  <language>JavaScript</language>
+  <offset>34</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js</file>
+  <line>44</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable column1 #loc</description>
+  <highlighted_element>column1</highlighted_element>
+  <language>JavaScript</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js</file>
+  <line>45</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable column2 #loc</description>
+  <highlighted_element>column2</highlighted_element>
+  <language>JavaScript</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js</file>
+  <line>46</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable column3 #loc</description>
+  <highlighted_element>column3</highlighted_element>
+  <language>JavaScript</language>
+  <offset>21</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>28</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable submittedTimesheetsList #loc</description>
+  <highlighted_element>submittedTimesheetsList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>36</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>106</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodStartDateISO #loc</description>
+  <highlighted_element>periodStartDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>104</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>106</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodEndDateISO #loc</description>
+  <highlighted_element>periodEndDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>180</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>107</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable usuario #loc</description>
+  <highlighted_element>usuario</highlighted_element>
+  <language>JavaScript</language>
+  <offset>72</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>108</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>72</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>109</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approver #loc</description>
+  <highlighted_element>approver</highlighted_element>
+  <language>JavaScript</language>
+  <offset>72</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>110</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable hoursTempo #loc</description>
+  <highlighted_element>hoursTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>79</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>74</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>100</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>125</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>113</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable actionDate #loc</description>
+  <highlighted_element>actionDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>72</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>29</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable partialTimesheetReportsDTOList #loc</description>
+  <highlighted_element>partialTimesheetReportsDTOList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>36</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodStartDateISO #loc</description>
+  <highlighted_element>periodStartDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>102</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodEndDateISO #loc</description>
+  <highlighted_element>periodEndDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>178</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>106</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable usuario #loc</description>
+  <highlighted_element>usuario</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>107</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>108</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approver #loc</description>
+  <highlighted_element>approver</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>109</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable requiredHours #loc</description>
+  <highlighted_element>requiredHours</highlighted_element>
+  <language>JavaScript</language>
+  <offset>77</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>110</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable submittedHours #loc</description>
+  <highlighted_element>submittedHours</highlighted_element>
+  <language>JavaScript</language>
+  <offset>77</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>72</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>98</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>123</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>113</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable actionDate #loc</description>
+  <highlighted_element>actionDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>70</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>26</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable unsubmittedHoursDTOList #loc</description>
+  <highlighted_element>unsubmittedHoursDTOList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>28</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodStartDate #loc</description>
+  <highlighted_element>periodStartDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>42</offset>
+  <length>15</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>105</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable usuario #loc</description>
+  <highlighted_element>usuario</highlighted_element>
+  <language>JavaScript</language>
+  <offset>65</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>106</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodStartDateISO #loc</description>
+  <highlighted_element>periodStartDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>89</offset>
+  <length>18</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>106</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodEndDateISO #loc</description>
+  <highlighted_element>periodEndDateISO</highlighted_element>
+  <language>JavaScript</language>
+  <offset>165</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>107</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable usuario #loc</description>
+  <highlighted_element>usuario</highlighted_element>
+  <language>JavaScript</language>
+  <offset>57</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>108</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable team #loc</description>
+  <highlighted_element>team</highlighted_element>
+  <language>JavaScript</language>
+  <offset>57</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>109</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approver #loc</description>
+  <highlighted_element>approver</highlighted_element>
+  <language>JavaScript</language>
+  <offset>57</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>110</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable totalHours #loc</description>
+  <highlighted_element>totalHours</highlighted_element>
+  <language>JavaScript</language>
+  <offset>64</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>57</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>83</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasPonto #loc</description>
+  <highlighted_element>horasPonto</highlighted_element>
+  <language>JavaScript</language>
+  <offset>108</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/index.js</file>
+  <line>7</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;render()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>render</highlighted_element>
+  <language>JavaScript</language>
+  <offset>9</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js</file>
+  <line>255</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable startDate #loc</description>
+  <highlighted_element>startDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>53</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js</file>
+  <line>255</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable endDate #loc</description>
+  <highlighted_element>endDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>99</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js</file>
+  <line>60</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable pagesMap #loc</description>
+  <highlighted_element>pagesMap</highlighted_element>
+  <language>JavaScript</language>
+  <offset>37</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js</file>
+  <line>62</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable deParaTypeOnRequest #loc</description>
+  <highlighted_element>deParaTypeOnRequest</highlighted_element>
+  <language>JavaScript</language>
+  <offset>41</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>171</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approvedTimesheetsList #loc</description>
+  <highlighted_element>approvedTimesheetsList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>46</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>173</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable submittedTimesheetsList #loc</description>
+  <highlighted_element>submittedTimesheetsList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>47</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>175</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable partialTimesheetReportsDTOList #loc</description>
+  <highlighted_element>partialTimesheetReportsDTOList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>47</offset>
+  <length>30</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>177</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable unsubmittedHoursDTOList #loc</description>
+  <highlighted_element>unsubmittedHoursDTOList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>44</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable accountHoursDTOList #loc</description>
+  <highlighted_element>accountHoursDTOList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>40</offset>
+  <length>19</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/reports/index.js</file>
+  <line>181</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/reports/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable approvedTimesheetsList #loc</description>
+  <highlighted_element>approvedTimesheetsList</highlighted_element>
+  <language>JavaScript</language>
+  <offset>46</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/services/approval/index.js</file>
+  <line>16</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/services/approval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable workerKey #loc</description>
+  <highlighted_element>workerKey</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/services/approval/index.js</file>
+  <line>16</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/services/approval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>90</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/services/approval/index.js</file>
+  <line>16</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/services/approval/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable horasTempo #loc</description>
+  <highlighted_element>horasTempo</highlighted_element>
+  <language>JavaScript</language>
+  <offset>132</offset>
+  <length>10</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js</file>
+  <line>2</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type process #loc</description>
+  <highlighted_element>process</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js</file>
+  <line>2</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable env #loc</description>
+  <highlighted_element>env</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js</file>
+  <line>2</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type process #loc</description>
+  <highlighted_element>process</highlighted_element>
+  <language>JavaScript</language>
+  <offset>27</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js</file>
+  <line>2</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable env #loc</description>
+  <highlighted_element>env</highlighted_element>
+  <language>JavaScript</language>
+  <offset>35</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/config/webpack.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type module #loc</description>
+  <highlighted_element>module</highlighted_element>
+  <language>JavaScript</language>
+  <offset>0</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>32</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable utils #loc</description>
+  <highlighted_element>utils</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>32</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;book_new()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>book_new</highlighted_element>
+  <language>JavaScript</language>
+  <offset>24</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable utils #loc</description>
+  <highlighted_element>utils</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>34</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;aoa_to_sheet()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>aoa_to_sheet</highlighted_element>
+  <language>JavaScript</language>
+  <offset>24</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>36</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable utils #loc</description>
+  <highlighted_element>utils</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>36</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;sheet_add_json()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>sheet_add_json</highlighted_element>
+  <language>JavaScript</language>
+  <offset>13</offset>
+  <length>14</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>38</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;writeFile()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>writeFile</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>45</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable updatedDate #loc</description>
+  <highlighted_element>updatedDate</highlighted_element>
+  <language>JavaScript</language>
+  <offset>30</offset>
+  <length>11</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>46</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable periodKey #loc</description>
+  <highlighted_element>periodKey</highlighted_element>
+  <language>JavaScript</language>
+  <offset>23</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>47</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable previousState #loc</description>
+  <highlighted_element>previousState</highlighted_element>
+  <language>JavaScript</language>
+  <offset>31</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>48</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable currentState #loc</description>
+  <highlighted_element>currentState</highlighted_element>
+  <language>JavaScript</language>
+  <offset>26</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/utils/index.js</file>
+  <line>61</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/utils/index.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;autoTable()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>autoTable</highlighted_element>
+  <language>JavaScript</language>
+  <offset>8</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.js</file>
+  <line>1</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.js</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type module #loc</description>
+  <highlighted_element>module</highlighted_element>
+  <language>JavaScript</language>
+  <offset>0</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>1</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>3</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>4</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>13</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>6</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>26</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>7</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>31</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>8</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>15</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>29</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable BundleAnalyzerPlugin #loc</description>
+  <highlighted_element>BundleAnalyzerPlugin</highlighted_element>
+  <language>JavaScript</language>
+  <offset>64</offset>
+  <length>20</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>13</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved function or method &lt;span style=&quot;&quot;&gt;require()&lt;/span&gt; #loc&lt;/html&gt;</description>
+  <highlighted_element>require</highlighted_element>
+  <language>JavaScript</language>
+  <offset>18</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>15</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type module #loc</description>
+  <highlighted_element>module</highlighted_element>
+  <language>JavaScript</language>
+  <offset>0</offset>
+  <length>6</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>21</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>Unresolved variable or type __dirname #loc</description>
+  <highlighted_element>__dirname</highlighted_element>
+  <language>JavaScript</language>
+  <offset>20</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/webpack.config.prod.js</file>
+  <line>25</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/webpack.config.prod.js" />
+  <problem_class id="JSUnresolvedReference" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Unresolved reference</problem_class>
+  <description>&lt;html&gt;Unresolved type DefinePlugin #loc&lt;/html&gt;</description>
+  <highlighted_element>DefinePlugin</highlighted_element>
+  <language>JavaScript</language>
+  <offset>16</offset>
+  <length>12</length>
+</problem>
+</problems>

@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 03:49:13 BRT 2025
+atlassian-plugins-api-4.5.1.jar>atlassian-proxy=
+atlassian-plugins-api-4.5.1.pom>atlassian-proxy=

@@ -1,0 +1,138 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>closedsource-private-pom</artifactId>
+        <version>6.3.6</version>
+    </parent>
+
+    <groupId>com.atlassian.beehive</groupId>
+    <artifactId>beehive</artifactId>
+    <version>6.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Beehive</name>
+    <description>Atlassian shared library providing utilities for clustering including cluster-wide locks</description>
+    <url>https://docs.atlassian.com/${project.artifactId}/${project.version}</url>
+
+    <developers>
+        <developer>
+            <name>Mark Lassau</name>
+            <email>mlassau@atlassian.com</email>
+            <timezone>+10</timezone>
+            <roles>
+                <role>Architect</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Andrew Swan</name>
+            <email>aswan@atlassian.com</email>
+            <timezone>+10</timezone>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>beehive-api</module>
+        <module>beehive-core</module>
+        <module>beehive-core-tck</module>
+        <module>beehive-db</module>
+        <module>beehive-hazelcast</module>
+        <module>beehive-hazelcast5</module>
+        <module>beehive-single-node</module>
+    </modules>
+
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://ecosystem-bamboo.internal.atlassian.com/browse/BEE</url>
+    </ciManagement>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:atlassian/beehive.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:atlassian/beehive.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/beehive</url>
+        <tag>beehive-6.0.0</tag>
+    </scm>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://ecosystem.atlassian.net/browse/BEE</url>
+    </issueManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+        </plugins>
+    </build>
+    <properties>
+        <hazelcast.version>3.12.12</hazelcast.version>
+        <hazelcast5.version>5.2.1</hazelcast5.version>
+        <!-- Test -->
+        <unit-test-toolkit.version>2.5.2</unit-test-toolkit.version>
+        <platform.version>7.0.0-m47</platform.version>
+        <failOnMilestoneOrReleaseCandidateDeps>false</failOnMilestoneOrReleaseCandidateDeps>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-public-api</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-internal-api</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>1.3.2</version>
+            </dependency>
+
+            <!-- Testing -->
+            <dependency>
+                <groupId>com.atlassian.beehive</groupId>
+                <artifactId>beehive-core-tck</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.utt</groupId>
+                <artifactId>toolkit</artifactId>
+                <version>${unit-test-toolkit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>2.28.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

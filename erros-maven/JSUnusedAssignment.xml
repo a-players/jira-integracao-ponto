@@ -1,0 +1,62 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>216</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSUnusedAssignment" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>Variable initializer is redundant #loc</description>
+  <highlighted_element>null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>215</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSUnusedAssignment" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>Variable initializer is redundant #loc</description>
+  <highlighted_element>null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>202</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSUnusedAssignment" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>Variable initializer is redundant #loc</description>
+  <highlighted_element>null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>224</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSUnusedAssignment" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>Variable initializer is redundant #loc</description>
+  <highlighted_element>null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>4</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>221</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSUnusedAssignment" severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused assignment</problem_class>
+  <description>Variable initializer is redundant #loc</description>
+  <highlighted_element>null</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>4</length>
+</problem>
+</problems>

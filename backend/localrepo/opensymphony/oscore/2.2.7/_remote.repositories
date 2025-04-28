@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 08:53:48 BRT 2025
+oscore-2.2.7.jar>atlassian-public=
+oscore-2.2.7.jar>atlassian-proxy=
+oscore-2.2.7.pom>atlassian-proxy=
+oscore-2.2.7.pom>atlassian-public=

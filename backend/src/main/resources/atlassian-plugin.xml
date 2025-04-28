@@ -1,0 +1,102 @@
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+        <param name="atlassian-data-center-compatible">true</param>
+    </plugin-info>
+
+    <!-- Arquivos de tradução -->
+    <resource type="i18n" name="i18n" location="integracaoponto"/>
+
+    <!-- Recursos web do plugin -->
+    <web-resource key="integracaoponto-resources" name="IntegracaoPonto Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <dependency>com.atlassian.auiplugin:aui-page-layout</dependency>
+        <resource type="download" name="integracaoponto-main-min.css" location="/css/integracaoponto-main-min.css"/>
+        <resource type="download" name="integracaoponto-1-bundle-min.js" location="/js/integracaoponto-1-bundle-min.js"/>
+        <resource type="download" name="integracaoponto-2-bundle-min.js" location="/js/integracaoponto-2-bundle-min.js"/>
+        <resource type="download" name="integracaoponto-3-bundle-min.js" location="/js/integracaoponto-3-bundle-min.js"/>
+        <resource type="download" name="integracaoponto-main-min.js" location="/js/integracaoponto-main-min.js"/>
+        <resource type="download" name="images/" location="/images"/>
+        <context>integracaoponto</context>
+    </web-resource>
+
+    <!-- Menu principal na barra de navegação -->
+    <web-item key="menu-integracaoponto" section="system.top.navigation.bar" weight="1000">
+        <label key="menu.label"></label>
+        <link linkId="menu-integracaoponto" />
+        <conditions type="OR">
+            <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoAdminCondition"/>
+            <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoTeamLeadCondition"/>
+        </conditions>
+    </web-item>
+
+    <!-- Submenus dentro do menu principal -->
+    <web-section key="menu-itens" location="menu-integracaoponto" weight="10"/>
+
+    <!-- Itens do submenu -->
+    <web-item key="menu-itens-logs" section="menu-integracaoponto/menu-itens" weight="10">
+        <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoAdminCondition"/>
+        <label key="menu-itens-logs.label"></label>
+        <link linkId="menu-itens-logs">/secure/Logs!default.jspa</link>
+    </web-item>
+    <web-item key="menu-itens-aprovacao" section="menu-integracaoponto/menu-itens" weight="10">
+        <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoTeamLeadCondition"/>
+        <label key="menu-itens-aprovacao.label"></label>
+        <link linkId="menu-itens-aprovacao">/secure/Aprovacao!default.jspa</link>
+    </web-item>
+    <web-item key="menu-itens-cadastro" section="menu-integracaoponto/menu-itens" weight="10">
+        <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoAdminCondition"/>
+        <label key="menu-itens-cadastro.label"></label>
+        <link linkId="menu-itens-cadastro">/secure/Cadastro!default.jspa</link>
+    </web-item>
+    <web-item key="menu-itens-relatorio" section="menu-integracaoponto/menu-itens" weight="10">
+        <conditions type="OR">
+            <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoAdminCondition"/>
+            <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoTeamLeadCondition"/>
+        </conditions>
+        <label key="menu-itens-relatorio.label"></label>
+        <link linkId="menu-itens-relatorio">/secure/Relatorio!default.jspa</link>
+    </web-item>
+
+    <!-- Configurações -->
+    <web-section key="menu-config" location="menu-integracaoponto" weight="10"/>
+
+    <web-item key="menu-config-settings" section="menu-integracaoponto/menu-config" weight="10">
+        <condition class="com.mindproapps.jira.integracaoponto.conditions.UserTempoAdminCondition"/>
+        <label key="menu-config-settings.label"></label>
+        <link linkId="menu-config-settings">/secure/ITSettings!default.jspa</link>
+    </web-item>
+
+    <!-- WebWork Configurations -->
+    <webwork1 key="webwork" name="IntegracaoPonto WebWork" class="java.lang.Object">
+        <description>WebWork actions for IntegracaoPonto Module</description>
+        <actions>
+            <action name="com.mindproapps.jira.integracaoponto.webwork.LogsWebWorkAction" alias="Logs">
+                <view name="success">/templates/webworkers/logs/webapp.vm</view>
+                <view name="unauthorized">/templates/webworkers/generic/webapp-unauthorized.vm</view>
+            </action>
+            <action name="com.mindproapps.jira.integracaoponto.webwork.SettingsWebWorkAction" alias="ITSettings">
+                <view name="success">/templates/webworkers/settings/webapp.vm</view>
+                <view name="unauthorized">/templates/webworkers/generic/webapp-unauthorized.vm</view>
+            </action>
+        </actions>
+    </webwork1>
+
+    <!-- REST Endpoint -->
+    <rest name="Integração Ponto Rest Resource" i18n-name-key="integracaoponto-rest-resource.name" key="integracaoponto-rest-resource" path="/integracaoponto" version="1.0">
+        <description key="integracaoponto-rest-resource.description">The Integração Ponto Rest Resource Plugin</description>
+    </rest>
+
+    <!-- Active Objects -->
+    <ao key="ao-module" interface="com.atlassian.activeobjects.external.ActiveObjects">
+        <description>Integração Ponto Active Objects</description>
+        <entity>com.mindproapps.jira.integracaoponto.model.period.AuditPeriod</entity>
+        <entity>com.mindproapps.jira.integracaoponto.model.timesheets.TSApprOriginTrace</entity>
+        <entity>com.mindproapps.jira.integracaoponto.model.user.DeParaUser</entity>
+        <entity>com.mindproapps.jira.integracaoponto.model.config.Config</entity>
+    </ao>
+</atlassian-plugin>

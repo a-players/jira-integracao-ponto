@@ -1,0 +1,14 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/pom.xml.bkp</file>
+  <line>1</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/pom.xml.bkp" />
+  <problem_class id="ReassignedToPlainText" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Reassigned to plain text</problem_class>
+  <description>This file was explicitly re-assigned to plain text</description>
+  <highlighted_element>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; ...</highlighted_element>
+  <language>TEXT</language>
+  <offset>0</offset>
+  <length>14480</length>
+</problem>
+</problems>

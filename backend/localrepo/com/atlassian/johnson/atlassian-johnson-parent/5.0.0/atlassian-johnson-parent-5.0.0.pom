@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>6.3.1</version>
+    </parent>
+
+    <groupId>com.atlassian.johnson</groupId>
+    <artifactId>atlassian-johnson-parent</artifactId>
+    <version>5.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Johnson</name>
+    <description>Johnson is an application consistency and error handling component for web applications</description>
+    <url>https://docs.atlassian.com/${project.artifactId}/${project.version}</url>
+
+    <modules>
+        <module>core</module>
+        <module>plugins</module>
+        <module>spring</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.org/atlassian/atlassian-johnson.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/atlassian/atlassian-johnson.git</developerConnection>
+        <tag>atlassian-johnson-parent-5.0.0</tag>
+        <url>https://bitbucket.org/atlassian/atlassian-johnson</url>
+    </scm>
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://jira.atlassian.com/browse/JOHNSON</url>
+    </issueManagement>
+
+    <properties>
+        <platform.version>7.0.0-m54</platform.version>
+
+        <hamcrest.libversion>1.3</hamcrest.libversion>
+        <junit.libversion>4.13.2</junit.libversion>
+        <mockito.libversion>2.21.0</mockito.libversion>
+        <powermock.libversion>2.0.9</powermock.libversion>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Platform dependencies -->
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-system-classpath</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-test-resources</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.johnson</groupId>
+                <artifactId>atlassian-johnson-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.libversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>${hamcrest.libversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.libversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-core</artifactId>
+                <version>${powermock.libversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-module-junit4</artifactId>
+                <version>${powermock.libversion}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-api-mockito2</artifactId>
+                <version>${powermock.libversion}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

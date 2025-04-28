@@ -1,0 +1,194 @@
+label {
+    right: 2px;
+    position: relative;
+}
+
+.hdrtimesheets-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 5px;
+    border-bottom: 1px solid rgb(221, 232, 241);
+}
+
+.hdrtimesheets-left-elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 5px 0 5px;
+    padding: 5px 5px 0 5px;
+    width: 100%;
+}
+
+.hdrtimesheets-right-elements {
+    background-color: white;
+    padding: 5px;
+    max-width: 20%;
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 25px;
+}
+
+.hdrtimesheets-element {
+    margin: 5px 5px 0 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.hdrtimesheets-element label {
+    flex-basis: 35px; /* Ajuste a largura da etiqueta conforme necessário */
+    text-align: right;
+    margin-right: 10px; /* Adicione margem entre a etiqueta e a entrada */
+}
+
+.hdrtimesheets-element input {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+.hdrtimesheets-element-button {
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute; /* Adicione esta linha */
+}
+
+.search-wrapper._2iA8p44d0WZ-WqRBGcAuEV  {
+    border: 1px solid gray;
+    border-radius: 0;
+    padding: 0px;
+}
+
+.hdrtimesheets-element-button input.searchBox {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
+    box-sizing: border-box;
+    outline: none;
+}
+    
+.btn-export {
+    background-color: white;
+    color:  rgba(145, 137, 137, 0.555);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.typeahead {
+    position: absolute;
+    z-index: 10000;
+}
+
+.TypeAheadDropDown {
+    width: fit-content;
+    background-color: white;
+}
+    
+.TypeAheadDropDown input, .hdrtimesheets-element input {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    border: 1px solid gray;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
+    box-sizing: border-box;
+    outline: none;
+}
+    
+.TypeAheadDropDown ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid gray;
+}
+    
+.TypeAheadDropDown li{
+    padding: 10px 5px ;
+    cursor: pointer;
+    background: white;
+}
+    
+.TypeAheadDropDown li:hover{
+    background: lightgray;
+    text-decoration: underline;
+}
+
+.visible-columns-label {
+    margin-right: 10px; /* Ajuste a margem conforme necessário */
+}
+
+.multiselect-container {
+    display: flex;
+    float: right;
+    padding-top: 5px;
+}
+
+.hdrtimesheets-element.new-line {
+    flex-basis: 100%;
+}
+
+.hdrtimesheets-teamsearch {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hdrtimesheets-campos {
+    margin: 0 0 35px 5px;
+    padding-left: 5px;
+    display: flex;
+}
+
+.h2-table {
+    display: flex;
+    width: 60%;
+}
+
+.header-container {
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.searchButton {
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-campo {
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.th {
+    position: relative;
+}
+
+.sorted.asc .asc-icon,
+.sorted.desc .desc-icon {
+    display: none;
+}
+
+.sorted .asc-icon,
+.sorted .desc-icon {
+    display: inline-block;
+}
+
+.sortable {
+    position: relative;
+    cursor: pointer;
+}
+

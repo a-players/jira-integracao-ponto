@@ -1,0 +1,26 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js</file>
+  <line>1</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>React</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>5</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js</file>
+  <line>29</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblPdfExport/index.js" />
+  <problem_class id="JSDuplicatedDeclaration" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Duplicate declaration</problem_class>
+  <description>Duplicate declaration</description>
+  <highlighted_element>React</highlighted_element>
+  <language>JavaScript</language>
+  <offset>7</offset>
+  <length>5</length>
+</problem>
+</problems>

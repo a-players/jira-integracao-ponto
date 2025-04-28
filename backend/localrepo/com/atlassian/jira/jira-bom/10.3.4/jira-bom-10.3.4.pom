@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.platform.dependencies</groupId>
+        <artifactId>platform-deps</artifactId>
+        <!-- Remember to update the platform.dependencies.version property to match -->
+        <version>7.2.6</version>
+        <relativePath/>
+    </parent>
+
+    <artifactId>jira-bom</artifactId>
+    <groupId>com.atlassian.jira</groupId>
+    <packaging>pom</packaging>
+    <version>10.3.4</version>
+    <name>Atlassian Jira - BOM</name>
+
+    <modules>
+        <module>jira-api-bom</module>
+        <module>jira-deprecated-api-bom</module>
+        <module>jira-internal-bom</module>
+        <module>jira-bundled-plugins-bom</module>
+    </modules>
+
+    <properties>
+        <!-- artifactory.target.repo is related to Cloudsource Private Repository, please remove when platform-deps provide similar functionality -->
+        <artifactory.target.repo>maven-closedsource-private-local</artifactory.target.repo>
+        <!-- Bundled plugins -->
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <admin.helper.version>${jira.plugins.bundle.version}</admin.helper.version>
+        <!-- Blank line to avoid conflicts -->
+        <adminquicksearch.version>3.0.1</adminquicksearch.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-servlet-plugin.version>7.0.0</atlassian-servlet-plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.pdk.plugin.version>0.7</atlassian.pdk.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <attach.image.version>4.0.1</attach.image.version>
+        <!-- Blank line to avoid conflicts -->
+        <automation4jira.version>10.3.3</automation4jira.version>
+        <!-- Blank line to avoid conflicts -->
+        <baseurl.version>${jira.plugins.bundle.version}</baseurl.version>
+        <!-- Blank line to avoid conflicts -->
+        <bot.killer.version>1.7.12</bot.killer.version>
+        <!-- Blank line to avoid conflicts -->
+        <confluence.client.version>0.9.8</confluence.client.version>
+        <!-- Blank line to avoid conflicts -->
+        <dnd.attachment.version>${jira.plugins.bundle.version}</dnd.attachment.version>
+        <!-- Blank line to avoid conflicts -->
+        <editor.version>8.0.20</editor.version>
+        <!-- Blank line to avoid conflicts -->
+        <fileviewer.plugin.version>${jira.plugins.bundle.version}</fileviewer.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <inviteuser.version>${jira.plugins.bundle.version}</inviteuser.version>
+        <!-- Blank line to avoid conflicts -->
+        <issue.collector.version>${jira.plugins.bundle.version}</issue.collector.version>
+        <!-- Blank line to avoid conflicts -->
+        <jcma.version>1.12.13</jcma.version>
+        <!-- Blank line to avoid conflicts -->
+        <jdbc.metrics.version>3.1.0-atlassian-8</jdbc.metrics.version>
+        <!-- Blank line to avoid conflicts -->
+        <jim.version>${jira.plugins.bundle.version}</jim.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira-ical-feed.version>${jira.plugins.bundle.version}</jira-ical-feed.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira-optimizer-plugin.version>5.0.1</jira-optimizer-plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.browser.metrics.plugin.version>${jira.plugins.bundle.version}</jira.browser.metrics.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.client.version>2.0.0-m16</jira.client.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.inform.version>4.1.3</jira.inform.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.inline.issue.create>${jira.plugins.bundle.version}</jira.inline.issue.create>
+        <!-- Blank line to avoid conflicts -->
+        <jira.issue.search.plugin.version>20.1.15</jira.issue.search.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.mail.plugin.version>${jira.plugins.bundle.version}</jira.mail.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.mobile.rest.version>5.2.0</jira.mobile.rest.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.plugins.bundle.version>110.3.8</jira.plugins.bundle.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.projects.version>9.0.33</jira.projects.version>
+        <!-- Blank line to avoid conflicts -->
+        <jwebunit.version>1.2-atlassian-7</jwebunit.version>
+        <!-- Blank line to avoid conflicts -->
+        <mobile.version>${jira.plugins.bundle.version}</mobile.version>
+        <!-- Blank line to avoid conflicts -->
+        <monitoring.version>${jira.plugins.bundle.version}</monitoring.version>
+        <!-- Blank line to avoid conflicts -->
+        <nekohtml.bundle.version>1.9.22-2</nekohtml.bundle.version>
+        <!-- Blank line to avoid conflicts -->
+        <password.policy.version>${jira.plugins.bundle.version}</password.policy.version>
+        <!-- Blank line to avoid conflicts -->
+        <personal.access.tokens.version>2.0.12</personal.access.tokens.version>
+        <!-- Blank line to avoid conflicts -->
+        <project.creation.version>5.0.0</project.creation.version>
+        <!-- Blank line to avoid conflicts -->
+        <project.templates.version>${jira.plugins.bundle.version}</project.templates.version>
+        <!-- Blank line to avoid conflicts -->
+        <querydsl.version>5.1.0</querydsl.version>
+        <!-- Blank line to avoid conflicts -->
+        <quickedit.version>${jira.plugins.bundle.version}</quickedit.version>
+        <!-- Blank line to avoid conflicts -->
+        <rome.version>1.0</rome.version>
+        <!-- Blank line to avoid conflicts -->
+        <timezonedetection.version>${jira.plugins.bundle.version}</timezonedetection.version>
+        <!-- Blank line to avoid conflicts -->
+        <user.profile.version>${jira.plugins.bundle.version}</user.profile.version>
+        <!-- Blank line to avoid conflicts -->
+        <wallboards.version>7.0.4</wallboards.version>
+        <!-- END.DEPENDENCY.VERSIONS -->
+
+        <!-- For The New Platform see https://bitbucket.org/server-platform/platform-dependencies/ -->
+        <!-- When bumping crowd.version within platform, TestCrowdRestAPI.xml may need updating to ensure the correct test data is loaded -->
+        <!-- Updates are normally handled by renovate. -->
+        <!-- Remember to update the parent pom version to match if you happen to change it manually. -->
+        <platform.dependencies.version>7.2.6</platform.dependencies.version>
+
+        <!-- BEGIN New Platform Dependencies Overrides -->
+        <!-- The version is HIGHER than in platform, remove when upgrading platform with a match/higher version  -->
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <!--
+            JSDSS-8395, JSEV-3690: We need to explicitly include analytics-api to ensure we get the latest version
+            instead of the one provided by platform. Please do to remove this until we have soaked the new version
+            and are ready to backport it to platform.
+            CF: https://hello.atlassian.net/wiki/spaces/~712020b1ef74b4cc8f4fd0aa6a4a294e48c2ed/pages/4322846930/Essential+Analytics+Connectivity+Check+-+Rollout+Plan+-+JSDSS-8395#Proposed-Rollout-Plan
+        -->
+        <analytics.version>9.2.2</analytics.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-authentication.version>5.1.14</atlassian-authentication.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-diagnostics.version>5.0.0</atlassian-diagnostics.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-gadgets.version>9.0.24</atlassian-gadgets.version>
+        <!-- Blank line to avoid conflicts -->
+        <commons-digester.version>2.1</commons-digester.version>
+        <!-- Blank line to avoid conflicts -->
+        <!-- END.DEPENDENCY.VERSIONS -->
+
+        <!-- This version is LOWER than that provided by the platform, and upgrading it requires substantial effort. -->
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <!-- When bumping up the AUI version ensure there is a version match in jira-frontend-plugin package.json devDependency -->
+        <aui.version>${auiplugin.parent.version}</aui.version>
+        <!-- Blank line to avoid conflicts -->
+        <auiplugin.parent.version>9.12.6</auiplugin.parent.version>
+        <!-- Blank line to avoid conflicts -->
+        <caesium.version>3.1.4</caesium.version>
+        <!-- Blank line to avoid conflicts -->
+        <!-- commons-pool2.version and commons.dbcp2.version should be updated together and must be compatible with the versions used in entityengine -->
+        <commons-pool2.version>2.12.0</commons-pool2.version>
+        <!-- Blank line to avoid conflicts -->
+        <ehcache.version>2.10.2-atlassian-nomgmt-21</ehcache.version>
+        <!-- Downgraded to avoid having to do an expensive antlr4-runtime bump to >4.10.1 -->
+        <jstyleparser.version>4.0.0</jstyleparser.version>
+        <!-- END.DEPENDENCY.VERSIONS -->
+        <!-- END New Platform Dependencies Overrides -->
+
+        <!-- START: X-Product components -->
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <atlassian-collectors.version>1.1</atlassian-collectors.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-healthcheck.version>8.0.0</atlassian-healthcheck.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-tenancy.version>4.0.1</atlassian-tenancy.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-velocity.version>1.4</atlassian-velocity.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.application.version>3.0.1</atlassian.application.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.ozymandias.version>1.0.0</atlassian.ozymandias.version>
+        <!-- Blank line to avoid conflicts -->
+        <fp.version>3.0.0</fp.version>
+        <!-- Blank line to avoid conflicts -->
+        <mywork.version>19.1.24</mywork.version>
+        <!-- Blank line to avoid conflicts -->
+        <quickreload.dbconsole.version>1.3.0</quickreload.dbconsole.version>
+        <!-- Blank line to avoid conflicts -->
+        <quickreload.version>5.0.11</quickreload.version>
+        <!-- Blank line to avoid conflicts -->
+        <supercsv.version>2.1.0</supercsv.version>
+        <!-- Blank line to avoid conflicts -->
+        <troubleshooting.plugin-jira.version>2.6.0</troubleshooting.plugin-jira.version>
+        <!-- Blank line to avoid conflicts -->
+        <whisper.version>7.0.6</whisper.version>
+        <!-- Blank line to avoid conflicts -->
+        <whitelist.version>6.1.1</whitelist.version>
+        <!-- END.DEPENDENCY.VERSIONS -->
+        <!-- END: X-Product components -->
+
+        <!-- START: Open API documentation -->
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <io.swagger.core.v3.version>2.2.21</io.swagger.core.v3.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.swagger.extras.version>1.0.10</jira.swagger.extras.version>
+        <!-- Blank line to avoid conflicts -->
+        <swagger.maven.plugin.version>2.1.7-atlassian-1</swagger.maven.plugin.version>
+        <!-- END.DEPENDENCY.VERSIONS -->
+        <!-- END: Open API documentation -->
+
+        <!-- BEGIN.DEPENDENCY.VERSIONS tags in this tag have to be sorted alphabetically -->
+        <amps.version>9.1.3</amps.version>
+        <!-- Blank line to avoid conflicts -->
+        <antlr.version>3.5.2</antlr.version>
+        <!-- Blank line to avoid conflicts -->
+        <antlr4.version>4.7.2</antlr4.version>
+        <!-- Blank line to avoid conflicts -->
+        <apache.httpasyncclient.version>4.1</apache.httpasyncclient.version>
+        <!-- Blank line to avoid conflicts -->
+        <apache.tika.version>2.7.0</apache.tika.version>
+        <!-- Blank line to avoid conflicts -->
+        <assertj.version>3.23.1</assertj.version>
+        <!-- Blank line to avoid conflicts -->
+        <atl-docco.version>0.11</atl-docco.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-msgraph-mail.version>1.0.6</atlassian-msgraph-mail.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian-test-categories.version>0.5</atlassian-test-categories.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.app.usage.version>2.0.8</atlassian.app.usage.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.aui.pageobjects.version>1.0.0</atlassian.aui.pageobjects.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.browsers.version>3.2.2</atlassian.browsers.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.jslibs.version>6.0.1</atlassian.jslibs.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.jstest.runner.plugin.version>0.20.1</atlassian.jstest.runner.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.monitoring.and.alerts.version>1.2.5</atlassian.monitoring.and.alerts.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.qunit.plugin.version>1.0.4</atlassian.qunit.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.selenium.version>3.5.1</atlassian.selenium.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.servlet.api.version>4.0.1</atlassian.servlet.api.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.theme.version>2.0.0</atlassian.theme.version>
+        <!-- Blank line to avoid conflicts -->
+        <atlassian.vcache.version>2.0.0</atlassian.vcache.version>
+        <!-- Blank line to avoid conflicts -->
+        <awaitility.version>4.2.0</awaitility.version>
+        <!-- Blank line to avoid conflicts -->
+        <batik.version>1.17</batik.version>
+        <!-- Blank line to avoid conflicts -->
+        <clover.version>4.1.1</clover.version>
+        <!-- Blank line to avoid conflicts -->
+        <commons-collections4.version>4.4</commons-collections4.version>
+        <!-- Blank line to avoid conflicts -->
+        <commons.compress.version>1.26.1</commons.compress.version>
+        <!-- Blank line to avoid conflicts -->
+        <!-- pool2 and dbcp2 should be updated together and must be compatible with the versions used in entityengine -->
+        <commons.dbcp2.version>2.12.0</commons.dbcp2.version>
+        <!-- Blank line to avoid conflicts -->
+        <commons.httpclient.version>3.1-jenkins-3</commons.httpclient.version>
+        <!-- Blank line to avoid conflicts -->
+        <datacenter-filestore.version>0.10.1</datacenter-filestore.version>
+        <!-- Blank line to avoid conflicts -->
+        <doclava.theme.version>0.16</doclava.theme.version>
+        <!-- Blank line to avoid conflicts -->
+        <dropwizard.version>4.0.3</dropwizard.version>
+        <!-- Blank line to avoid conflicts -->
+        <!-- pool2 and dbcp2 should be updated together and must be compatible with the versions used in entityengine -->
+        <entityengine.version>4.0.2</entityengine.version>
+        <!-- Blank line to avoid conflicts -->
+        <equalsverifier.version>3.15.6</equalsverifier.version>
+        <!-- Blank line to avoid conflicts -->
+        <findbugs.annotations.version>3.0.0</findbugs.annotations.version>
+        <!-- Blank line to avoid conflicts -->
+        <google.closure.compiler.version>v20181008</google.closure.compiler.version>
+        <!-- Blank line to avoid conflicts -->
+        <guice.version>5.1.0</guice.version>
+        <!-- Blank line to avoid conflicts -->
+        <h2.jdbc.version>2.1.214</h2.jdbc.version>
+        <!-- Blank line to avoid conflicts -->
+        <hamcrest.version>1.3</hamcrest.version>
+        <!-- this is only used in IDEA because its Maven integration is too stupid to figure out that it has to run the
+        docversions-maven-plugin. in Maven builds the jira.docs.version is set according to the ${project.version}.
+        there is no need to update idea.docs.version. -->
+        <idea.docs.version>062</idea.docs.version>
+        <!-- Blank line to avoid conflicts -->
+        <inception.version>1.25</inception.version>
+        <!-- Blank line to avoid conflicts -->
+        <jakarta-transaction.version>1.3.3</jakarta-transaction.version>
+        <!-- Blank line to avoid conflicts -->
+        <!-- Required to build REST API docs on JDK9+ ~ should match platform -->
+        <!-- Blank line to avoid conflicts -->
+        <jaxen.version>1.1.4</jaxen.version>
+        <!-- Blank line to avoid conflicts -->
+        <jettison.version>1.5.4</jettison.version>
+        <!-- Blank line to avoid conflicts -->
+        <jira.rest.java.client.version>6.0.1</jira.rest.java.client.version>
+        <!-- Blank line to avoid conflicts -->
+        <joda-time.version>2.12.7</joda-time.version>
+        <!-- Blank line to avoid conflicts -->
+        <junit-platform.version>1.8.2</junit-platform.version>
+        <!-- Blank line to avoid conflicts -->
+        <junit.version>4.13.1</junit.version>
+        <!-- Blank line to avoid conflicts -->
+        <jupiter.version>5.7.0</jupiter.version>
+        <!-- Blank line to avoid conflicts -->
+        <kryo.version>5.0.0</kryo.version>
+        <!-- Blank line to avoid conflicts -->
+        <log4j2.version>2.20.0</log4j2.version>
+        <!-- Blank line to avoid conflicts -->
+        <lucene.version>7.3.1</lucene.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.bundle.plugin.version>5.1.9</maven.bundle.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <maven.javadoc.version>3.6.3</maven.javadoc.version>
+        <!-- Blank line to avoid conflicts -->
+        <mockito.booster.version>0.3.6</mockito.booster.version>
+        <!-- Blank line to avoid conflicts -->
+        <mockito.junit.extension.version>2.23.0</mockito.junit.extension.version>
+        <!-- Blank line to avoid conflicts -->
+        <mockito.version>2.21.0</mockito.version>
+        <!-- Blank line to avoid conflicts -->
+        <!-- Version 10.2 introduces a breaking change in encryption defaults -->
+        <mssql.jdbc.version>9.2.1.jre8</mssql.jdbc.version>
+        <!-- Blank line to avoid conflicts -->
+        <mysql.jdbc.version>8.0.20</mysql.jdbc.version>
+        <!-- Blank line to avoid conflicts -->
+        <oracle.jdbc.version>19.3.0.0</oracle.jdbc.version>
+        <!-- Blank line to avoid conflicts -->
+        <password.cipher.version>1.4.0</password.cipher.version>
+        <!-- see https://jdbc.postgresql.org/documentation/faq.html#versioning -->
+        <postgres.jdbc.version>42.7.3</postgres.jdbc.version>
+        <!-- Blank line to avoid conflicts -->
+        <postgresql.container.version>1.17.2</postgresql.container.version>
+        <!-- Blank line to avoid conflicts -->
+        <powermock.version>2.0.9</powermock.version>
+        <!-- Blank line to avoid conflicts -->
+        <protobuf.version>3.25.5</protobuf.version>
+        <!-- Blank line to avoid conflicts -->
+        <selenium.version>3.141.59-atlassian-1</selenium.version>
+        <!-- Blank line to avoid conflicts -->
+        <smartass.version>3.0.2</smartass.version>
+        <!-- Blank line to avoid conflicts -->
+        <snappy.version>1.1.10.5</snappy.version>
+        <!-- END: Spring servicemix version -->
+        <squareup.tape.version>1.2.3-atlassian-5</squareup.tape.version>
+        <!-- Blank line to avoid conflicts -->
+        <testkit.version>10.0.11</testkit.version>
+        <!-- Blank line to avoid conflicts -->
+        <timed.promise.version>1.0.13</timed.promise.version>
+        <!-- Blank line to avoid conflicts -->
+        <tomcat.extensions.version>0.1.0</tomcat.extensions.version>
+        <!-- Blank line to avoid conflicts -->
+        <upgrade.task.framework.version>2.0.2</upgrade.task.framework.version>
+        <!-- Blank line to avoid conflicts -->
+        <velocity-tools.version>1.3</velocity-tools.version>
+        <!-- Blank line to avoid conflicts -->
+        <workflow.designer.version>${jira.plugins.bundle.version}</workflow.designer.version>
+        <!-- Blank line to avoid conflicts -->
+        <workflow.sharing.plugin.version>${jira.plugins.bundle.version}</workflow.sharing.plugin.version>
+        <!-- Blank line to avoid conflicts -->
+        <xstream.version>1.4.21</xstream.version>
+        <!-- END.DEPENDENCY.VERSIONS -->
+
+    </properties>
+
+    <!-- START: Coming from closedsource-private-pom, please remove when platform-deps provide POM with closedsource private distribution -->
+    <distributionManagement>
+        <repository>
+            <id>maven-atlassian-com</id>
+            <name>Atlassian Closed Source Private Repository</name>
+            <url>https://packages.atlassian.com/maven-closedsource-private</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-atlassian-com</id>
+            <name>Atlassian Closed Source Private Snapshot Repository</name>
+            <url>https://packages.atlassian.com/maven-closedsource-private-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <!-- END: Coming from closedsource-private-pom, please remove when platform-deps provide POM with closedsource private distribution -->
+</project>

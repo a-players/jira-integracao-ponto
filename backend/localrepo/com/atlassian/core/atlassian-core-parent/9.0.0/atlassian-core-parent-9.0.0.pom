@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>6.3.1</version>
+    </parent>
+
+    <groupId>com.atlassian.core</groupId>
+    <artifactId>atlassian-core-parent</artifactId>
+    <version>9.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Core (Parent)</name>
+    <description>Atlassian Core parent project</description>
+    <url>https://docs.atlassian.com/${project.artifactId}/${project.version}</url>
+
+    <modules>
+        <module>atlassian-core</module>
+        <module>atlassian-core-logging</module>
+        <module>atlassian-core-thumbnail</module>
+        <module>atlassian-core-user</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.org/atlassian/atlassian-core.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/atlassian/atlassian-core.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-core</url>
+        <tag>atlassian-core-parent-9.0.0</tag>
+    </scm>
+    <issueManagement>
+        <system>Jira</system>
+        <url>https://jira.atlassian.com/browse/CORE</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://ecosystem-bamboo.internal.atlassian.com/browse/CORE</url>
+    </ciManagement>
+
+    <properties>
+        <failOnMilestoneOrReleaseCandidateDeps>false</failOnMilestoneOrReleaseCandidateDeps>
+        <maven.compiler.release>17</maven.compiler.release>
+        <javadoc.additional.params>-Xdoclint:none</javadoc.additional.params>
+        <platform.version>7.0.0-m53</platform.version>
+        <imageio.version>3.8.2</imageio.version>
+        <osuser.version>1.2.2-m1</osuser.version>
+        <!-- Test dependencies -->
+        <hamcrest.version>1.3</hamcrest.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Module dependencies -->
+            <dependency>
+                <groupId>com.atlassian.core</groupId>
+                <artifactId>atlassian-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.core</groupId>
+                <artifactId>atlassian-core-logging</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.core</groupId>
+                <artifactId>atlassian-core-thumbnail</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.core</groupId>
+                <artifactId>atlassian-core-user</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Platform dependencies -->
+            <!-- atlassian-core is a set of regular libraries, hence the dependency on platform-system-classpath -->
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-system-classpath</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-test-resources</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.osuser</groupId>
+                <artifactId>osuser-api</artifactId>
+                <version>${osuser.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.osuser</groupId>
+                <artifactId>osuser-provider-memory</artifactId>
+                <version>${osuser.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.user</groupId>
+                <artifactId>atlassian-user-api</artifactId>
+                <version>5.5.9</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-core</artifactId>
+                <version>${hamcrest.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-library</artifactId>
+                <version>${hamcrest.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>2.28.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.twelvemonkeys.imageio</groupId>
+                <artifactId>imageio-core</artifactId>
+                <version>${imageio.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.twelvemonkeys.imageio</groupId>
+                <artifactId>imageio-jpeg</artifactId>
+                <version>${imageio.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.twelvemonkeys.imageio</groupId>
+                <artifactId>imageio-tiff</artifactId>
+                <version>${imageio.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

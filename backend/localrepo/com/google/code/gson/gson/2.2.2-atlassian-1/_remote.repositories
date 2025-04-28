@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 08:53:49 BRT 2025
+gson-2.2.2-atlassian-1.pom>atlassian-proxy=
+gson-2.2.2-atlassian-1.pom>atlassian-public=
+gson-2.2.2-atlassian-1.jar>atlassian-public=
+gson-2.2.2-atlassian-1.jar>atlassian-proxy=

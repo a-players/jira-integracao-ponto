@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>3.0.39</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.atlassian.plugins</groupId>
+    <artifactId>atlassian-plugins-osgi-testrunner-parent</artifactId>
+    <version>2.0.1</version>
+    <modules>
+        <module>atlassian-plugins-osgi-testrunner</module>
+        <module>atlassian-plugins-osgi-testrunner-bundle</module>
+    </modules>
+    <packaging>pom</packaging>
+    <name>Atlassian Plugins OSGi TestRunner Parent POM</name>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:atlassian/atlassian-plugins-osgi-testrunner-parent.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:atlassian/atlassian-plugins-osgi-testrunner-parent.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-plugins-osgi-testrunner-parent</url>
+        <tag>atlassian-plugins-osgi-testrunner-parent-2.0.1</tag>
+    </scm>
+
+    <issueManagement>
+        <system>Jira</system>
+        <url>https://ecosystem.atlassian.net/browse/PTRUNNER</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://ecosystem-bamboo.internal.atlassian.com/browse/PTRUNNER</url>
+    </ciManagement>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <remoteTagging>true</remoteTagging>
+                    <arguments>-Prelease</arguments>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <updateBranchVersions>true</updateBranchVersions>
+                    <useReleaseProfile>true</useReleaseProfile>
+                    <preparationGoals>clean install</preparationGoals>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <!-- Exclude inner classes, as done by the base POM -->
+                    <excludes>
+                        <exclude>**/*$*</exclude>
+                    </excludes>
+                    <!-- Prevents JUnit 3 being used, which ignores @Test methods -->
+                    <junitArtifactName>org.apache.servicemix.bundles:org.apache.servicemix.bundles.junit</junitArtifactName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.servicemix.bundles</groupId>
+                <artifactId>org.apache.servicemix.bundles.junit</artifactId>
+                <version>${junit.version}_${junit.bundle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.wink</groupId>
+                <artifactId>wink-client</artifactId>
+                <version>1.1.3-incubating</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>1.4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>1.10.8</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-all</artifactId>
+                <version>1.3</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <properties>
+        <junit.version>4.12</junit.version>
+        <junit.bundle.version>1-atlassian-7</junit.bundle.version>
+        <junit3.version>3.8.2</junit3.version>
+        <felix.version>3.0.2</felix.version>
+        <gson.version>2.8.0</gson.version>
+        <osgi.manifest.version>1.0.0</osgi.manifest.version>
+        <amps.version>5.0.4</amps.version>
+        <atlassian.upm.version>2.15</atlassian.upm.version>
+    </properties>
+</project>

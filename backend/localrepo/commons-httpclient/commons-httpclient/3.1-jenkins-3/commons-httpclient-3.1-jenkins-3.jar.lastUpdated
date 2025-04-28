@@ -1,0 +1,25 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 06:51:15 BRT 2025
+https\://repository.mulesoft.org/releases/.error=
+https\://repo.jenkins-ci.org/releases/.lastUpdated=1743760275601
+https\://repo1.maven.org/maven2/.error=
+https\://releases.aspose.com/java/repo/.lastUpdated=1743760269740
+https\://repository.mulesoft.org/nexus/content/repositories/public/.error=
+https\://clojars.org/repo/.error=
+https\://clojars.org/repo/.lastUpdated=1743760270595
+https\://plugins.gradle.org/m2/.error=
+https\://repo1.maven.org/maven2/.lastUpdated=1743760257540
+https\://repository.mulesoft.org/releases/.lastUpdated=1743760271497
+https\://maven.anypoint.mulesoft.com/api/v1/maven/.lastUpdated=1743760268846
+https\://plugins.gradle.org/m2/.lastUpdated=1743760268245
+https\://releases.aspose.com/java/repo/.error=
+https\://repo.typesafe.com/typesafe/releases/.lastUpdated=1743760272645
+https\://packages.atlassian.com/artifactory/maven-atlassian-all/.error=
+https\://maven.anypoint.mulesoft.com/api/v1/maven/.error=
+https\://repository.mulesoft.org/nexus/content/repositories/public/.lastUpdated=1743760271947
+https\://repo.terracotta.org/maven2/.lastUpdated=1743760267253
+https\://repo.terracotta.org/maven2/.error=
+https\://repository.sonatype.org/content/repositories/forge/.error=
+https\://repository.sonatype.org/content/repositories/forge/.lastUpdated=1743760271051
+https\://packages.atlassian.com/artifactory/maven-atlassian-all/.lastUpdated=1743760265409
+https\://repo.typesafe.com/typesafe/releases/.error=

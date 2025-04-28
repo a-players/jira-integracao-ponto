@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>6.0.7</version>
+    </parent>
+
+    <groupId>com.atlassian.plugins.rest</groupId>
+    <artifactId>atlassian-rest-parent</artifactId>
+    <version>8.0.0-m19</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian REST - Parent POM</name>
+    <licenses>
+        <license>
+            <name>BSD License</name>
+            <url>http://opensource.org/licenses/BSD-3-Clause</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <modules>
+        <module>atlassian-rest-base</module>
+        <module>atlassian-rest-exported-libraries</module>
+        <module>atlassian-rest-v2-base</module>
+        <module>atlassian-rest-v2-exported-libraries</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:atlassian/atlassian-rest.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:atlassian/atlassian-rest.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-rest</url>
+        <tag>atlassian-rest-parent-8.0.0-m19</tag>
+    </scm>
+    <issueManagement>
+        <system>Jira</system>
+        <url>https://ecosystem.atlassian.net/browse/REST</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://ecosystem-bamboo.internal.atlassian.com/browse/REST</url>
+    </ciManagement>
+
+    <properties>
+        <!-- REST v1 -->
+        <!-- Dependencies exported through the plugin -->
+        <jersey.version>1.19.5-atlassian-17</jersey.version>
+        <!-- TODO REST-391, REST-400, REST-402: Upgrade to 1.9.14 if and when it is released -->
+        <jackson.version>1.9.14-atlassian-6</jackson.version>
+        <jackson.osgi.version>1.9.13</jackson.osgi.version>
+        <java.ws.version>1.1.1</java.ws.version>
+
+        <!-- Sync with platform. -->
+        <!-- Used in REST v1 plugin for com.fasterxml.jackson.annotation OSGi import and export. -->
+        <!-- This property will be removed, when REST v1 is no longer supported. -->
+        <fasterxml.jackson.version>2.15.3</fasterxml.jackson.version>
+
+        <refimpl.rest.version>1</refimpl.rest.version>
+        <refimpl2.rest.version>2</refimpl2.rest.version>
+
+        <!-- REST v2 -->
+        <java.ws2.version>2.1.6</java.ws2.version>
+        <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
+
+        <!-- common -->
+        <platform.version>7.0.0-m49</platform.version>
+        <amps.version>8.11.0</amps.version>
+        <tomcat.version>tomcat9x</tomcat.version>
+        <confluence.version>8.0.4</confluence.version>
+
+        <!-- internal compiled dependencies -->
+        <asm.version>9.5</asm.version>
+        <osgi.javaconfig.version>0.6.0</osgi.javaconfig.version>
+        <bytebuddy.version>1.14.11</bytebuddy.version>
+
+        <!-- Test dependencies -->
+        <junit.version>4.13.2</junit.version>
+        <mockito-core.version>2.28.2</mockito-core.version>
+        <hamcrest.version>1.3</hamcrest.version>
+        <system-rules.version>1.19.0</system-rules.version>
+        <commons-httpclient.version>3.1-atlassian-2</commons-httpclient.version>
+        <json-lib.version>2.4</json-lib.version>
+        <json-lib.classifier>jdk15</json-lib.classifier>
+        <jaxb.runtime.version>2.3.6</jaxb.runtime.version>
+        <commons.lang.version>2.6</commons.lang.version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.6.3</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

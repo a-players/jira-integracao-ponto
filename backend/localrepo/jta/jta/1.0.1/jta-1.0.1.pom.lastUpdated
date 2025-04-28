@@ -1,0 +1,29 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 06:25:45 BRT 2025
+https\://repository.mulesoft.org/releases/.error=
+https\://repo.jenkins-ci.org/releases/.lastUpdated=1743758745007
+https\://repo.jenkins-ci.org/releases/.error=
+https\://clojars.org/repo/.error=
+https\://clojars.org/repo/.lastUpdated=1743758741504
+https\://plugins.gradle.org/m2/.error=
+https\://packages.atlassian.com/artifactory/maven-atlassian-all/.error=
+https\://maven.anypoint.mulesoft.com/api/v1/maven/.error=
+https\://repository.mulesoft.org/nexus/content/repositories/public/.lastUpdated=1743758743028
+https\://repo.terracotta.org/maven2/.lastUpdated=1743758739193
+https\://repo.terracotta.org/maven2/.error=
+https\://repository.sonatype.org/content/repositories/forge/.lastUpdated=1743758742188
+https\://repository.sonatype.org/content/repositories/forge/.error=
+https\://packages.atlassian.com/artifactory/maven-atlassian-all/.lastUpdated=1743758737396
+https\://repo1.maven.org/maven2/.error=
+https\://releases.aspose.com/java/repo/.lastUpdated=1743758740633
+https\://repository.mulesoft.org/nexus/content/repositories/public/.error=
+https\://repository.mulesoft.org/releases/.lastUpdated=1743758742811
+https\://repo1.maven.org/maven2/.lastUpdated=1743758736932
+https\://maven.anypoint.mulesoft.com/api/v1/maven/.lastUpdated=1743758740075
+https\://repo.maven.apache.org/maven2/.lastUpdated=1743758745055
+https\://releases.aspose.com/java/repo/.error=
+https\://plugins.gradle.org/m2/.lastUpdated=1743758739309
+https\://repo.typesafe.com/typesafe/releases/.lastUpdated=1743758744214
+file\://C\:\\Users\\FernandoHorn/localrepo/.lastUpdated=1743752753616
+https\://repo.maven.apache.org/maven2/.error=
+https\://repo.typesafe.com/typesafe/releases/.error=

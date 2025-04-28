@@ -1,0 +1,242 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>151</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;asc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;asc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>156</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;desc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;desc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>25</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>169</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison switchcount == 0 may cause unexpected type coercion #loc</description>
+  <highlighted_element>switchcount == 0</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>169</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;asc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;asc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>38</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>54</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>47</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>124</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>47</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>179</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>47</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js</file>
+  <line>234</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApproval/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>47</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>122</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>59</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>69</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>111</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison item.horasPonto == '?' may cause unexpected type coercion #loc</description>
+  <highlighted_element>item.horasPonto == '?'</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>67</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>159</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;asc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;asc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>164</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;desc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;desc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>25</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>177</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison switchcount == 0 may cause unexpected type coercion #loc</description>
+  <highlighted_element>switchcount == 0</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>177</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;asc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;asc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>38</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>156</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;asc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;asc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>161</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;desc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;desc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>25</offset>
+  <length>13</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>174</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison switchcount == 0 may cause unexpected type coercion #loc</description>
+  <highlighted_element>switchcount == 0</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>18</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>174</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison dir == &quot;asc&quot; may cause unexpected type coercion #loc</description>
+  <highlighted_element>dir == &quot;asc&quot;</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>38</offset>
+  <length>12</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js</file>
+  <line>60</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js" />
+  <problem_class id="JSEqualityComparisonWithCoercion" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Equality operator may cause type coercion</problem_class>
+  <description>Comparison element[0] == currentPage may cause unexpected type coercion #loc</description>
+  <highlighted_element>element[0] == currentPage</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>80</offset>
+  <length>25</length>
+</problem>
+</problems>

@@ -1,0 +1,98 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>166</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;Node&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>row</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>35</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>155</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;Node&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>row</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>37</offset>
+  <length>3</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js</file>
+  <line>201</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;(prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;undefined&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;undefined&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>i</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>42</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js</file>
+  <line>210</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;(prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;undefined&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;undefined&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>currentPeriodIndex - 1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>30</offset>
+  <length>22</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js</file>
+  <line>215</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/aprovacao/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;(prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;undefined&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;undefined&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>+currentPeriodIndex + 1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>30</offset>
+  <length>23</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js</file>
+  <line>104</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;((prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;|&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;&quot;&gt;(prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>23</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js</file>
+  <line>109</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;((prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;|&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;&quot;&gt;(prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>23</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js</file>
+  <line>173</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/pages/cadastro/index.js" />
+  <problem_class id="JSCheckFunctionSignatures" severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Signature mismatch</problem_class>
+  <description>&lt;html&gt;Argument type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to parameter type &lt;code&gt;&lt;span style=&quot;&quot;&gt;((prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;|&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;br/&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Type &lt;code&gt;&lt;span style=&quot;color:#000080;&quot;&gt;number&lt;/span&gt;&lt;/code&gt; is not assignable to type &lt;code&gt;&lt;span style=&quot;&quot;&gt;(prevState:&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&amp;#32;=&amp;gt;&amp;#32;&lt;/span&gt;&lt;span style=&quot;color:#000080;&quot;&gt;string&lt;/span&gt;&lt;/code&gt;&lt;/html&gt;</description>
+  <highlighted_element>1</highlighted_element>
+  <language>ECMAScript 6</language>
+  <offset>23</offset>
+  <length>1</length>
+</problem>
+</problems>

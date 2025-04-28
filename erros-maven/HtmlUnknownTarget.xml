@@ -1,0 +1,2426 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/email.html</file>
+  <line>753</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/email.html" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file '%%TIMESHEET_URL%%'</description>
+  <highlighted_element>%%TIMESHEET_URL%%</highlighted_element>
+  <language>HTML</language>
+  <offset>123</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/src/main/resources/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/email.html</file>
+  <line>753</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/email.html" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file '%%TIMESHEET_URL%%'</description>
+  <highlighted_element>%%TIMESHEET_URL%%</highlighted_element>
+  <language>HTML</language>
+  <offset>123</offset>
+  <length>17</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>18</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>37</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/aprovacao/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>100</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/cadastro/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/logs/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/relatorio/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>50</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>59</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>69</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>5</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.css'</description>
+  <highlighted_element>integracaoponto-main-min.css</highlighted_element>
+  <language>HTML</language>
+  <offset>132</offset>
+  <length>28</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>9</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-1-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-1-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>10</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-2-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-2-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>11</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-3-bundle-min.js'</description>
+  <highlighted_element>integracaoponto-3-bundle-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>31</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'download'</description>
+  <highlighted_element>download</highlighted_element>
+  <language>HTML</language>
+  <offset>22</offset>
+  <length>8</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'resources'</description>
+  <highlighted_element>resources</highlighted_element>
+  <language>HTML</language>
+  <offset>31</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve directory 'com.mindproapps.jira.integracaoponto:integracaoponto-resources'</description>
+  <highlighted_element>com.mindproapps.jira.integracaoponto:integracaoponto-resources</highlighted_element>
+  <language>HTML</language>
+  <offset>41</offset>
+  <length>62</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm</file>
+  <line>12</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/backend/target/classes/templates/webworkers/settings/webapp.vm" />
+  <problem_class id="HtmlUnknownTarget" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved file in a link</problem_class>
+  <description>Cannot resolve file 'integracaoponto-main-min.js'</description>
+  <highlighted_element>integracaoponto-main-min.js</highlighted_element>
+  <language>HTML</language>
+  <offset>104</offset>
+  <length>27</length>
+</problem>
+</problems>

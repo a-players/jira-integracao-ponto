@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 08:53:43 BRT 2025
+alt-jdk1.3-0.07.jar>maven-central=
+alt-jdk1.3-0.07.pom>maven-central=

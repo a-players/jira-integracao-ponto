@@ -1,0 +1,62 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js</file>
+  <line>76</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblAccountHoursReport/index.js" />
+  <problem_class id="JSXDomNesting" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid DOM element nesting</problem_class>
+  <description>'h2' cannot appear as a child of 'thead'</description>
+  <highlighted_element>h2</highlighted_element>
+  <language>XML</language>
+  <offset>21</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js</file>
+  <line>82</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblApprovedTimesheetReport/index.js" />
+  <problem_class id="JSXDomNesting" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid DOM element nesting</problem_class>
+  <description>'h2' cannot appear as a child of 'thead'</description>
+  <highlighted_element>h2</highlighted_element>
+  <language>XML</language>
+  <offset>17</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js</file>
+  <line>79</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblSubmittedTimesheetReport/index.js" />
+  <problem_class id="JSXDomNesting" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid DOM element nesting</problem_class>
+  <description>'h2' cannot appear as a child of 'thead'</description>
+  <highlighted_element>h2</highlighted_element>
+  <language>XML</language>
+  <offset>21</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js</file>
+  <line>80</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnderHoursReport/index.js" />
+  <problem_class id="JSXDomNesting" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid DOM element nesting</problem_class>
+  <description>'h2' cannot appear as a child of 'thead'</description>
+  <highlighted_element>h2</highlighted_element>
+  <language>XML</language>
+  <offset>19</offset>
+  <length>2</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js</file>
+  <line>82</line>
+  <module>jira-integracao-ponto</module>
+  <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/frontend/src/components/tblUnsubHoursReport/index.js" />
+  <problem_class id="JSXDomNesting" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Invalid DOM element nesting</problem_class>
+  <description>'h2' cannot appear as a child of 'thead'</description>
+  <highlighted_element>h2</highlighted_element>
+  <language>XML</language>
+  <offset>18</offset>
+  <length>2</length>
+</problem>
+</problems>

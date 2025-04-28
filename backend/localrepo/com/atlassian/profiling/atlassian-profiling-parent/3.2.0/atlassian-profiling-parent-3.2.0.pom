@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>public-pom</artifactId>
+        <version>5.0.23</version>
+    </parent>
+
+    <groupId>com.atlassian.profiling</groupId>
+    <artifactId>atlassian-profiling-parent</artifactId>
+    <version>3.2.0</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Profiling - Parent POM</name>
+    <description>A simple framework for run-time profiling an application, focused on JEE web applications.
+    </description>
+    <url>http://docs.atlassian.com/${project.artifactId}/${project.version}</url>
+
+    <scm>
+        <connection>scm:git:git@bitbucket.org:atlassian/atlassian-profiling.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:atlassian/atlassian-profiling.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-profiling</url>
+        <tag>atlassian-profiling-parent-3.2.0</tag>
+    </scm>
+
+    <issueManagement>
+        <system>Jira</system>
+        <url>https://ecosystem.atlassian.net/browse/PROF</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://bamboo.developer.atlassian.com/browse/ATLASSIANPROFILING</url>
+    </ciManagement>
+
+    <modules>
+        <module>atlassian-profiling</module>
+        <module>atlassian-dropwizard-metrics</module>
+        <module>atlassian-instrumentation-metrics</module>
+        <module>performance-test</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.atlassian.profiling</groupId>
+                <artifactId>atlassian-profiling</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.profiling</groupId>
+                <artifactId>atlassian-profiling-dropwizard-metrics</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.profiling</groupId>
+                <artifactId>atlassian-instrumentation-metrics</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.instrumentation</groupId>
+                <artifactId>atlassian-instrumentation-core</artifactId>
+                <version>3.0.0-97b9423</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>3.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard.metrics</groupId>
+                <artifactId>metrics-core</artifactId>
+                <version>4.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.25</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.3</version>
+                <scope>provided</scope>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>p6spy</groupId>
+                <artifactId>p6spy</artifactId>
+                <version>1.3</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>2.21.0</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

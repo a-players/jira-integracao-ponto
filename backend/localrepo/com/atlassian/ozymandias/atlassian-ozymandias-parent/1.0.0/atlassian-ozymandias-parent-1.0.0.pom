@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+    <groupId>com.atlassian.pom</groupId>
+    <artifactId>closedsource-pom</artifactId>
+    <version>5.0.21</version>
+    </parent>
+
+    <groupId>com.atlassian.ozymandias</groupId>
+    <artifactId>atlassian-ozymandias-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Atlassian Ozymandias Parent</name>
+    <description>
+        I met a traveller from an antique land
+        Who said: "Two vast and trunkless legs of stone
+        Stand in the desert. Near them on the sand,
+        Half sunk, a shattered visage lies, whose frown
+        And wrinkled lip and sneer of cold command
+        Tell that its sculptor well those passions read
+        Which yet survive, stamped on these lifeless things,
+        The hand that mocked them and the heart that fed.
+        And on the pedestal these words appear:
+        `My name is Ozymandias, King of Plugins:
+        Look on your lack of try catches, ye mighty, and despair!'
+
+        Nothing beside remains. Round the decay
+        Of that colossal wreck, boundless and bare
+        The lone and level sands stretch far away
+    </description>
+
+    <modules>
+        <module>ozymandias</module>
+    </modules>
+
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.org/atlassian/atlassian-ozymandias.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/atlassian/atlassian-ozymandias.git</developerConnection>
+        <url>https://bitbucket.org/atlassian/atlassian-ozymandias</url>
+      <tag>atlassian-ozymandias-parent-1.0.0</tag>
+  </scm>
+
+    <properties>
+        <platform.version>5.0.0-m2</platform.version>
+        <maven.javadoc.plugin.version>3.0.1</maven.javadoc.plugin.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.atlassian.platform</groupId>
+                <artifactId>platform</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform</groupId>
+                <artifactId>third-party</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

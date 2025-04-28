@@ -1,0 +1,2443 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>closedsource-private-pom</artifactId>
+        <version>6.3.6</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.atlassian.crowd</groupId>
+    <artifactId>atlassian-crowd</artifactId>
+
+    <name>Atlassian Crowd</name>
+    <url>http://www.atlassian.com/software/crowd/</url>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://jira.atlassian.com/browse/CWD</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Bamboo</system>
+        <url>https://extranet-bamboo.internal.atlassian.com/browse/CWD</url>
+    </ciManagement>
+
+    <packaging>pom</packaging>
+    <version>6.0.6</version>
+
+    <properties>
+        <!-- Use this instead of the "arguments" property of maven-release-plugin -->
+        <crowd.license>SERVER</crowd.license>
+        <crowd.license.upgradedc>false</crowd.license.upgradedc>
+        <test.listener>org.junit.runner.notification.RunListener</test.listener>
+        <release.extra.arguments />
+        <buildNumber>2096</buildNumber>
+        <jdkLevel>17</jdkLevel>
+        <maven.compiler.source>${jdkLevel}</maven.compiler.source>
+        <maven.compiler.target>${jdkLevel}</maven.compiler.target>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+        <third.party.licensing.licenses.dir>${user.dir}/third-party-licensing/licenses</third.party.licensing.licenses.dir>
+
+        <!-- Regarding the additional Javadoc parameters below:
+            - The first two options are inherited from the base pom
+            - The -Xdoclint:-reference option is currently necessary because we have broken references in our Javadoc, see CWD-4528
+        -->
+        <javadoc.additional.doclint.params>all,-missing,-reference</javadoc.additional.doclint.params>
+
+        <!-- Versioning info for common infrastructure -->
+        <!-- Make sure to keep <upm.version> used by CI in sync with platform defined version -->
+        <platform.version>7.0.27</platform.version>
+        <upm.version>7.0.21</upm.version>
+        <atlassian.atst.version>2.4.0</atlassian.atst.version>
+        <atlassian.healthcheck.version>8.0.0-m04</atlassian.healthcheck.version>
+        <atlassian.panopticon-api.version>2.0.1</atlassian.panopticon-api.version>
+
+        <!-- ____________ com.atlassian.platform.dependencies:platform-system-classpath ____________ -->
+        <atlassian-hibernate-extras.version>6.1.1</atlassian-hibernate-extras.version>
+        <atlassian-csv.version>1.0</atlassian-csv.version>
+        <atlassian-osgi-config.version>0.6.0</atlassian-osgi-config.version>
+        <password.cipher.version>1.4.1</password.cipher.version>
+
+        <commons-beanutils.version>1.9.4</commons-beanutils.version>
+        <commons-validator.version>1.8.0</commons-validator.version>
+        <commons-pool2.version>2.12.0</commons-pool2.version>
+        <commons-lang.version>2.6</commons-lang.version>
+        <findbugs-annotations.version>3.0.1</findbugs-annotations.version>
+        <jsp.api.version>2.3.6</jsp.api.version>
+        <glassfish.jaxb.version>2.3.1</glassfish.jaxb.version>
+        <log4j2.version>2.22.1</log4j2.version>
+        <json-smart.version>2.4.11</json-smart.version>
+        <xml-apis.version>1.4.01</xml-apis.version>
+        <!-- used to be 1.3.0; KRAK-5441: 2.2.6 is the oldest non-vulnerable version -->
+        <xml-security.version>2.2.6</xml-security.version>
+        <!-- TODO: Migrate to Platform versions -->
+        <atlassian-profiling.version>4.4.0</atlassian-profiling.version>
+        <atlassian-config.version>1.2.0</atlassian-config.version>
+        <atlassian-secure-xml.version>4.1.0</atlassian-secure-xml.version>
+        <atlassian-template-renderer.version>5.1.1</atlassian-template-renderer.version>
+        <ehcache.version>2.10.10-atlassian-2</ehcache.version>
+        <jsr305.version>3.0.0</jsr305.version>
+
+        <jakarta.mail.version>1.6.7</jakarta.mail.version>
+        <jakarta-activation.version>1.2.2</jakarta-activation.version>
+        <javax.el-api.version>2.2.5</javax.el-api.version>
+        <javax-transaction.version>1.1</javax-transaction.version>
+
+        <!-- Crowd actually uses 'com.springsource.net.jcip.annotations', and not 'net.jcip:jcip-annotations'  -->
+        <jcip.annotations.version>1.0.0</jcip.annotations.version>
+        <!-- Used to define plugin dependency. Should be consistent with platform -->
+        <!-- TODO: Migrate to new Fugue -->
+        <ow2.asm.version>9.5</ow2.asm.version>
+
+        <!-- ____________ com.atlassian.platform.dependencies:platform-bundled-plugins ____________ -->
+        <atlassian-jslibs.version>1.3.0</atlassian-jslibs.version>
+
+        <!-- TODO: Migrate to Platform versions -->
+        <atlassian.aui.version>8.0.12</atlassian.aui.version>
+
+        <!-- ____________ com.atlassian.platform.dependencies:platform-test-resources ____________ -->
+        <spring.test.version>5.3.26</spring.test.version>
+        <atlassian-functest-plugin.version>3.0.0</atlassian-functest-plugin.version>
+        <atlassian-quickreload.version>3.2.1</atlassian-quickreload.version>
+        <atlassian-test-annotations.version>2.5</atlassian-test-annotations.version>
+        <atlassian-ldap-test-webapp.version>5</atlassian-ldap-test-webapp.version>
+        <!-- TODO: Remove 'atlassian-browsers-auto' override once the transitive dependency is upgraded in com.atlassian.selenium:atlassian-pageobjects-elements -->
+        <atlassian.selenium.version>3.3.2</atlassian.selenium.version>
+        <atlassian-browsers-auto.version>3.2.0</atlassian-browsers-auto.version>
+        <maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
+
+        <!-- ____________ com.atlassian.platform.dependencies:platform-framework-bundles ____________ -->
+        <!--
+             TODO: Remove this explicit override and migrate to platform version in next Major release
+             This property is not used by maven - application-provided-plugins.txt and application-required-plugins.txt
+             The version is part of the plugin key, so make sure to sync this version with platform.
+        -->
+        <plugin.servicemix.bundles.velocity.version>1.6.4_4</plugin.servicemix.bundles.velocity.version>
+
+        <!-- ____________ Platform maven-plugins ____________ -->
+        <atlassian.spring.scanner.version>4.0.0</atlassian.spring.scanner.version>
+        <atlassian-source-distribution-maven-plugin.version>4.2.6</atlassian-source-distribution-maven-plugin.version>
+        <atlassian-artifactory-maven-plugin.version>2.0.0</atlassian-artifactory-maven-plugin.version>
+        <atlassian-license-maven-plugin.version>1.0.1</atlassian-license-maven-plugin.version>
+        <atlassian-licensing-bom-maven-plugin.version>1.0.0</atlassian-licensing-bom-maven-plugin.version>
+        <idea-maven-plugin.version>2.3-atlassian-10</idea-maven-plugin.version>
+        <atlassian-bundled-plugins-maven-plugin.version>2.2</atlassian-bundled-plugins-maven-plugin.version>
+
+        <atlassian.sdk.version>9.1.1</atlassian.sdk.version>
+        <amps.atlassian.config.version>1.1.4</amps.atlassian.config.version>
+        <!-- The OSGi version to import -->
+        <slf4j.osgi.version>1.7.36</slf4j.osgi.version>
+
+        <!-- ________________________ Platform Imports _________________________ -->
+
+        <!-- ___________________________________________________________________ -->
+
+        <!-- __________________   Crowd Specific Dependencies __________________ -->
+
+        <!--
+            The version of jakarta.servlet-api declared here should be consistent with the one bundled in Tomcat.
+            The reason for this is that we do not bundle jakarta.servlet-api in Crowd, but we do use it to compile
+            several Crowd components. At runtime, all jakarta.servlet-api functionalities are provided by the
+            version bundled in Tomcat.
+        -->
+
+        <tomcat.version>9.0.95</tomcat.version>
+        <tomcat.artifact.version>${tomcat.version}-atlassian-hosted</tomcat.artifact.version> <!-- atlassian-hosted tomcat artifacts seem to be a remainder of old build engineering requirements present across DC products, but no concrete reason could be found - KRAK-4097 -->
+        <cargo.containerid>tomcat9x</cargo.containerid>
+
+        <!-- KRAK-844: the Atlassian version of Struts is necessary to support runtime plugin reloading via UPM -->
+        <struts.version>2.5.33</struts.version>
+        <struts-atlassian.version>2.5.33-atlassian-1</struts-atlassian.version>
+
+        <opensymphony.propertyset.version>1.3-21Nov03</opensymphony.propertyset.version>
+        <opensymphony.oscore.version>2.3.0-atlassian-1</opensymphony.oscore.version>
+        <opensymphony.sitemesh.version>2.3</opensymphony.sitemesh.version>
+
+        <hibernate.version>5.4.33.Final</hibernate.version>
+        <liquibase.version>4.16.1</liquibase.version>
+        <c3p0.version>0.9.5.5</c3p0.version>
+        <jtds.version>1.3.1</jtds.version>
+        <urlrewritefilter.version>4.0.3</urlrewritefilter.version>
+        <opensaml.version>3.4.6</opensaml.version>
+        <openxri.version>1.2.1</openxri.version>
+        <javassist.version>3.18.1-GA</javassist.version>
+        <antlr.version>3.5.2</antlr.version>
+        <antlr3-maven-plugin.version>3.4</antlr3-maven-plugin.version>
+
+        <scala-maven-plugin.version>3.2.1</scala-maven-plugin.version>
+        <gatling.version>3.4.2</gatling.version>
+        <gatling.maven.plugin.version>3.1.0</gatling.maven.plugin.version>
+        <gatling.scala.version>2.12.13</gatling.scala.version>
+        <gatling.scala.major.version>2.12</gatling.scala.major.version>
+        <!-- This logback version is excluded from gatling -->
+        <logback.version>1.3.0-alpha5</logback.version>
+
+        <org.glassfish.jersey.version>2.39.1</org.glassfish.jersey.version>
+        <wiremock.version>2.33.2</wiremock.version>
+
+        <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+        <node.version>v18.19.1</node.version>
+        <yarn.version>v1.22.19</yarn.version>
+
+        <!-- Distribution Dependencies -->
+        <xmltask.version>1.16</xmltask.version>
+        <hsqldb.version>2.7.2</hsqldb.version>
+        <antrun-maven-plugin.version>1.7</antrun-maven-plugin.version>
+        <wadl-maven-plugin.version>1.19</wadl-maven-plugin.version>
+        <xml-maven-plugin.version>1.0</xml-maven-plugin.version>
+        <maven-enforcer-plugin.version>1.3.1</maven-enforcer-plugin.version>
+        <maven-assembly-plugin.version>3.1.0</maven-assembly-plugin.version>
+        <maven-war-plugin.version>3.0.0</maven-war-plugin.version>
+        <maven-jar-plugin.version>2.3.2</maven-jar-plugin.version>
+        <clirr-maven-plugin.version>2.7</clirr-maven-plugin.version>
+        <docker-maven-plugin.version>0.44.0</docker-maven-plugin.version>
+        <duplicate-finder-maven-plugin.version>1.2.1</duplicate-finder-maven-plugin.version>
+        <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
+        <!-- Database Drivers included in distribution-->
+        <postgresql.version>42.6.2</postgresql.version>
+        <snakeyaml.version>2.0</snakeyaml.version>
+        <swagger.dc.version>2.0.0-alpha-1</swagger.dc.version>
+        <swagger.version>2.2.20</swagger.version>
+        <swagger.parser.version>2.1.22</swagger.parser.version>
+
+        <ojdbc.version>12.2.0.1</ojdbc.version>
+
+        <!-- Test Dependencies -->
+        <junit.version>4.13.2</junit.version>
+        <hamcrest.version>2.2</hamcrest.version>
+        <hamcrest.junit.version>2.0.0.0</hamcrest.junit.version>
+        <mockito.version>3.9.0</mockito.version>
+        <jmock.version>1.2.0</jmock.version>
+        <assertj.version>3.18.1</assertj.version>
+        <rest-assured.version>4.5.1</rest-assured.version>
+        <xmlunit.version>1.5</xmlunit.version>
+
+        <reflections.version>0.9.10</reflections.version>
+        <jsonpath.version>2.9.0</jsonpath.version>
+        <easyrandom.version>4.3.0</easyrandom.version>
+        <system-rules.version>1.18.0</system-rules.version>
+        <asynchttpclient.version>2.12.2</asynchttpclient.version>
+        <boon-json.version>0.6.6</boon-json.version>
+        <jwebunit.version>3.4-atlassian-1-m02</jwebunit.version>
+        <exec-maven-plugin.version>1.2.1</exec-maven-plugin.version>
+        <failsafe-maven-plugin.version>3.0.0-M5</failsafe-maven-plugin.version>
+
+        <testcontainers.version>1.15.1</testcontainers.version>
+        <cargo-maven-plugin.version>1.9.0</cargo-maven-plugin.version>
+        <mysql.driver.version>8.0.26</mysql.driver.version>
+        <spring-test-dbunit.version>1.2.0</spring-test-dbunit.version>
+        <h2.version>1.4.200</h2.version>
+        <apacheds-server-jndi.version>1.5.7</apacheds-server-jndi.version>
+        <mockserver.version>5.15.0</mockserver.version>
+        <netty.version>4.1.62.Final</netty.version>
+        <greenmail.version>1.4.0</greenmail.version>
+        <dbunit.version>2.7.2</dbunit.version>
+        <dbunit-maven-plugin.version>1.0-beta-3</dbunit-maven-plugin.version>
+        <sql-maven-plugin.version>1.4</sql-maven-plugin.version>
+        <groovy-maven-plugin.version>2.0</groovy-maven-plugin.version>
+        <build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
+
+        <!-- Test Settings -->
+        <crowd.cargo.goal>start</crowd.cargo.goal>
+
+        <cargo.timeout>240000</cargo.timeout>
+        <skipTests>false</skipTests>
+        <skipUTs>${skipTests}</skipUTs>
+
+        <!-- used by the 'checkstyle' profile inherited from the parent pom -->
+        <atlassian.codestyle>platform:1.0.1</atlassian.codestyle>
+        <api.baseline.version>3.1.1</api.baseline.version>
+
+        <hsqldb.version>2.7.2</hsqldb.version>
+
+        <crowd.home>${project.build.directory}/crowd-home</crowd.home>
+        <argLine>-Xmx1024m -Dcrowd.home=${crowd.home}</argLine>
+
+        <!-- SonarQube -->
+        <sonar.maven.plugin.version>3.9.1.2184</sonar.maven.plugin.version>
+        <jacoco.maven.plugin.version>0.8.10</jacoco.maven.plugin.version>
+        <sonar.exclusions>
+            **/*Test.java,
+            **/tests/**,
+            **/acceptance/**,
+            **/crowd-integration-tests/**,
+            **/crowd-pageobjects/**,
+            **/crowd-test-runner/**,
+            **/components/crowd-acceptance-test/**,
+            **/components/crowd-bundled-plugins/**,
+            **/components/crowd-test-utils/**
+        </sonar.exclusions>
+        <sonar.test.exclusions>
+            **/test/**
+        </sonar.test.exclusions>
+        <sonar.coverage.jacoco.xmlReportPaths>
+            ${user.dir}/crowd-test-runner/crowd-jacoco-report/target/site/jacoco-aggregate/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
+        <jacoco.ut.argLine />
+
+        <!-- BEGIN.AMPS.CONTAINER.PROPERTIES -->
+        <!-- Properties for AMPS to decide which tomcat version use when starting Crowd. For visit go/amps-autocontainer -->
+        <!-- windows-x64 works on both Linux-like and Windows systems - it contains extra binaries for Windows x64 - https://apache.mirrors.tworzy.net/tomcat/tomcat-8/v8.5.61/README.html -->
+        <amps.product.specific.container>org.apache.tomcat:apache-tomcat:${tomcat.artifact.version}:windows-x64</amps.product.specific.container>
+        <!-- List of containers supported by cargo-maven-plugin: https://codehaus-cargo.github.io/cargo/Containers.html -->
+        <amps.product.specific.cargo.container>${cargo.containerid}</amps.product.specific.cargo.container>
+        <!-- END.AMPS.CONTAINER.PROPERTIES -->
+
+        <!-- FE SBOM properties -->
+        <fe.yarn.build.args />
+        <fe.yarn.build.type />
+        <!-- We need to limit max workers spawned by jest testing library,
+         in order to avoid exceeding memory limit in certain environments (ie. Bamboo PBC) -->
+        <fe.yarn.test.maxWorkers>3</fe.yarn.test.maxWorkers>
+        <yarn.install.network.timeout>60000</yarn.install.network.timeout>
+    </properties>
+
+    <prerequisites>
+        <maven>3.6.3</maven>
+    </prerequisites>
+
+    <scm>
+        <connection>scm:git:ssh://git@stash.atlassian.com:7997/CWD/crowd.git</connection>
+        <developerConnection>scm:git:ssh://git@stash.atlassian.com:7997/CWD/crowd.git</developerConnection>
+        <url>https://stash.atlassian.com/projects/CWD/repos/crowd/</url>
+        <tag>atlassian-crowd-6.0.6</tag>
+    </scm>
+
+    <modules>
+        <module>components</module>
+        <module>crowd-integration-tests</module>
+        <module>crowd-test-runner</module>
+        <module>crowd-pageobjects</module>
+        <module>crowd-maven-plugins</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <id>distribution</id>
+            <modules>
+                <module>distribution</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>end-to-end</id>
+            <modules>
+                <!-- E2E tests depend on docker image build by distribution module -->
+                <module>distribution</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>release</id>
+            <modules>
+                <module>distribution</module>
+            </modules>
+            <properties>
+                <release.extra.arguments>-DskipTests</release.extra.arguments>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.atlassian.maven.plugins</groupId>
+                        <artifactId>license-maven-plugin</artifactId>
+                        <inherited>false</inherited>
+                        <executions>
+                            <execution>
+                                <id>deploy-sources</id>
+                                <phase>deploy</phase>
+                                <goals>
+                                    <goal>open-source-distro</goal>
+                                </goals>
+                                <configuration>
+                                    <deploySources>true</deploySources>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>maven-cargo-wait</id>
+            <activation>
+                <property>
+                    <name>cargo.wait</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <properties>
+                <crowd.cargo.goal>run</crowd.cargo.goal>
+            </properties>
+        </profile>
+        <profile>
+            <id>jacoco</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>jacoco-maven-plugin</artifactId>
+                        <version>${jacoco.maven.plugin.version}</version>
+                        <configuration>
+                            <includes>
+                                <include>com/atlassian/crowd/**/*</include>
+                                <include>com/atlassian/**/crowd/**/*</include>
+                            </includes>
+                        </configuration>
+                        <executions>
+                            <!-- Unit Tests Coverage -->
+                            <execution>
+                                <id>pre-unit-test</id>
+                                <goals>
+                                    <goal>prepare-agent</goal>
+                                </goals>
+                                <configuration>
+                                    <destFile>${project.build.directory}/jacoco-ut.exec</destFile>
+                                    <propertyName>jacoco.ut.argLine</propertyName>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>post-unit-test</id>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>report</goal>
+                                </goals>
+                                <configuration>
+                                    <dataFile>${project.build.directory}/jacoco-ut.exec</dataFile>
+                                    <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>aws-quick-starts</id>
+            <modules>
+                <module>crowd-aws-quick-starts</module>
+            </modules>
+        </profile>
+    </profiles>
+
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- Module dependencies -->
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-db-config-password-cipher-encryptors</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-web-app</artifactId>
+                <type>war</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-server</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-ldap</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-synchronisation</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-persistence</artifactId>
+                <version>${project.version}</version>
+                <type>jar</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-persistence-hibernate5</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-language</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-api</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-password-encoders</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-decorator-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.plugins</groupId>
+                <artifactId>panopticon-api</artifactId>
+                <version>${atlassian.panopticon-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-events</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-application-management</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-admin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-common</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-swagger</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-swagger-extras</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-common</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-test</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-rest-test-api</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-test-utils</artifactId>
+                <version>${project.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-xwork</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-web-app-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-pageobjects</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-beehive-compat</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j.osgi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>${ow2.asm.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-query-language</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-directory-pruning-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>jslibs</artifactId>
+                <version>${atlassian-jslibs.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-apacheds-server</artifactId>
+                <type>war</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- TODO: Remove this override once platform brings cluster-monitoring-plugin v5.0.3 or newer -->
+            <dependency>
+                <groupId>com.atlassian.cluster.monitoring</groupId>
+                <artifactId>cluster-monitoring-plugin</artifactId>
+                <version>5.0.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-monitoring-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-sso-saml</artifactId>
+                <version>${project.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.bouncycastle</groupId>
+                        <artifactId>bcprov-jdk15on</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- analytics/nps -->
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-analytics-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.troubleshooting</groupId>
+                <artifactId>plugin-crowd</artifactId>
+                <version>${atlassian.atst.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>xpp3</groupId>
+                        <artifactId>xpp3</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+
+            <!-- Integration Modules -->
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-test-helper</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-api</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-client-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-client-rest</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-client</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-saml</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-seraph</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-springsecurity</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-integration-springsecurity-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-remote</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-azure-ad</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-server-api</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-server-common</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-server-shared</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-sync-feedback</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Crowd Embedded Modules -->
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>embedded-crowd-spi</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>embedded-crowd-api</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>embedded-crowd-core</artifactId>
+                <type>jar</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Atlassian dependencies -->
+
+            <dependency>
+                <groupId>com.atlassian.plugins</groupId>
+                <artifactId>atlassian-plugins-osgi-javaconfig</artifactId>
+                <version>${atlassian-osgi-config.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-core-tiny</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.profiling</groupId>
+                <artifactId>atlassian-profiling</artifactId>
+                <version>${atlassian-profiling.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-testkit-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.aui</groupId>
+                <artifactId>auiplugin</artifactId>
+                <version>${atlassian.aui.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.aui</groupId>
+                <artifactId>aui-flat-pack</artifactId>
+                <version>${atlassian.aui.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.security</groupId>
+                <artifactId>atlassian-secure-xml</artifactId>
+                <version>${atlassian-secure-xml.version}</version>
+            </dependency>
+
+            <!-- END: Plugin Framework Specific Dependencies -->
+
+            <!-- Other dependencies -->
+
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.dom4j</groupId>
+                        <artifactId>dom4j</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.glassfish.jaxb</groupId>
+                        <artifactId>jaxb-runtime</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-c3p0</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.hibernate</groupId>
+                <artifactId>atlassian-hibernate5.2-extras</artifactId>
+                <version>${atlassian-hibernate-extras.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mchange</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>${c3p0.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>${liquibase.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.yaml</groupId>
+                        <artifactId>snakeyaml</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>ch.qos.logback</groupId>
+                        <artifactId>logback-classic</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons-pool2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${commons-validator.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <!-- slf4j to log4j2 bridging dependency-->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j2-impl</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <!-- log4j to log4j2 bridging dependency-->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-1.2-api</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <!-- log4j to jul bridge dependency-->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-jul</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>jakarta.mail</artifactId>
+                <version>${jakarta.mail.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>${glassfish.jaxb.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>opensymphony</groupId>
+                <artifactId>oscore</artifactId>
+                <version>${opensymphony.oscore.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>opensymphony</groupId>
+                <artifactId>propertyset</artifactId>
+                <version>${opensymphony.propertyset.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>opensymphony</groupId>
+                <artifactId>sitemesh</artifactId>
+                <version>${opensymphony.sitemesh.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.el</groupId>
+                <artifactId>javax.el-api</artifactId>
+                <version>${javax.el-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jakarta.servlet.jsp</groupId>
+                <artifactId>jakarta.servlet.jsp-api</artifactId>
+                <version>${jsp.api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>xml-apis</groupId>
+                <artifactId>xml-apis</artifactId>
+                <version>${xml-apis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>mysql</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>selenium</artifactId>
+                <version>${testcontainers.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.struts</groupId>
+                <artifactId>struts2-core</artifactId>
+                <version>${struts-atlassian.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.struts</groupId>
+                <artifactId>struts2-spring-plugin</artifactId>
+                <version>${struts.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.struts</groupId>
+                <artifactId>struts2-sitemesh-plugin</artifactId>
+                <version>${struts.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.transaction</groupId>
+                <artifactId>jta</artifactId>
+                <version>${javax-transaction.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.csv</groupId>
+                <artifactId>atlassian-csv</artifactId>
+                <version>${atlassian-csv.version}</version>
+            </dependency>
+
+            <!-- ANTLR dependencies -->
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr-runtime</artifactId>
+                <version>${antlr.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.santuario</groupId>
+                <artifactId>xmlsec</artifactId>
+                <version>${xml-security.version}</version>
+                <exclusions>
+                    <!-- It conflicts with org.codehaus.woodstox:wstx-asl:3.2.4 and causes build failure -->
+                    <exclusion>
+                        <groupId>com.fasterxml.woodstox</groupId>
+                        <artifactId>woodstox-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.tuckey</groupId>
+                <artifactId>urlrewritefilter</artifactId>
+                <version>${urlrewritefilter.version}</version>
+            </dependency>
+
+            <!--SAL 4-->
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-sal</artifactId>
+                <type>bundle</type>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>findbugs-annotations</artifactId>
+                <version>${findbugs-annotations.version}</version>
+            </dependency>
+
+            <!-- Start Azure AD dependencies -->
+            <dependency>
+                <groupId>com.nimbusds</groupId>
+                <artifactId>nimbus-jose-jwt</artifactId>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.github.stephenc.jcip</groupId>
+                        <artifactId>jcip-annotations</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>net.minidev</groupId>
+                <artifactId>json-smart</artifactId>
+                <version>${json-smart.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.jcip</groupId>
+                <artifactId>com.springsource.net.jcip.annotations</artifactId>
+                <version>${jcip.annotations.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
+
+            <!-- Start Test Dependencies -->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-core</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${reflections.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.google.code.findbugs</groupId>
+                        <artifactId>annotations</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-random-core</artifactId>
+                <version>${easyrandom.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.stefanbirkner</groupId>
+                <artifactId>system-rules</artifactId>
+                <version>${system-rules.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit-dep</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>jmock</groupId>
+                <artifactId>jmock</artifactId>
+                <version>${jmock.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest</artifactId>
+                <version>${hamcrest.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.dbunit</groupId>
+                <artifactId>dbunit</artifactId>
+                <version>${dbunit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>${rest-assured.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-osgi</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>org.apache.sling.javax.activation</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>jakarta.xml.bind</groupId>
+                        <artifactId>jakarta.xml.bind-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-impl</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-core</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>hamcrest-library</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-ext</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.apache.httpcomponents</groupId>
+                        <artifactId>httpclient</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>org.asynchttpclient</groupId>
+                <artifactId>async-http-client</artifactId>
+		        <version>${asynchttpclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mock-server</groupId>
+                <artifactId>mockserver-netty-no-dependencies</artifactId>
+                <version>${mockserver.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.mock-server</groupId>
+                <artifactId>mockserver-junit-rule</artifactId>
+                <version>${mockserver.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                    <!-- KRAK-7092: the latest mockserver-junit-rule depends on outdated com.nimbusds:nimbus-jose-jwt -->
+                    <exclusion>
+                        <groupId>com.nimbusds</groupId>
+                        <artifactId>nimbus-jose-jwt</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-socks</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler-proxy</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-buffer</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-http</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-common</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-handler</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport-native-epoll</artifactId>
+                <classifier>linux-x86_64</classifier>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport-native-unix-common</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-transport-native-kqueue</artifactId>
+                <classifier>osx-x86_64</classifier>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-resolver-dns</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-dns</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-codec-http2</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.directory.server</groupId>
+                <artifactId>apacheds-server-jndi</artifactId>
+                <version>${apacheds-server-jndi.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>bouncycastle</groupId>
+                        <artifactId>lcrypto-jdk14</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sourceforge.jwebunit</groupId>
+                <artifactId>jwebunit-core</artifactId>
+                <version>${jwebunit.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit-dep</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>jakarta.servlet</groupId>
+                        <artifactId>jakarta.servlet-api</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.selenium</groupId>
+                <artifactId>atlassian-pageobjects-elements</artifactId>
+                <version>${atlassian.selenium.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>com.atlassian.bundles</groupId>
+                        <artifactId>jsr305</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.browsers</groupId>
+                <artifactId>atlassian-browsers-auto</artifactId>
+                <version>${atlassian-browsers-auto.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.config</groupId>
+                <artifactId>atlassian-config</artifactId>
+                <version>${atlassian-config.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.atlassian.johnson</groupId>
+                        <artifactId>atlassian-johnson</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>xmlunit</groupId>
+                <artifactId>xmlunit</artifactId>
+                <version>${xmlunit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.springtestdbunit</groupId>
+                <artifactId>spring-test-dbunit</artifactId>
+                <version>${spring-test-dbunit.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.icegreen</groupId>
+                <artifactId>greenmail</artifactId>
+                <version>${greenmail.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>com.sun.mail</groupId>
+                        <artifactId>jakarta.mail</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- End Test Dependencies -->
+
+            <!-- Start Distribution Dependencies -->
+
+            <dependency>
+                <groupId>com.oopsconsultancy</groupId>
+                <artifactId>xmltask</artifactId>
+                <version>${xmltask.version}</version>
+            </dependency>
+
+            <!-- JDBC Drivers -->
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>${hsqldb.version}</version>
+                <classifier>jdk8</classifier>
+            </dependency>
+
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.driver.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.oracle.database.jdbc</groupId>
+                <artifactId>ojdbc8</artifactId>
+                <version>${ojdbc.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>*</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sourceforge.jtds</groupId>
+                <artifactId>jtds</artifactId>
+                <version>${jtds.version}</version>
+            </dependency>
+            <!-- End Distribution Dependencies -->
+
+            <!-- New platform dependencies -->
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-public-api</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-deprecated-public-api</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-internal-api</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-system-classpath</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-bundled-plugins</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-test-resources</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-framework-bundles</artifactId>
+                <version>${platform.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <!-- platform version overrides -->
+
+            <dependency>
+                <groupId>com.atlassian.healthcheck</groupId>
+                <artifactId>atlassian-healthcheck</artifactId>
+                <version>${atlassian.healthcheck.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.healthcheck</groupId>
+                <artifactId>atlassian-healthcheck-spi</artifactId>
+                <version>${atlassian.healthcheck.version}</version>
+            </dependency>
+
+            <!-- START - Dependencies that are not provided by new-platform anymore -->
+            <!-- Beginning: Spring deps -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.test.version}</version>
+            </dependency>
+
+            <!-- End: Spring deps -->
+            <dependency>
+                <groupId>com.sun.activation</groupId>
+                <artifactId>jakarta.activation</artifactId>
+                <version>${jakarta-activation.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.functest</groupId>
+                <artifactId>functest-plugin</artifactId>
+                <version>${atlassian-functest-plugin.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hamcrest</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>io.advantageous.boon</groupId>
+                <artifactId>boon-json</artifactId>
+                <version>${boon-json.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.labs.plugins</groupId>
+                <artifactId>quickreload</artifactId>
+                <version>${atlassian-quickreload.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.opensaml</groupId>
+                <artifactId>opensaml-saml-api</artifactId>
+                <version>${opensaml.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.bouncycastle</groupId>
+                        <artifactId>bcprov-jdk15on</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.opensaml</groupId>
+                <artifactId>opensaml-saml-impl</artifactId>
+                <version>${opensaml.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.bouncycastle</groupId>
+                        <artifactId>bcprov-jdk15on</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-frontend-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.crowd</groupId>
+                <artifactId>crowd-hibernate5-dialects</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>atlassian-spring-scanner-annotation</artifactId>
+                <version>${atlassian.spring.scanner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>atlassian-spring-scanner-runtime</artifactId>
+                <version>${atlassian.spring.scanner.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.db.config</groupId>
+                <artifactId>password-cipher-api</artifactId>
+                <version>${password.cipher.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.bouncycastle</groupId>
+                        <artifactId>bcprov-jdk15on</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.db.config</groupId>
+                <artifactId>password-cipher-base</artifactId>
+                <version>${password.cipher.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.bouncycastle</groupId>
+                        <artifactId>bcprov-jdk15on</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.atlassian.testutils</groupId>
+                <artifactId>atlassian-test-annotations</artifactId>
+                <version>${atlassian-test-annotations.version}</version>
+            </dependency>
+
+            <!-- org.glassfish.jersey v2 -->
+            <dependency>
+                <groupId>org.glassfish.jersey.core</groupId>
+                <artifactId>jersey-client</artifactId>
+                <version>${org.glassfish.jersey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-json-jackson</artifactId>
+                <version>${org.glassfish.jersey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey.inject</groupId>
+                <artifactId>jersey-hk2</artifactId>
+                <version>${org.glassfish.jersey.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.glassfish.hk2.external</groupId>
+                        <artifactId>aopalliance-repackaged</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-jaxb</artifactId>
+                <version>${org.glassfish.jersey.version}</version>
+            </dependency>
+            <!-- OpenAPI docs -->
+            <dependency>
+                <groupId>com.atlassian.dc.swagger</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${swagger.dc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.dc.swagger</groupId>
+                <artifactId>processor</artifactId>
+                <version>${swagger.dc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger.parser.v3</groupId>
+                <artifactId>swagger-parser</artifactId>
+                <version>${swagger.parser.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger.parser.v3</groupId>
+                <artifactId>swagger-core</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${jsonpath.version}</version>
+            </dependency>
+
+            <!-- wiremock -->
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-jre8</artifactId>
+                <version>${wiremock.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>amps-maven-plugin</artifactId>
+                    <configuration>
+                        <skipBanningDependencies>true</skipBanningDependencies>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <extensions>true</extensions>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.cargo</groupId>
+                    <artifactId>cargo-maven3-plugin</artifactId>
+                    <version>${cargo-maven-plugin.version}</version>
+                    <configuration>
+                        <container>
+                            <containerId>${cargo.containerid}</containerId>
+                            <artifactInstaller>
+                                <groupId>org.apache.tomcat</groupId>
+                                <artifactId>apache-tomcat</artifactId>
+                                <type>zip</type>
+                                <version>${tomcat.artifact.version}</version>
+                                <extractDir>${basedir}/target/cargo-installs</extractDir>
+                            </artifactInstaller>
+                            <timeout>${cargo.timeout}</timeout>
+                        </container>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${antrun-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>${exec-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-idea-plugin</artifactId>
+                    <version>${idea-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>net.alchim31.maven</groupId>
+                    <artifactId>scala-maven-plugin</artifactId>
+                    <version>${scala-maven-plugin.version}</version>
+                    <configuration>
+                        <recompileMode>incremental</recompileMode>
+                        <useZincServer>true</useZincServer>
+                        <args> <!-- for Scala compilation -->
+                            <arg>-target:jvm-${jdkLevel}</arg>
+                            <arg>-Xlint</arg>
+                            <arg>-Xfatal-warnings</arg>
+                            <arg>-deprecation</arg>
+                            <arg>-feature</arg>
+                            <!--
+                            Maximum file name length in an ecryptfs is 143 characters
+                            See https://bugs.launchpad.net/ecryptfs/+bug/344878.
+                            -->
+                            <arg>-Xmax-classfile-name</arg>
+                            <arg>143</arg>
+                        </args>
+                        <sendJavaToScalac>false</sendJavaToScalac>
+                        <!-- Can't fail on multiple Scala versions because we use different versions of 2.10 -->
+                        <failOnMultipleScalaVersions>false</failOnMultipleScalaVersions>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>io.gatling</groupId>
+                    <artifactId>gatling-maven-plugin</artifactId>
+                    <version>${gatling.maven.plugin.version}</version>
+                    <configuration>
+                        <runMultipleSimulations>true</runMultipleSimulations>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>ch.qos.logback</groupId>
+                            <artifactId>logback-classic</artifactId>
+                            <version>${logback.version}</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>ch.qos.logback</groupId>
+                            <artifactId>logback-core</artifactId>
+                            <version>${logback.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>licensing-bom-processor-maven-plugin</artifactId>
+                    <version>${atlassian-licensing-bom-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>xml-maven-plugin</artifactId>
+                    <version>${xml-maven-plugin.version}</version>
+
+                    <dependencies>
+                        <dependency>
+                            <groupId>net.sf.saxon</groupId>
+                            <artifactId>saxon</artifactId>
+                            <version>8.7</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.plugin</groupId>
+                    <artifactId>atlassian-spring-scanner-maven-plugin</artifactId>
+                    <version>${atlassian.spring.scanner.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>atlassian-spring-scanner</goal>
+                            </goals>
+                            <phase>process-classes</phase>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <verbose>false</verbose>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>clirr-maven-plugin</artifactId>
+                    <version>${clirr-maven-plugin.version}</version>
+                    <dependencies>
+                        <!-- workaround https://github.com/mojohaus/clirr-maven-plugin/issues/3 -->
+                        <dependency>
+                            <groupId>com.google.code.findbugs</groupId>
+                            <artifactId>bcel-findbugs</artifactId>
+                            <version>6.0</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <!-- skip in v6.0.0 which introduces many breaking changes -->
+                        <skip>true</skip>
+                        <!--
+                                                <comparisonArtifacts>
+                                                    <comparisonArtifact>
+                                                        <groupId>${project.groupId}</groupId>
+                                                        <artifactId>${project.artifactId}</artifactId>
+                                                        <version>${api.baseline.version}</version>
+                                                    </comparisonArtifact>
+                                                </comparisonArtifacts>
+
+                                                <minSeverity>info</minSeverity>
+                                                <failOnWarning>true</failOnWarning>
+                        -->                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${docker-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sql-maven-plugin</artifactId>
+                    <version>${sql-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.gmaven</groupId>
+                    <artifactId>groovy-maven-plugin</artifactId>
+                    <version>${groovy-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>${failsafe-maven-plugin.version}</version>
+                    <configuration>
+                        <trimStackTrace>false</trimStackTrace>
+                        <properties>
+                            <property>
+                                <name>listener</name>
+                                <value>${test.listener}</value>
+                            </property>
+                        </properties>
+                        <systemPropertyVariables>
+                            <crowd.license>${crowd.license}</crowd.license>
+                            <crowd.license.upgradedc>${crowd.license.upgradedc}</crowd.license.upgradedc>
+                        </systemPropertyVariables>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven-assembly-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>${atlassian-license-maven-plugin.version}</version>
+                    <configuration>
+                        <nonMavenDependenciesFile>third-party-licensing/missing-non-maven-dependencies.properties</nonMavenDependenciesFile>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <configuration>
+                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.eirslett</groupId>
+                    <artifactId>frontend-maven-plugin</artifactId>
+                    <version>${frontend-maven-plugin.version}</version>
+                    <configuration>
+                        <nodeVersion>${node.version}</nodeVersion>
+                        <yarnVersion>${yarn.version}</yarnVersion>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${sonar.maven.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <!-- https://hello.atlassian.net/browse/BUILDENG-17711 -->
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>artifactory-staging-maven-plugin</artifactId>
+                    <version>${atlassian-artifactory-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${build-helper-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>maven-atlassian-source-distribution-plugin</artifactId>
+                    <version>${atlassian-source-distribution-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.atlassian.maven.plugins</groupId>
+                    <artifactId>atlassian-bundled-plugins-maven-plugin</artifactId>
+                    <version>${atlassian-bundled-plugins-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven.javadoc.plugin.version}</version>
+                    <configuration>
+                        <doclint>${javadoc.additional.doclint.params}</doclint>
+                        <additionalJOption>--add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED</additionalJOption>
+                        <!-- All the -tag * options are necessary because of WADL-related tags in crowd-rest-plugin, see CWD-4527 -->
+                        <tags>
+                            <tag>
+                                <name>request.representation.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>request.representation.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>request.representation.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.200.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.200.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.200.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.200.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.201.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.201.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.201.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.201.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.204.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.204.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.204.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.204.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.303.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.303.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.303.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.303.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.400.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.400.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.400.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.400.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.401.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.401.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.401.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.401.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.403.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.403.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.403.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.403.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.404.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.404.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.404.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.404.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.409.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.409.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.409.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.409.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.412.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.412.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.412.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.412.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.500.example</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.500.qname</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.500.mediaType</name>
+                                <placement>X</placement>
+                            </tag>
+                            <tag>
+                                <name>response.representation.500.doc</name>
+                                <placement>X</placement>
+                            </tag>
+                        </tags>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>io.swagger.core.v3</groupId>
+                    <artifactId>swagger-maven-plugin</artifactId>
+                    <version>${swagger.version}</version>
+                    <configuration>
+                        <outputPath>${project.build.directory}/site</outputPath>
+                        <outputFileName>swagger</outputFileName>
+                        <outputFormat>JSONANDYAML</outputFormat>
+                        <prettyPrint>true</prettyPrint>
+                        <scannerClass>com.atlassian.crowd.swagger.enricher.CrowdSwaggerEnricher</scannerClass>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <!-- KRAK-6213: Overriding surefire version from base-pom -->
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.2.5</version>
+                    <configuration>
+                        <excludes>
+                            <exclude>**/*$*</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <inherited>false</inherited>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>setup-idea</id>
+                        <configuration>
+                            <tasks>
+                                <echo>Copying `resources/runConfigurations' to `.idea/runConfigurations'</echo>
+                                <mkdir dir=".idea/runConfigurations" />
+                                <touch>
+                                    <fileset dir=".idea/runConfigurations" />
+                                </touch>
+                                <copy overwrite="false" todir=".idea/runConfigurations">
+                                    <fileset dir="resources/runConfigurations" />
+                                </copy>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>amps-maven-plugin</artifactId>
+                <version>${atlassian.sdk.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <compressResources>false</compressResources>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${maven-enforcer-plugin.version}</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <id>enforce-java</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>${jdkLevel}</version>
+                                </requireJavaVersion>
+                                <requirePluginVersions>
+                                    <message>Best Practice is to always define plugin versions!</message>
+                                </requirePluginVersions>
+                            </rules>
+                        </configuration>
+                    </execution>
+
+                    <!-- Ensure Crowd releases have Maven 3 -->
+                    <execution>
+                        <id>enforce-build-environment</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[3, 4)</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>enforce-no-obsolete-files</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireFilesDontExist>
+                                    <message>Generated files should not be present in src/ directories.</message>
+                                    <files>
+                                        <file>components/crowd-web-app/src/main/resources/atlassian-bundled-plugins-dev.zip</file>
+                                        <file>components/crowd-web-app/src/main/resources/atlassian-bundled-plugins.zip</file>
+                                        <file>components/crowd-integration-api/src/main/java/com/atlassian/crowd/util/build/BuildUtils.java</file>
+                                    </files>
+                                </requireFilesDontExist>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <configuration>
+                    <connectionType>connection</connectionType>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-idea-plugin</artifactId>
+                <configuration>
+                    <downloadSources>false</downloadSources>
+                    <!--<downloadJavadocs>false</downloadJavadocs>-->
+                    <useFullNames>false</useFullNames>
+                    <dependenciesAsLibraries>true</dependenciesAsLibraries>
+                    <jdkName>${jdkLevel}</jdkName>
+                    <jdkLevel>${jdkLevel}</jdkLevel>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <jvm>${env.JAVA_HOME}/bin/java</jvm>
+                    <skipTests>${skipUTs}</skipTests>
+                    <excludes>
+                        <exclude>**/*$*</exclude>
+                    </excludes>
+                    <trimStackTrace>false</trimStackTrace>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>${test.listener}</value>
+                        </property>
+                    </properties>
+                    <systemPropertyVariables>
+                        <crowd.license>${crowd.license}</crowd.license>
+                    </systemPropertyVariables>
+                    <argLine>
+                        @{jacoco.ut.argLine}
+                        -XX:+IgnoreUnrecognizedVMOptions
+                        --add-opens=java.base/java.util=ALL-UNNAMED
+                        --add-opens=java.base/java.lang=ALL-UNNAMED
+                        --add-opens=java.naming/javax.naming.directory=ALL-UNNAMED
+                        --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED
+                        -Duser.language=en -Duser.country=US
+                    </argLine>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <!-- All release builds are for the whole distribution -->
+                    <arguments>-Pdistribution ${release.extra.arguments}</arguments>
+
+                    <preparationGoals>clean verify javadoc:aggregate-jar</preparationGoals>
+                    <goals>clean install javadoc:aggregate-jar deploy</goals>
+
+                    <!-- release:perform also sets -Prelease -->
+                    <releaseProfiles>release</releaseProfiles>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

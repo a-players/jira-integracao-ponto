@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 04 03:33:52 BRT 2025
+atlassian-plugins-osgi-testrunner-2.0.1.jar>atlassian-proxy=
+atlassian-plugins-osgi-testrunner-2.0.1.pom>atlassian-proxy=
