@@ -3,24 +3,25 @@ package com.mindproapps.jira.integracaoponto.webwork;
 import com.atlassian.jira.web.action.ActionViewDataMappings;
 import com.atlassian.jira.web.action.JiraWebActionSupport;
 import com.mindproapps.jira.integracaoponto.conditions.ConditionsHelper;
-import org.springframework.beans.factory.annotation.Autowired;
-import lombok.extern.log4j.Log4j;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.HashMap;
 import java.util.Map;
 
-@Log4j
+@Named
 public class SettingsWebWorkAction extends JiraWebActionSupport {
-    private ConditionsHelper conditionsHelper;
 
-    @Autowired
+    private final ConditionsHelper conditionsHelper;
+
+    @Inject
     public SettingsWebWorkAction(ConditionsHelper conditionsHelper) {
-        log.info("SettingsWebWorkAction: conditionsHelper = " + conditionsHelper);
         this.conditionsHelper = conditionsHelper;
     }
+
     @Override
     public String execute() throws Exception {
-        if(conditionsHelper.hasUserTempoAdminPermissions()) {
+        if (conditionsHelper.hasUserTempoAdminPermissions()) {
             return SUCCESS;
         }
         return "unauthorized";
@@ -32,7 +33,6 @@ public class SettingsWebWorkAction extends JiraWebActionSupport {
 
     @ActionViewDataMappings({"success", "unauthorized"})
     public Map<String, Object> getData() {
-        Map<String, Object> map = new HashMap<>();
-        return map;
+        return new HashMap<>();
     }
 }

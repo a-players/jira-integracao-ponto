@@ -1,29 +1,29 @@
 package com.mindproapps.jira.integracaoponto.conditions;
 
-import com.atlassian.plugin.PluginParseException;
 import com.atlassian.plugin.web.Condition;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.Map;
 import lombok.extern.log4j.Log4j;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.util.Map;
+
 @Log4j
+@Named
 public abstract class BaseCondition implements Condition {
 
-    @Autowired
+    @Inject
     protected ConditionsHelper conditionsHelper;
 
     @Override
-    public void init(Map<String, String> map) throws PluginParseException {
+    public void init(Map<String, String> params) {
         log.info("Inicializando condição do plugin.");
     }
 
     @Override
-    public boolean shouldDisplay(Map<String, Object> map) {
+    public boolean shouldDisplay(Map<String, Object> context) {
         log.info("Verificando se deve exibir a condição.");
         return hasPermissions();
     }
 
     protected abstract Boolean hasPermissions();
-
 }

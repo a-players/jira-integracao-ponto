@@ -6,76 +6,69 @@ import com.mindproapps.jira.integracaoponto.dao.reports.ReportsDAO;
 import com.mindproapps.jira.integracaoponto.exception.NoLoggedUserException;
 import com.mindproapps.jira.integracaoponto.model.dto.period.TimesheetsPeriodDTO;
 import com.mindproapps.jira.integracaoponto.model.dto.ponto.PontoDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.HoursReportsResponseDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.PartialTimesheetReportsDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.TeamDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.AccountDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.CategoryAccountDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.TimesheetReportsDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.TimesheetReportsResponseDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.UnsubmittedHoursDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.AccountTimesheetReportsDTO;
+import com.mindproapps.jira.integracaoponto.model.dto.reports.*;
 import com.mindproapps.jira.integracaoponto.service.ponto.PontoService;
 import com.mindproapps.jira.integracaoponto.service.reports.ReportsService;
 import com.mindproapps.jira.integracaoponto.util.ConversionUtils;
-import com.mindproapps.jira.integracaoponto.util.UnsubmittedHoursDTOComparator;
-import com.mindproapps.jira.integracaoponto.util.AccountHoursDTOComparator;
 import com.mindproapps.jira.integracaoponto.validator.PeriodValidator;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import lombok.extern.log4j.Log4j;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
+@Named
+@Singleton
 @Log4j
 public class ReportsServiceImpl implements ReportsService {
+
+    @Inject
     private ReportsDAO reportsDAO;
+
+    @Inject
     private PeriodValidator periodValidator;
+
+    @Inject
     private PontoService pontoService;
 
-    @Autowired
-    public ReportsServiceImpl(ReportsDAO reportsDAO, PeriodValidator periodValidator, PontoService pontoService) {
-        log.info("ReportsServiceImpl: reportsDAO = " + reportsDAO + ", periodValidator = " + periodValidator + ", pontoService = " + pontoService);
-        this.reportsDAO = reportsDAO;
-        this.periodValidator = periodValidator;
-        this.pontoService = pontoService;
-    }
     @Override
     public TimesheetReportsResponseDTO getTimesheetsApproved(String startDate, String endDate, Integer teamId) {
         log.info("getTimesheetsApproved: startDate = " + startDate + ", endDate = " + endDate + ", teamId = " + teamId);
         LocalDate start = ConversionUtils.convertISODateStringToLocalDate(startDate);
         LocalDate end = ConversionUtils.convertISODateStringToLocalDate(endDate);
         periodValidator.validateDateInterval(start, end);
+
         TimesheetReportsResponseDTO responseDTO = new TimesheetReportsResponseDTO();
         List<TimesheetReportsDTO> all = reportsDAO.getTimesheetsApproved(
                 ConversionUtils.convertLocalDateToISODateString(start),
                 ConversionUtils.convertLocalDateToISODateString(end));
-        if(teamId != null && teamId.intValue() != 0) {
+
+        if (teamId != null && teamId != 0) {
             all = all.stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getTeamId().intValue() == teamId.intValue())
-                    .collect(Collectors.toList());            
+                    .filter(dto -> dto.getTeamId() != null && dto.getTeamId().intValue() == teamId.intValue())
+                    .collect(Collectors.toList());
         }
 
-        List<String> lstEmails = new ArrayList<String>();
+        List<String> lstEmails = new ArrayList<>();
         all.forEach(dto -> {
             dto.updateEmailPonto();
             if (!lstEmails.contains(dto.getEmailPonto())) {
                 lstEmails.add(dto.getEmailPonto());
             }
         });
-        List<PontoDTO> allData = pontoService.getAllData(lstEmails, LocalDate.parse(startDate), LocalDate.parse(endDate)); 
 
+        List<PontoDTO> allData = pontoService.getAllData(lstEmails, start, end);
         ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
         if (user == null || !user.isActive()) {
             throw new NoLoggedUserException();
         }
-        String key = user.getKey();
-        pontoService.setPontoHours(allData, all, key);
+        pontoService.setPontoHours(allData, all, user.getKey());
+
         responseDTO.setApprovedTimesheetsList(all);
         return responseDTO;
     }
@@ -86,31 +79,33 @@ public class ReportsServiceImpl implements ReportsService {
         LocalDate start = ConversionUtils.convertISODateStringToLocalDate(startDate);
         LocalDate end = ConversionUtils.convertISODateStringToLocalDate(endDate);
         periodValidator.validateDateInterval(start, end);
+
         TimesheetReportsResponseDTO responseDTO = new TimesheetReportsResponseDTO();
         List<TimesheetReportsDTO> all = reportsDAO.getTimesheetsSubmitted(
                 ConversionUtils.convertLocalDateToISODateString(start),
                 ConversionUtils.convertLocalDateToISODateString(end));
-        if(teamId != null && teamId.intValue() != 0) {
+
+        if (teamId != null && teamId != 0) {
             all = all.stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getTeamId().intValue() == teamId.intValue())
+                    .filter(dto -> dto.getTeamId() != null && dto.getTeamId().intValue() == teamId.intValue())
                     .collect(Collectors.toList());
         }
 
-        List<String> lstEmails = new ArrayList<String>();
+        List<String> lstEmails = new ArrayList<>();
         all.forEach(dto -> {
             dto.updateEmailPonto();
             if (!lstEmails.contains(dto.getEmailPonto())) {
                 lstEmails.add(dto.getEmailPonto());
             }
         });
-        List<PontoDTO> allData = pontoService.getAllData(lstEmails, LocalDate.parse(startDate), LocalDate.parse(endDate)); 
-        
+
+        List<PontoDTO> allData = pontoService.getAllData(lstEmails, start, end);
         ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
         if (user == null || !user.isActive()) {
             throw new NoLoggedUserException();
         }
-        String key = user.getKey();
-        pontoService.setPontoHours(allData, all, key);
+        pontoService.setPontoHours(allData, all, user.getKey());
+
         responseDTO.setSubmittedTimesheetsList(all);
         return responseDTO;
     }
@@ -121,31 +116,33 @@ public class ReportsServiceImpl implements ReportsService {
         LocalDate start = ConversionUtils.convertISODateStringToLocalDate(startDate);
         LocalDate end = ConversionUtils.convertISODateStringToLocalDate(endDate);
         periodValidator.validateDateInterval(start, end);
+
         HoursReportsResponseDTO hoursReportsResponseDTO = new HoursReportsResponseDTO();
         ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
         if (user == null || !user.isActive()) {
             throw new NoLoggedUserException();
         }
-        String key = user.getKey();
 
-        List<PartialTimesheetReportsDTO> partialTimesheetReportsDTOS = reportsDAO.getTimesheetsSubmittedPartialHours(startDate, endDate);
-        if(teamId != null && teamId.intValue() != 0) {
-            partialTimesheetReportsDTOS = partialTimesheetReportsDTOS.stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getTeamId().intValue() == teamId.intValue())
+        List<PartialTimesheetReportsDTO> list = reportsDAO.getTimesheetsSubmittedPartialHours(startDate, endDate);
+
+        if (teamId != null && teamId != 0) {
+            list = list.stream()
+                    .filter(dto -> dto.getTeamId() != null && dto.getTeamId().intValue() == teamId.intValue())
                     .collect(Collectors.toList());
         }
 
-        List<String> lstEmails = new ArrayList<String>();
-        partialTimesheetReportsDTOS.forEach(dto -> {
+        List<String> lstEmails = new ArrayList<>();
+        list.forEach(dto -> {
             dto.updateEmailPonto();
             if (!lstEmails.contains(dto.getEmailPonto())) {
                 lstEmails.add(dto.getEmailPonto());
             }
         });
-        List<PontoDTO> allData = pontoService.getAllData(lstEmails, LocalDate.parse(startDate), LocalDate.parse(endDate));
-        
-        pontoService.setPontoHours(allData, partialTimesheetReportsDTOS, key);
-        hoursReportsResponseDTO.setPartialTimesheetReportsDTOList(partialTimesheetReportsDTOS);
+
+        List<PontoDTO> allData = pontoService.getAllData(lstEmails, start, end);
+        pontoService.setPontoHours(allData, list, user.getKey());
+
+        hoursReportsResponseDTO.setPartialTimesheetReportsDTOList(list);
         return hoursReportsResponseDTO;
     }
 
@@ -158,103 +155,65 @@ public class ReportsServiceImpl implements ReportsService {
         if (user == null || !user.isActive()) {
             throw new NoLoggedUserException();
         }
-        String key = user.getKey();
-        if(periods != null && !periods.isEmpty()) {
+
+        if (periods != null && !periods.isEmpty()) {
             periods.parallelStream().forEach(period -> {
-                        List<UnsubmittedHoursDTO> unsubmittedHoursDTOList = reportsDAO.getUnsubmittedHours(
-                                period.getStartDate(),
-                                period.getEndDate());
+                List<UnsubmittedHoursDTO> list = reportsDAO.getUnsubmittedHours(period.getStartDate(), period.getEndDate());
 
-                        List<String> lstEmails = new ArrayList<String>();
-                        unsubmittedHoursDTOList.forEach(dto -> {
-                            dto.updateEmailPonto();
-                            if (!lstEmails.contains(dto.getEmailPonto())) {
-                                lstEmails.add(dto.getEmailPonto());
-                            }
-                        });        
-                        List<PontoDTO> allData = pontoService.getAllData(lstEmails, LocalDate.parse(period.getStartDate()), LocalDate.parse(period.getEndDate()));
-                        
-                        pontoService.setPontoHours(allData, unsubmittedHoursDTOList, key);
-                        hoursReportsResponseDTO.getUnsubmittedHoursDTOList().addAll(unsubmittedHoursDTOList);
+                List<String> lstEmails = new ArrayList<>();
+                list.forEach(dto -> {
+                    dto.updateEmailPonto();
+                    if (!lstEmails.contains(dto.getEmailPonto())) {
+                        lstEmails.add(dto.getEmailPonto());
                     }
+                });
 
-            );
+                List<PontoDTO> allData = pontoService.getAllData(lstEmails,
+                        LocalDate.parse(period.getStartDate()),
+                        LocalDate.parse(period.getEndDate()));
+                pontoService.setPontoHours(allData, list, user.getKey());
+
+                hoursReportsResponseDTO.getUnsubmittedHoursDTOList().addAll(list);
+            });
         }
-        if(teamId != null && teamId.intValue() != 0) {
+
+        if (teamId != null && teamId != 0) {
             hoursReportsResponseDTO.setUnsubmittedHoursDTOList(
                     hoursReportsResponseDTO.getUnsubmittedHoursDTOList().stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getTeamId().intValue() == teamId.intValue())
-                    .collect(Collectors.toList())
+                            .filter(dto -> dto.getTeamId() != null && dto.getTeamId().intValue() == teamId.intValue())
+                            .collect(Collectors.toList())
             );
         }
-        UnsubmittedHoursDTOComparator comparator = new UnsubmittedHoursDTOComparator();
-        Collections.sort(hoursReportsResponseDTO.getUnsubmittedHoursDTOList(), comparator);
+
         return hoursReportsResponseDTO;
     }
-/*
+
     @Override
     public HoursReportsResponseDTO getAccountHours(String startDate, String endDate, Integer accountId, Integer categoryaccountId) {
-        log.info("getAccountHours: periods = accpountid = " +accountId);
+        log.info("getAccountHours: startDate = " + startDate + ", endDate = " + endDate + ", accountId = " + accountId + ", categoryaccountId = " + categoryaccountId);
         LocalDate start = ConversionUtils.convertISODateStringToLocalDate(startDate);
         LocalDate end = ConversionUtils.convertISODateStringToLocalDate(endDate);
         periodValidator.validateDateInterval(start, end);
-        HoursReportsResponseDTO hoursReportsResponseDTO = new HoursReportsResponseDTO();
-        hoursReportsResponseDTO.setAccountHoursDTOList(Collections.synchronizedList(new ArrayList<>()));
-        ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
-        if (user == null || !user.isActive()) {
-            throw new NoLoggedUserException();
-        }
-        if(accountId != null && accountId.intValue() != 0) {
-            hoursReportsResponseDTO.setAccountHoursDTOList(
-                    hoursReportsResponseDTO.getAccountHoursDTOList().stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getAccountId().intValue() == accountId.intValue())
-                    .collect(Collectors.toList())
-            );
-        }
-        if(categoryaccountId != null && categoryaccountId.intValue() != 0) {
-            hoursReportsResponseDTO.setAccountHoursDTOList(
-                    hoursReportsResponseDTO.getAccountHoursDTOList().stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getCategoryaccountId().intValue() == categoryaccountId.intValue())
-                    .collect(Collectors.toList())
-            );
-        }
-        String key = user.getKey();
-        return hoursReportsResponseDTO;
-    }
-    */
-    @Override
-    public HoursReportsResponseDTO getAccountHours(String startDate, String endDate, Integer accountId, Integer categoryaccountId) {
-        log.info("getAccountHours: startDate = " + startDate + ", endDate = " + endDate + ", teamId = " + accountId + ", categoryaccountId = " + categoryaccountId);
-        LocalDate start = ConversionUtils.convertISODateStringToLocalDate(startDate);
-        LocalDate end = ConversionUtils.convertISODateStringToLocalDate(endDate);
-        periodValidator.validateDateInterval(start, end);
-        HoursReportsResponseDTO hoursReportsResponseDTO = new HoursReportsResponseDTO();
-        ApplicationUser user = ComponentAccessor.getJiraAuthenticationContext().getLoggedInUser();
-        if (user == null || !user.isActive()) {
-            throw new NoLoggedUserException();
-        }
-        String key = user.getKey();
 
-        List<AccountTimesheetReportsDTO> accountTimesheetReportsDTOS = reportsDAO.getAccountHours(
-            ConversionUtils.convertLocalDateToISODateString(start),
-            ConversionUtils.convertLocalDateToISODateString(end));
-        log.error("accountTimesheetReportsDTOS: " +accountTimesheetReportsDTOS);
-        if(accountId != null && accountId.intValue() != 0) {
-            log.error("Entrou no if de account");
-            accountTimesheetReportsDTOS = accountTimesheetReportsDTOS.stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getAccountId().intValue() == accountId.intValue())
-                    .collect(Collectors.toList());
-        }
-        if(categoryaccountId != null && categoryaccountId.intValue() != 0) {
-            log.error("Entrou no if de categoryaccount");
-            accountTimesheetReportsDTOS = accountTimesheetReportsDTOS.stream()
-                    .filter(timesheetReportsDTO -> timesheetReportsDTO.getCategoryaccountId().intValue() == categoryaccountId.intValue())
+        HoursReportsResponseDTO responseDTO = new HoursReportsResponseDTO();
+        List<AccountTimesheetReportsDTO> list = reportsDAO.getAccountHours(
+                ConversionUtils.convertLocalDateToISODateString(start),
+                ConversionUtils.convertLocalDateToISODateString(end));
+
+        if (accountId != null && accountId != 0) {
+            list = list.stream()
+                    .filter(dto -> dto.getAccountId() != null && dto.getAccountId().intValue() == accountId.intValue())
                     .collect(Collectors.toList());
         }
 
-        hoursReportsResponseDTO.setAccountHoursDTOList(accountTimesheetReportsDTOS);
-        log.error(accountTimesheetReportsDTOS);
-        return hoursReportsResponseDTO;
+        if (categoryaccountId != null && categoryaccountId != 0) {
+            list = list.stream()
+                    .filter(dto -> dto.getCategoryaccountId() != null && dto.getCategoryaccountId().intValue() == categoryaccountId.intValue())
+                    .collect(Collectors.toList());
+        }
+
+        responseDTO.setAccountHoursDTOList(list);
+        return responseDTO;
     }
 
     @Override

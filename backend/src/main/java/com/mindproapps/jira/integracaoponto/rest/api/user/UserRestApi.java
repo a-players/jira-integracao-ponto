@@ -5,10 +5,10 @@ import com.mindproapps.jira.integracaoponto.model.dto.user.DeParaUserDTO;
 import com.mindproapps.jira.integracaoponto.model.dto.user.DeParaUserListRequestDTO;
 import com.mindproapps.jira.integracaoponto.rest.client.PontoRestClient;
 import com.mindproapps.jira.integracaoponto.service.user.UserService;
+import lombok.extern.log4j.Log4j;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
+import javax.inject.Inject;
+import javax.inject.Named;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -19,17 +19,23 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Component
+@Named
+@Log4j
 @Path("/user")
 public class UserRestApi {
-    @Autowired
-    ConditionsHelper conditionsHelper;
 
-    @Autowired
-    UserService userService;
+    private final ConditionsHelper conditionsHelper;
+    private final UserService userService;
+    private final PontoRestClient pontoRestClient;
 
-    @Autowired
-    PontoRestClient pontoRestClient;
+    @Inject
+    public UserRestApi(ConditionsHelper conditionsHelper,
+                       UserService userService,
+                       PontoRestClient pontoRestClient) {
+        this.conditionsHelper = conditionsHelper;
+        this.userService = userService;
+        this.pontoRestClient = pontoRestClient;
+    }
 
     @GET
     @Path("/list")
@@ -39,7 +45,7 @@ public class UserRestApi {
                             @QueryParam("DPType") Integer DPType,
                             @QueryParam("previous") Integer previous,
                             @QueryParam("groups") String groups) {
-        if(conditionsHelper.hasUserTempoAdminPermissions() || conditionsHelper.hasUserTempoTeamLeadOrViewTimesheetPermissions()) {
+        if (conditionsHelper.hasUserTempoAdminPermissions() || conditionsHelper.hasUserTempoTeamLeadOrViewTimesheetPermissions()) {
             DeParaUserListRequestDTO requestDTO = new DeParaUserListRequestDTO();
             requestDTO.setDeParaType(DPType);
             requestDTO.setNumberOfRecords(records);
@@ -49,12 +55,11 @@ public class UserRestApi {
             return Response.ok(userService.getUsersList(requestDTO)).build();
         }
         return Response.status(Response.Status.UNAUTHORIZED).build();
-
     }
 
     @PUT
     public Response update(List<DeParaUserDTO> deParaUserDTOList) {
-        if(conditionsHelper.hasUserTempoAdminPermissions()) {
+        if (conditionsHelper.hasUserTempoAdminPermissions()) {
             userService.updateDeParaUsers(deParaUserDTOList);
             return Response.ok().build();
         }
@@ -64,33 +69,30 @@ public class UserRestApi {
     @GET
     @Path("/list/{userKey}")
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getList(@PathParam("userKey") String userKey) {
-        if(conditionsHelper.hasUserTempoAdminPermissions()) {
+    public Response getListByKey(@PathParam("userKey") String userKey) {
+        if (conditionsHelper.hasUserTempoAdminPermissions()) {
             return Response.ok(userService.getListByKey(userKey)).build();
         }
         return Response.status(Response.Status.UNAUTHORIZED).build();
-
     }
 
     @GET
     @Path("/list/username/all")
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getList() {
-        if(conditionsHelper.hasUserTempoAdminPermissions()) {
+    public Response getUsernameUserKeyList() {
+        if (conditionsHelper.hasUserTempoAdminPermissions()) {
             return Response.ok(userService.getAllUsernameUserKeyList()).build();
         }
         return Response.status(Response.Status.UNAUTHORIZED).build();
-
     }
 
     @GET
     @Path("/list/groups/all")
     @Produces({MediaType.APPLICATION_JSON})
     public Response getGroups() {
-        if(conditionsHelper.hasUserTempoAdminPermissions()) {
+        if (conditionsHelper.hasUserTempoAdminPermissions()) {
             return Response.ok(userService.getAllGroups()).build();
         }
         return Response.status(Response.Status.UNAUTHORIZED).build();
-
     }
 }

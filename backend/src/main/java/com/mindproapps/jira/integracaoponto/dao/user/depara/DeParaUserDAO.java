@@ -26,7 +26,7 @@ import java.sql.ResultSet;
 @Component
 @Log4j
 public class DeParaUserDAO extends BaseDAO {
-    @ComponentImport
+
     private ActiveObjects ao;
 
     public static final String SQL_AUDIT =

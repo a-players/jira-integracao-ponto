@@ -1,35 +1,31 @@
 package com.mindproapps.jira.integracaoponto.dao.reports;
 
 import com.mindproapps.jira.integracaoponto.dao.base.BaseDAO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.PartialTimesheetReportsDTO;
+import com.mindproapps.jira.integracaoponto.model.dto.reports.*;
 import com.mindproapps.jira.integracaoponto.conditions.ConditionsHelper;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.TeamDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.AccountDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.CategoryAccountDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.TimesheetReportsDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.UnsubmittedHoursDTO;
-import com.mindproapps.jira.integracaoponto.model.dto.reports.AccountTimesheetReportsDTO;
 import com.mindproapps.jira.integracaoponto.util.ConversionUtils;
-import lombok.Cleanup;
+import com.mindproapps.jira.integracaoponto.util.LegacySQLProcessor;
+
 import lombok.extern.log4j.Log4j;
-import lombok.var;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.sql.ResultSet;
 import java.text.DecimalFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mindproapps.jira.integracaoponto.util.LegacySQLProcessor;
-import java.sql.ResultSet;
-
+@Named
 @Log4j
-@Component
 public class ReportsDAO extends BaseDAO {
-    @Autowired
-    ConditionsHelper conditionsHelper;
+
+    private final ConditionsHelper conditionsHelper;
+
+    @Inject
+    public ReportsDAO(ConditionsHelper conditionsHelper) {
+        this.conditionsHelper = conditionsHelper;
+    }
 
     private static final String SQL_REPORT_APPROVED_TIMESHEETS =
                     "SELECT * FROM (" +
@@ -189,29 +185,29 @@ public class ReportsDAO extends BaseDAO {
                 "JOIN cwd_directory cd ON (cu.directory_id = cd.id) "+
                 "INNER JOIN \"AO_AEFED0_USER_INDEX\" uia ON uia .\"USER_KEY\" = account.\"LEAD\" "+
                 "LEFT JOIN \"AO_441C88_DE_PARA_USER\" acdpu ON acdpu .\"USER_KEY\" = account.\"LEAD\" "+
-                "left join public.\"AO_013613_WA_VALUE\" value on value.\"VALUE\" = account.\"KEY\" "+  
+                "left join public.\"AO_013613_WA_VALUE\" value on value.\"VALUE\" = account.\"KEY\" "+
                 "left join public.\"jiraissue\" issue on value.\"WORKLOG_ID\" = issue.id "+
                 "left join public.\"worklog\" worklog on value.\"WORKLOG_ID\" = worklog.issueid "+
                 "WHERE cd.lower_directory_name = 'linx ad v.01' "+
                 "AND ui.\"EMAIL\" NOT LIKE '%@terceiroslinx.com.br' "+
                 "AND ui.\"EMAIL\" NOT LIKE '%@franqueadolinx.com.br' "+
                 "AND ui.\"EMAIL\" NOT LIKE '%@parceiroslinx.com.br' "+
-                "group by account.\"ID\", "+ 
+                "group by account.\"ID\", "+
                 "account.\"KEY\", "+
                 "account.\"LEAD\", "+
                 "account.\"NAME\", "+
                 "account.\"STATUS\", "+
-                "account.\"CATEGORY_ID\", "+ 
+                "account.\"CATEGORY_ID\", "+
                 "ui.\"DISPLAY_NAME\", "+
-                "category.\"CATEGORY_TYPE_ID\", "+ 
+                "category.\"CATEGORY_TYPE_ID\", "+
                 "category.\"NAME\", "+
                 "category.\"ID\", "+
-                "uia.\"DISPLAY_NAME\", "+ 
+                "uia.\"DISPLAY_NAME\", "+
                 "uia.\"TEAM_ID\", "+
                 "ui.\"EMAIL\", "+
                 "ui.\"USER_KEY\", "+
                 "acdpu .\"JIRA_EMAIL\", "+
-                "acdpu .\"INFORMED_EMAIL\", "+ 
+                "acdpu .\"INFORMED_EMAIL\", "+
                 "acdpu .\"PONTO_EMAIL\" "+
                 "ORDER BY account.\"ID\" "+
                 ") AS sq ORDER by sq.\"ACCOUNT_NAME\" ";
@@ -475,7 +471,7 @@ public class ReportsDAO extends BaseDAO {
                 dto.setWorkerKey(result.getString("USER_KEY"));
                 list.add(dto);
                 log.error("Executou SQL: "+list);
-            } 
+            }
         }
         } catch (Exception e) {
             log.error("DAO: getUnsubmittedHours error: " + e.getMessage(), e);
@@ -532,7 +528,7 @@ public class ReportsDAO extends BaseDAO {
                         .categoryaccountName(result.getString("NAME"))
                         .build();
                 list.add(dto);
-                
+
             }
         } catch (Exception e) {
             log.error("DAO: getAllAccountsCategory error: " + e.getMessage(), e);

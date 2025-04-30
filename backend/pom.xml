@@ -19,9 +19,17 @@
         <amps.version>8.9.0</amps.version>
         <java.version>17</java.version>
         <spring.version>5.3.26</spring.version>
+        <atlassian.plugin.key>com.mindproapps.jira.integracaoponto</atlassian.plugin.key>
     </properties>
 
     <repositories>
+        <repository>
+            <id>atlassian-public</id>
+            <name>Atlassian Public Repository</name>
+            <url>https://packages.atlassian.com/maven/public/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </repository>
         <repository>
             <id>atlassian</id>
             <url>https://packages.atlassian.com/mvn/maven-atlassian-external/</url>
@@ -33,12 +41,6 @@
         <repository>
             <id>local-repo</id>
             <url>file:///C:/Users/FernandoHorn/Documents/linx-jira-dc/jira-integracao-ponto/backend/localrepo</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
         </repository>
         <repository>
             <id>nrgxnat-repo</id>
@@ -47,26 +49,52 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.atlassian.sal</groupId>
+            <artifactId>sal-api</artifactId>
+            <version>3.0.0</version>
+            <scope>provided</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>com.atlassian.scheduler</groupId>
+            <artifactId>atlassian-scheduler-api</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>osgi.core</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>jndi</groupId>
             <artifactId>jndi</artifactId>
             <version>1.2.1</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.17.0</version> <!-- Ou a versão mais recente -->
+            <version>2.17.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
-            <version>2.17.0</version> <!-- Ou a versão mais recente -->
+            <version>2.17.0</version>
         </dependency>
-
-        <!-- Dependências locais da Tempo -->
         <dependency>
             <groupId>com.tempoplugin</groupId>
             <artifactId>tempo-accounts</artifactId>
@@ -84,7 +112,7 @@
         <dependency>
             <groupId>com.tempoplugin</groupId>
             <artifactId>tempo-plan-core</artifactId>
-            <version>2.5.3</version>
+            <version>4.5.3</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/tempo-plan-core-4.5.3.jar</systemPath>
         </dependency>
@@ -116,14 +144,11 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/tempo-teams-4.5.3.jar</systemPath>
         </dependency>
-
-        <!-- Outras dependências -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.30</version>
         </dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
@@ -134,35 +159,30 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.15.2</version>
         </dependency>
-
         <dependency>
             <groupId>javax.ws.rs</groupId>
             <artifactId>javax.ws.rs-api</artifactId>
             <version>2.1.1</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-api</artifactId>
             <version>${jira.version}</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.atlassian.plugin</groupId>
             <artifactId>atlassian-spring-scanner-annotation</artifactId>
             <version>3.0.3</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.atlassian.plugins</groupId>
             <artifactId>atlassian-plugins-osgi</artifactId>
             <version>8.1.1</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -181,27 +201,23 @@
             <version>${spring.version}</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.atlassian.plugin</groupId>
             <artifactId>atlassian-spring-scanner-runtime</artifactId>
             <version>3.0.3</version>
             <scope>runtime</scope>
         </dependency>
-
         <dependency>
             <groupId>com.atlassian.activeobjects</groupId>
             <artifactId>activeobjects-plugin</artifactId>
             <version>3.0.0</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>javax.jms</groupId>
             <artifactId>jms</artifactId>
             <version>1.1</version>
         </dependency>
-
         <dependency>
             <groupId>javax.management</groupId>
             <artifactId>jmxri</artifactId>
@@ -212,61 +228,67 @@
             <artifactId>jmxtools</artifactId>
             <version>1.2.1</version>
         </dependency>
-
         <dependency>
             <groupId>jta</groupId>
             <artifactId>jta</artifactId>
             <version>1.0.1</version>
         </dependency>
-
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.7</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version> <!-- Ou a versão mais recente disponível -->
+            <version>3.12.0</version>
             <scope>provided</scope>
         </dependency>
-
-
-        <!-- Testes
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>4.11.0</version>
-            <scope>test</scope>
-        </dependency> -->
-
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-inline</artifactId>
             <version>5.2.0</version>
         </dependency>
-
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-core</artifactId>
-            <version>8.5.4</version> <!-- Versão correta do Jira SDK -->
+            <version>8.5.4</version>
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.atlassian.event</groupId>
+            <artifactId>atlassian-event</artifactId>
+            <version>3.1.0</version> <!-- versão compatível com Jira 10.3.x -->
+            <scope>provided</scope>
+        </dependency>
 
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>atlassian-plugin.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>atlassian-plugin.xml</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>com.atlassian.maven.plugins</groupId>
@@ -276,16 +298,63 @@
                 <configuration>
                     <productVersion>${jira.version}</productVersion>
                     <productDataVersion>${jira.version}</productDataVersion>
-                    <generate-rest-docs>false</generate-rest-docs> <!-- Desabilitar a geração da documentação REST -->
+                    <instructions>
+                        <Atlassian-Plugin-Key>${atlassian.plugin.key}</Atlassian-Plugin-Key>
+                        <Export-Package>
+                            com.mindproapps.jira.integracaoponto.api,
+                            com.mindproapps.jira.integracaoponto.dao.base,
+                            com.mindproapps.jira.integracaoponto.dao.config,
+                            com.mindproapps.jira.integracaoponto.database,
+                            com.mindproapps.jira.integracaoponto.service,
+                            com.mindproapps.jira.integracaoponto.util,
+                            com.mindproapps.jira.integracaoponto.listener,
+                            com.mindproapps.jira.integracaoponto.model.*,
+                            com.mindproapps.jira.integracaoponto.webwork
+                        </Export-Package>
+                        <Import-Package>
+                            com.tempoplugin.*;resolution:=optional,
+                            com.atlassian.upm.api;version="[2.0,3.0)",
+                            com.atlassian.scheduler;version="[2.0,3.0)",
+                            com.atlassian.sal.api.*;version="[2.0,4.0)",
+                            *
+                        </Import-Package>
+                        <Spring-Context>com.mindproapps.jira.integracaoponto.*</Spring-Context>
+                    </instructions>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <release>${java.version}</release>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.atlassian.plugin</groupId>
+                <artifactId>atlassian-spring-scanner-maven-plugin</artifactId>
+                <version>2.2.1</version>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>create-plugin-module</goal> <!-- Desabilita o generate-rest-docs -->
+                            <goal>atlassian-spring-scanner</goal>
                         </goals>
+                        <phase>process-classes</phase>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>atlassian-public</id>
+            <url>https://packages.atlassian.com/maven/public/</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>false</enabled></snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>

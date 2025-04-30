@@ -6,26 +6,27 @@ import com.mindproapps.jira.integracaoponto.dao.tempo.team.TempoTeamDAO;
 import com.mindproapps.jira.integracaoponto.model.dto.approval.TimesheetApprovalDTO;
 import com.mindproapps.jira.integracaoponto.model.dto.approval.TimesheetsWaitingForApprovalDTO;
 import com.mindproapps.jira.integracaoponto.util.LegacySQLProcessor;
-
 import lombok.Cleanup;
 import lombok.extern.log4j.Log4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.sql.ResultSet;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 @Log4j
-@Component
+@Named
 public class TempoTimesheetDAO extends BaseDAO {
 
-    @Autowired
-    private ConditionsHelper conditionsHelper;
+    private final ConditionsHelper conditionsHelper;
+    private final TempoTeamDAO tempoTeamDAO;
 
-    @Autowired
-    private TempoTeamDAO tempoTeamDAO;
+    @Inject
+    public TempoTimesheetDAO(ConditionsHelper conditionsHelper, TempoTeamDAO tempoTeamDAO) {
+        this.conditionsHelper = conditionsHelper;
+        this.tempoTeamDAO = tempoTeamDAO;
+    }
 
     private static final String SQL = "[SUA QUERY SQL COMPLETA AQUI]";
 
@@ -33,7 +34,7 @@ public class TempoTimesheetDAO extends BaseDAO {
         log.info("getTimesheetsWaitingForApprovalList: startDate=" + startDate + ", endDate=" + endDate + ", period=" + period + ", userKey=" + userKey);
         List<TimesheetsWaitingForApprovalDTO> list = new ArrayList<>();
 
-        try (LegacySQLProcessor sqlProcessor = this.createSQLProcessor()){
+        try (LegacySQLProcessor sqlProcessor = this.createSQLProcessor()) {
             String stDate = startDate + " 00:00:00";
             String edDate = endDate + " 23:59:59";
 
@@ -78,7 +79,7 @@ public class TempoTimesheetDAO extends BaseDAO {
     public TimesheetApprovalDTO getTimesheetApprovalById(Integer timeSheetApprovalId) {
         log.info("getTimesheetApprovalById: timeSheetApprovalId=" + timeSheetApprovalId);
 
-        try (LegacySQLProcessor sqlProcessor = this.createSQLProcessor()){
+        try (LegacySQLProcessor sqlProcessor = this.createSQLProcessor()) {
             String sql = "SELECT * FROM \"AO_86ED1B_TIMESHEET_APPROVAL\" WHERE \"ID\" = ?";
             sqlProcessor.prepareStatement(sql);
             sqlProcessor.setValue(timeSheetApprovalId);
@@ -106,8 +107,8 @@ public class TempoTimesheetDAO extends BaseDAO {
     public Integer saveTimesheetApproval(TimesheetApprovalDTO dto) {
         log.info("saveTimesheetApproval: timesheetApprovalDTO=" + dto);
         Integer resultId = -1;
-        try (LegacySQLProcessor sqlProcessor = this.createSQLProcessor()){
-            String sql = "INSERT INTO public.\"AO_86ED1B_TIMESHEET_APPROVAL\"" +
+        try (LegacySQLProcessor sqlProcessor = this.createSQLProcessor()) {
+            String sql = "INSERT INTO public.\"AO_86ED1B_TIMESHEET_APPROVAL\" " +
                     "(\"ACTION\", \"ACTOR_KEY\", \"DATE_CREATED\", \"DATE_FROM\", \"DATE_TO\", \"PERIOD\", " +
                     "\"PERIOD_TYPE\", \"PERIOD_VIEW\", \"REASON\", \"REQUIRED_TIME\", \"REVIEWER_KEY\", " +
                     "\"STATUS\", \"SUBMITTED_TIME\", \"USER_KEY\") " +

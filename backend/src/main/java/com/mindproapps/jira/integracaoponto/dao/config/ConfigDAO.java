@@ -6,17 +6,19 @@ import com.mindproapps.jira.integracaoponto.dao.base.BaseDAO;
 import com.mindproapps.jira.integracaoponto.model.config.Config;
 import lombok.val;
 import lombok.extern.log4j.Log4j;
-import org.springframework.stereotype.Component;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.HashMap;
 
-@Component
+@Named
 @Log4j
 public class ConfigDAO extends BaseDAO {
-    @ComponentImport
-    private ActiveObjects ao;
 
-    public ConfigDAO(ActiveObjects ao) {
+    private final ActiveObjects ao;
+
+    @Inject
+    public ConfigDAO( ActiveObjects ao) {
         this.ao = ao;
     }
 

@@ -5,24 +5,23 @@ import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.mindproapps.jira.integracaoponto.dao.base.BaseDAO;
 import com.mindproapps.jira.integracaoponto.model.timesheets.TimesheetActionOrigin;
 import com.mindproapps.jira.integracaoponto.model.timesheets.TSApprOriginTrace;
-import lombok.val;
 import lombok.extern.log4j.Log4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import lombok.val;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.HashMap;
 
-@Component
+@Named
 @Log4j
 public class TimesheetApprovalsOriginTraceDAO extends BaseDAO {
 
-    @ComponentImport
-    private ActiveObjects ao;
+    private final ActiveObjects ao;
 
-    @Autowired
-    public TimesheetApprovalsOriginTraceDAO(ActiveObjects activeObjects) {
-        log.info("TimesheetApprovalsOriginTraceDAO: activeObjects = " + activeObjects);
-        this.ao = activeObjects;
+    @Inject
+    public TimesheetApprovalsOriginTraceDAO(@ComponentImport ActiveObjects ao) {
+        log.info("TimesheetApprovalsOriginTraceDAO: activeObjects = " + ao);
+        this.ao = ao;
     }
 
     public void saveOriginTrace(Integer timesheetApprovalId, TimesheetActionOrigin origin) {
@@ -30,8 +29,7 @@ public class TimesheetApprovalsOriginTraceDAO extends BaseDAO {
         val map = new HashMap<String, Object>();
         map.put("TIMESHEET_APPROVAL_ID", timesheetApprovalId);
         map.put("ORIGIN", origin.getCode());
-        TSApprOriginTrace tSApprOriginTrace = ao.create(
-                TSApprOriginTrace.class, map);
-        tSApprOriginTrace.save();
+        TSApprOriginTrace trace = ao.create(TSApprOriginTrace.class, map);
+        trace.save();
     }
 }

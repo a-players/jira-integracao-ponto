@@ -1,31 +1,33 @@
 package com.mindproapps.jira.integracaoponto.dao.tempo.timesheet;
 
+import com.atlassian.jira.ofbiz.SQLProcessor;
 import com.mindproapps.jira.integracaoponto.conditions.ConditionsHelper;
 import com.mindproapps.jira.integracaoponto.dao.base.BaseDAO;
 import com.mindproapps.jira.integracaoponto.dao.tempo.team.TempoTeamDAO;
 import com.mindproapps.jira.integracaoponto.model.dto.approval.TimesheetApprovalDTO;
 import com.mindproapps.jira.integracaoponto.model.dto.approval.TimesheetsWaitingForApprovalDTO;
-import com.atlassian.jira.ofbiz.SQLProcessor;
-
 import lombok.extern.log4j.Log4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-import java.sql.Date;
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.sql.ResultSet;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 @Log4j
-@Component
+@Named
 public class TempoTimesheetDAO extends BaseDAO {
 
-    @Autowired
-    private ConditionsHelper conditionsHelper;
+    private final ConditionsHelper conditionsHelper;
+    private final TempoTeamDAO tempoTeamDAO;
 
-    @Autowired
-    private TempoTeamDAO tempoTeamDAO;
+    @Inject
+    public TempoTimesheetDAO(ConditionsHelper conditionsHelper, TempoTeamDAO tempoTeamDAO) {
+        log.info("TempoTimesheetDAO: conditionsHelper = " + conditionsHelper + ", tempoTeamDAO = " + tempoTeamDAO);
+        this.conditionsHelper = conditionsHelper;
+        this.tempoTeamDAO = tempoTeamDAO;
+    }
 
     private static final String SQL = "[SUA QUERY SQL COMPLETA AQUI]";
 
@@ -46,7 +48,14 @@ public class TempoTimesheetDAO extends BaseDAO {
 
             while (result.next()) {
                 if (conditionsHelper.hasUserTempoTeamLeadOrViewTimesheetPermissions(result.getInt("TEAM_ID"))) {
-                    double requiredTime = Double.parseDouble(df.format((result.getDouble("REQUIRED_TIME") < 0 ? tempoTeamDAO.userWorkLoad(result.getString("USER_KEY"), startDate, endDate) : result.getDouble("REQUIRED_TIME")) / 3600).replace(",", "."));
+                    double requiredTime = Double.parseDouble(
+                            df.format(
+                                    (result.getDouble("REQUIRED_TIME") < 0
+                                            ? tempoTeamDAO.userWorkLoad(result.getString("USER_KEY"), startDate, endDate)
+                                            : result.getDouble("REQUIRED_TIME")) / 3600
+                            ).replace(",", ".")
+                    );
+
                     TimesheetsWaitingForApprovalDTO dto = TimesheetsWaitingForApprovalDTO.builder()
                             .status(result.getString("STATUS"))
                             .horasTempo(Double.parseDouble(df.format(result.getDouble("SUBMITTED_TIME") / 3600).replace(",", ".")))
@@ -114,7 +123,20 @@ public class TempoTimesheetDAO extends BaseDAO {
                     "VALUES (?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
             sqlProcessor.prepareStatement(sql);
-            // [Setar os valores do DTO...]
+            sqlProcessor.setValue(dto.getAction());
+            sqlProcessor.setValue(dto.getActorKey());
+            sqlProcessor.setValue(java.sql.Date.valueOf(dto.getDateFrom()));
+            sqlProcessor.setValue(java.sql.Date.valueOf(dto.getDateTo()));
+            sqlProcessor.setValue(dto.getPeriod());
+            sqlProcessor.setValue(dto.getPeriodType());
+            sqlProcessor.setValue(dto.getPeriodView());
+            sqlProcessor.setValue(dto.getReason());
+            sqlProcessor.setValue(dto.getRequiredTime());
+            sqlProcessor.setValue(dto.getReviewerKey());
+            sqlProcessor.setValue(dto.getStatus());
+            sqlProcessor.setValue(dto.getSubmittedTime());
+            sqlProcessor.setValue(dto.getUserKey());
+
             sqlProcessor.executeUpdate();
 
             ResultSet result = sqlProcessor.executeQuery("SELECT MAX(\"ID\") FROM \"AO_86ED1B_TIMESHEET_APPROVAL\"");

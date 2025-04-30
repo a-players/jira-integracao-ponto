@@ -4,6 +4,8 @@ import lombok.Getter;
 
 import java.util.HashMap;
 import java.util.Map;
+import com.mindproapps.jira.integracaoponto.model.timesheets.TimesheetActionOrigin;
+
 
 @Getter
 public enum TimesheetActionOrigin {

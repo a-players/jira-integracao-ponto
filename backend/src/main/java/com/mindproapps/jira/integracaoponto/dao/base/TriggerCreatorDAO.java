@@ -1,15 +1,20 @@
 package com.mindproapps.jira.integracaoponto.dao.base;
 
 import lombok.extern.log4j.Log4j;
-import org.ofbiz.core.entity.GenericEntityException;
-import org.springframework.stereotype.Component;
 import com.mindproapps.jira.integracaoponto.util.LegacySQLProcessor;
 
-import java.sql.SQLException;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 @Log4j
-@Component
-public class TriggerCreatorDAO extends BaseDAO{
+@Named
+public class TriggerCreatorDAO extends BaseDAO {
+
+    @Inject
+    public TriggerCreatorDAO() {
+        // Construtor padrão necessário para o Spring Scanner registrar como bean
+    }
+
     private static final String SQL_CREATE_FUNCTION = "CREATE OR REPLACE FUNCTION audit_period_log_fn() RETURNS TRIGGER AS $audit_period_trg$\n" +
             "    DECLARE v_previous_state TEXT;\n" +
             "    DECLARE v_current_state TEXT;\n" +
@@ -52,6 +57,7 @@ public class TriggerCreatorDAO extends BaseDAO{
 
     public void createDatabaseTrigger() {
         log.trace("entering create trigger");
+        log.info("TriggerCreatorDAO - Bean carregado com sucesso.");
 
         try (LegacySQLProcessor processor = this.createSQLProcessor()) {
             processor.prepareStatement(SQL_CREATE_FUNCTION);
@@ -66,7 +72,6 @@ public class TriggerCreatorDAO extends BaseDAO{
             log.error("Erro ao criar trigger no banco de dados", e);
         }
     }
-
 
     public void removeDatabaseTrigger() {
         log.trace("entering remove trigger");
